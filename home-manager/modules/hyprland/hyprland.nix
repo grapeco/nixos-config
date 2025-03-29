@@ -13,7 +13,7 @@
         "XDG_SCREENSHOTS_DIR,$HOME/screens"
       ];
 
-      monitor = ",1920x1080@60,auto,1";
+      monitor = ",1920x1080@100,auto,1";
       "$mainMod" = "SUPER";
       "$terminal" = "kitty";
       "$fileManager" = "nautilus";
@@ -26,12 +26,12 @@
       ];
 
       general = {
-        gaps_in = 0;
+        gaps_in = 5;
         gaps_out = 0;
 
-        border_size = 5;
+        border_size = 2;
 
-        "col.active_border" = "rgba(d65d0eff) rgba(98971aff) 45deg";
+        "col.active_border" = "rgba(095fdeff) rgba(1b3d6fff) 45deg";
         "col.inactive_border" = "rgba(3c3836ff)";
 
         resize_on_border = true;
@@ -41,7 +41,7 @@
       };
 
       decoration = {
-        rounding = 0;
+        rounding = 10;
 
         active_opacity = 1.0;
         inactive_opacity = 1.0;
@@ -51,7 +51,7 @@
         };
 
         blur = {
-          enabled = false;
+          enabled = true;
         };
       };
 
@@ -85,31 +85,6 @@
         force_default_wallpaper = 0;
         disable_hyprland_logo = true;
       };
-
-      # windowrulev2 = [
-      #   "bordersize 0, floating:0, onworkspace:w[t1]"
-
-      #   "float,class:(mpv)|(imv)|(showmethekey-gtk)"
-      #   "move 990 60,size 900 170,pin,noinitialfocus,class:(showmethekey-gtk)"
-      #   "noborder,nofocus,class:(showmethekey-gtk)"
-
-      #   "workspace 3,class:(obsidian)"
-      #   "workspace 3,class:(zathura)"
-      #   "workspace 4,class:(com.obsproject.Studio)"
-      #   "workspace 5,class:(telegram)"
-      #   "workspace 5,class:(vesktop)"
-      #   "workspace 6,class:(teams-for-linux)"
-
-      #   "suppressevent maximize, class:.*"
-      #   "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
-
-      #   "opacity 0.0 override, class:^(xwaylandvideobridge)$"
-      #   "noanim, class:^(xwaylandvideobridge)$"
-      #   "noinitialfocus, class:^(xwaylandvideobridge)$"
-      #   "maxsize 1 1, class:^(xwaylandvideobridge)$"
-      #   "noblur, class:^(xwaylandvideobridge)$"
-      #   "nofocus, class:^(xwaylandvideobridge)$"
-      # ];
 
       workspace = [
         "w[tv1], gapsout:0, gapsin:0"
