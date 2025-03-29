@@ -18,6 +18,7 @@
       "$terminal" = "kitty";
       "$fileManager" = "nautilus";
       "$menu" = "wofi";
+      "$browser" = "firefox";
 
       exec-once = [
         "waybar"

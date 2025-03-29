@@ -4,6 +4,8 @@
     ./vscode.nix
     ./git.nix
     ./kitty.nix
+    ./qt.nix
+    ./stylix.nix
 
     ./hyprland
     ./wofi

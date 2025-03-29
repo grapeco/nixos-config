@@ -3,7 +3,10 @@
 {
   imports = [  
     ./hardware-configuration.nix
+    inputs.home-manager.nixosModules.default
   ];
+
+  home-manager.backupFileExtension = "backup";
 
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "nodev";
