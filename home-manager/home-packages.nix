@@ -14,6 +14,14 @@
     cava
     libreoffice-qt6-fresh
 
+    wofi
+    waybar
+    wl-clipboard
+    libsForQt5.xwaylandvideobridge
+    libnotify
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-hyprland
+
     gnome-extension-manager
     gnomeExtensions.dash-to-dock
     gnomeExtensions.burn-my-windows
