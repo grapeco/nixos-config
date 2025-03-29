@@ -4,6 +4,10 @@
     ./vscode.nix
     ./git.nix
     ./kitty.nix
+
     ./hyprland
+    ./wofi
+    ./waybar
+    ./swaync
   ];
 }

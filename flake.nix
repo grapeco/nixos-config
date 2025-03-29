@@ -10,9 +10,14 @@
     hyprland = {
       url = "github:hyprwm/Hyprland";
     };
+
+    stylix = {
+      url = "github:danth/stylix/release-24.11";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { nixpkgs, home-manager, ... }@inputs: 
+  outputs = { self, nixpkgs, home-manager, ... }@inputs: 
     let
       system = "x86_64-linux";
       homeStateVersion = "24.11";
