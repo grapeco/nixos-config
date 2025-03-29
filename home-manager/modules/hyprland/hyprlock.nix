@@ -23,7 +23,7 @@
 
       background = [
         {
-          path = "/home/${user}/nix/Favorite.jpg";
+          path = "/home/${user}/nixos-config/Favorite.jpg";
           blur_passes = 3;
           blur_size = 5;
         }
