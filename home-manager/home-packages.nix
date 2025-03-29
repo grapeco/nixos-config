@@ -12,6 +12,7 @@
     vesktop
     neovim
     cava
+    libreoffice-qt6-fresh
 
     gnome-extension-manager
     gnomeExtensions.dash-to-dock
