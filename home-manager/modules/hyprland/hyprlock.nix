@@ -1,4 +1,4 @@
-{
+{ user ,... }: {
   programs.hyprlock = {
     enable = true;
     settings = {
@@ -23,9 +23,9 @@
 
       background = [
         {
-          path = "../../../Favorite.jpg";
+          path = "/home/${user}/nix/Favorite.jpg";
           blur_passes = 3;
-          blur_size = 8;
+          blur_size = 5;
         }
       ];
 
