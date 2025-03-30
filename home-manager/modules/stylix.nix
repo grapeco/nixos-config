@@ -29,9 +29,9 @@
     };
 
     cursor = {
-      name = "DMZ-Black";
+      name = "Bibata-Modern-Classic";
       size = 24;
-      package = pkgs.vanilla-dmz;
+      package = pkgs.bibata-cursors;
     };
 
     fonts = {
