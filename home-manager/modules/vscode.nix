@@ -8,6 +8,7 @@
       catppuccin.catppuccin-vsc-icons
       github.copilot
       github.copilot-chat
+      # harg.iceberg(imperative)
     ];
   };
 }
