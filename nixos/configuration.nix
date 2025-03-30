@@ -40,7 +40,11 @@
   i18n.supportedLocales = ["en_US.UTF-8/UTF-8" "ru_RU.UTF-8/UTF-8"];
   
   services.resolved.enable = true;
-  services.displayManager.sddm.enable = true;
+
+  services.displayManager.sddm = {
+    enable = true;
+    theme = "${import ./sddm-theme.nix { inherit pkgs; }}";
+  };
 
   services.xserver = {
     enable = true;
@@ -97,6 +101,9 @@
   environment.systemPackages = with pkgs; [
     vim 
     usbutils
+    libsForQt5.qt5.qtquickcontrols2
+    libsForQt5.qt5.qtgraphicaleffects
+    libsForQt5.qt5.qtsvg
   ];
 
   nixpkgs.config.allowUnfree = true;

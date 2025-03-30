@@ -13,6 +13,8 @@
     cava
     libreoffice-qt6-fresh
     btop
+    unzip
+    nix-prefetch-scripts
 
     wofi
     waybar
