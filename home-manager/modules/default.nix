@@ -11,5 +11,6 @@
     ./wofi
     ./waybar
     ./swaync
+    ./wlogout
   ];
 }

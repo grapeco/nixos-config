@@ -19,6 +19,7 @@
       "$mainMod,       P, exec, hyprpicker -an"
       "$mainMod,       N, exec, swaync-client -t"
       ", Print, exec, grimblast --notify --freeze copysave area"
+      "Ctrl+Alt,       Delete, exec, wlogout"
 
       # Moving focus
       "$mainMod, left, movefocus, l"
