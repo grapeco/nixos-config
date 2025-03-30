@@ -1,6 +1,6 @@
-{
+{ user, ... }: {
   programs.wlogout = {
-    enable = true;
+    enable = true; 
     layout = [
       {
         label = "lock";
