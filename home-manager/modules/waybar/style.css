@@ -18,10 +18,10 @@ window#waybar {
   padding: 0 10px;
 }
 #workspaces button.active label {
-  color: #1d2021;
+  color: #ebdbb2;
 }
 #workspaces button.active {
-  background: #d65d0e;
+  background: #0632b9;
 }
 
 #clock, #battery, #pulseaudio, #tray, #language, #weather {
