@@ -17,10 +17,13 @@
     wofi
     waybar
     wl-clipboard
+    cliphist
     libsForQt5.xwaylandvideobridge
     libnotify
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
+    hyprpicker
+    grimblast
 
     gnome-extension-manager
     gnomeExtensions.dash-to-dock

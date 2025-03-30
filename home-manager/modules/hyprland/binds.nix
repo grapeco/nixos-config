@@ -3,9 +3,11 @@
     bind = [
       "$mainMod,       T, exec, $terminal"
       "$mainMod,       W, exec, $browser"
+      "$mainMod,       E, exec, $fileManager"
+      "$mainMod,       C, exec, code"
+
       "$mainMod,       Q, killactive,"
       "$mainMod,       M, exit,"
-      "$mainMod,       E, exec, $fileManager"
       "$mainMod,       F, togglefloating,"
       "$mainMod,       D, exec, $menu --show drun"
       "$mainMod,       P, pin,"
