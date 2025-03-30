@@ -12,6 +12,7 @@
     neovim
     cava
     libreoffice-qt6-fresh
+    btop
 
     wofi
     waybar
