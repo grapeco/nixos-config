@@ -8,11 +8,23 @@
 
   home-manager.backupFileExtension = "backup";
 
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "nodev";
-  boot.loader.grub.efiSupport = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.efi.efiSysMountPoint = "/boot";
+  boot.loader = {
+    grub = {
+      enable = true;
+      device = "nodev";
+      efiSupport = true;
+      theme = pkgs.fetchFromGitHub {
+        owner = "shvchk";
+        repo = "fallout-grub-theme";
+        rev = "80734103d0b48d724f0928e8082b6755bd3b2078";
+        sha256 = "sha256-7kvLfD6Nz4cEMrmCA9yq4enyqVyqiTkVZV5y4RyUatU=";
+      };
+    };
+    efi = {
+      canTouchEfiVariables = true;
+      efiSysMountPoint = "/boot";
+    };
+  };
 
   boot.extraModulePackages = [ config.boot.kernelPackages.rtl8192eu ];
 
