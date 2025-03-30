@@ -9,11 +9,11 @@
 }
 
 window#waybar {
-  background: #1d2021;
+  background: #031548;
 }
 
 /* Workspace Buttons */
-#workspaces button label{
+#workspaces button label {
   color: #ebdbb2;
   padding: 0 10px;
 }
