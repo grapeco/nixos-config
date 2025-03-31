@@ -1,9 +1,9 @@
 {lib, ...}: {
-  programs.kitty = lib.mkForce {
+  programs.kitty = {
     enable = true;
     settings = {
       confirm_os_window_close = 0;
-      opacity = 1.0;
+      opacity = 0;
     };
   };
 }
