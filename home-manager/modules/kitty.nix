@@ -3,12 +3,7 @@
     enable = true;
     settings = {
       confirm_os_window_close = 0;
-
-      font_size = 13;
-      font_family = "Operator Mono Book";
-      bold_font = "Operator Mono Medium";
-      italic_font = "Operator Mono Book Italic";
-      bold_italic_font = "Operator Mono Medium Italic";
+      opacity = 1.0;
     };
   };
 }

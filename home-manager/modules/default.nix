@@ -6,6 +6,7 @@
     ./kitty.nix
     ./qt.nix
     ./stylix.nix
+    ./eza.nix
 
     ./hyprland
     ./wofi
