@@ -32,5 +32,8 @@
     gnomeExtensions.burn-my-windows
     gnomeExtensions.appindicator
     gnomeExtensions.blur-my-shell
+
+    papirus-icon-theme
+    pcmanfm-qt
   ];
 }

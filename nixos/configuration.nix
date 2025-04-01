@@ -27,6 +27,7 @@
   };
 
   boot.extraModulePackages = [ config.boot.kernelPackages.rtl8192eu ];
+  boot.kernelPackages = pkgs.linuxPackages_6_6;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
