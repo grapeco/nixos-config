@@ -8,7 +8,7 @@
 
       "$mainMod,       Q, killactive,"
       # "$mainMod,       M, exit,"
-      "$mainMod,       F, togglefloating,"
+      "$mainMod,       G, togglefloating,"
       "$mainMod,       P, pin,"
       "$mainMod,       J, togglesplit,"
       "$mainMod,       F, fullscreen, 0"
