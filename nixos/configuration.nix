@@ -3,6 +3,7 @@
 {
   imports = [  
     ./hardware-configuration.nix
+    ./rtl.nix
     inputs.home-manager.nixosModules.default
   ];
 
@@ -26,14 +27,19 @@
     };
   };
 
-  boot.extraModulePackages = [ config.boot.kernelPackages.rtl8192eu ];
-  boot.kernelPackages = pkgs.linuxPackages_6_6;
+  hardware.enableAllFirmware = true;
+  hardware.wirelessRegulatoryDatabase = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  networking.hostName = "nixos";
-  networking.networkmanager.enable = true;
-  networking.firewall.allowedTCPPorts = [ 22 ];
+  networking = {
+    hostName = "nixos";
+    firewall.allowedTCPPorts = [ 22 ];
+    networkmanager = {
+      enable = true;
+      wifi.backend = "iwd";
+    };
+  };
 
   time.timeZone = "Europe/Moscow";
 
@@ -79,7 +85,7 @@
 
   users.users.nox = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ]; 
+    extraGroups = [ "wheel" "networkmanager"]; 
     packages = with pkgs; [
       tree
     ];

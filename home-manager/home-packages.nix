@@ -1,21 +1,25 @@
 { pkgs, ... }: {
   
   home.packages = with pkgs; [
-    vim
-    cmatrix
-    wget
-    fastfetch
+    # Gui utils
     firefox
-    wireguard-tools
     telegram-desktop
     vesktop
+    libreoffice-qt6-fresh
+
+    # CLI Utils
+    wget
+    cmatrix
+    fastfetch
+    wireguard-tools
     neovim
     cava
-    libreoffice-qt6-fresh
     btop
     unzip
     nix-prefetch-scripts
+    speedtest-cli
 
+    # Hyprland stuff
     wofi
     waybar
     wl-clipboard
@@ -27,12 +31,14 @@
     hyprpicker
     grimblast
 
+    # Gnome stuff
     gnome-extension-manager
     gnomeExtensions.dash-to-dock
     gnomeExtensions.burn-my-windows
     gnomeExtensions.appindicator
     gnomeExtensions.blur-my-shell
 
+    # idk
     papirus-icon-theme
     pcmanfm-qt
   ];
