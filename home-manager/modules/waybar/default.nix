@@ -8,7 +8,7 @@
         position = "top";
         height = 30;
         modules-left = ["hyprland/workspaces"];
-        modules-center = ["hyprland/window"];
+        modules-center = ["custom/label"];
         modules-right = ["hyprland/language" "custom/weather" "pulseaudio" "battery" "clock" "tray"];
         "hyprland/workspaces" = {
           disable-scroll = true;
@@ -32,6 +32,10 @@
           persistent-workspaces = {
             "*" = 9;
           };
+        };
+
+        "custom/label" = {
+          format = "I use Arch and NixOS btw";
         };
 
         "hyprland/language" = {
