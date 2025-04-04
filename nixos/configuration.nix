@@ -4,71 +4,29 @@
   imports = [  
     ./hardware-configuration.nix
     ./rtl.nix
+    ./grub.nix
+    ./network.nix
+    ./ssh.nix
+    ./bash.nix
+    ./sddm.nix
     inputs.home-manager.nixosModules.default
   ];
 
   home-manager.backupFileExtension = "backup";
 
-  boot.loader = {
-    grub = {
-      enable = true;
-      device = "nodev";
-      efiSupport = true;
-      theme = pkgs.fetchFromGitHub {
-        owner = "shvchk";
-        repo = "fallout-grub-theme";
-        rev = "80734103d0b48d724f0928e8082b6755bd3b2078";
-        sha256 = "sha256-7kvLfD6Nz4cEMrmCA9yq4enyqVyqiTkVZV5y4RyUatU=";
-      };
-    };
-    efi = {
-      canTouchEfiVariables = true;
-      efiSysMountPoint = "/boot";
-    };
-  };
-
   hardware.enableAllFirmware = true;
-  hardware.wirelessRegulatoryDatabase = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-  networking = {
-    hostName = "nixos";
-    firewall.allowedTCPPorts = [ 22 ];
-    networkmanager = {
-      enable = true;
-      wifi.backend = "iwd";
-    };
-  };
 
   time.timeZone = "Europe/Moscow";
 
   i18n.defaultLocale = "en_US.UTF-8";
   i18n.supportedLocales = ["en_US.UTF-8/UTF-8" "ru_RU.UTF-8/UTF-8"];
-  
-  services.resolved.enable = true;
-
-  services.displayManager.sddm = {
-    enable = true;
-    theme = "${import ./sddm-theme.nix { inherit pkgs; }}";
-  };
 
   services.xserver = {
     enable = true;
     desktopManager.gnome.enable = true;
     videoDrivers = ["nvidia"];
-  };
-
-  services.openssh = {
-    enable = true;
-    ports = [ 22 ];
-    settings = {
-      PasswordAuthentication = true;
-      AllowUsers = null;
-      UseDns = true;
-      X11Forwarding = false;
-      PermitRootLogin = "prohibit-password"; 
-    };
   };
 
   hardware.graphics = {
@@ -89,16 +47,6 @@
     packages = with pkgs; [
       tree
     ];
-  };
-
-  programs.bash = {
-    interactiveShellInit = ''
-      if [[ $(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" && -z ''${BASH_EXECUTION_STRING} ]]
-      then
-        shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=""
-        exec ${pkgs.fish}/bin/fish $LOGIN_OPTION
-      fi
-    '';
   };
 
   programs.hyprland = {
