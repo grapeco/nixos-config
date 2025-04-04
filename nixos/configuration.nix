@@ -9,6 +9,7 @@
     ./ssh.nix
     ./bash.nix
     ./sddm.nix
+    ./bluetooth.nix
     inputs.home-manager.nixosModules.default
   ];
 
