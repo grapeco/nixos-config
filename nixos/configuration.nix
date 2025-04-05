@@ -10,12 +10,12 @@
     ./bash.nix
     ./sddm.nix
     ./bluetooth.nix
+    ./steam.nix
+    ./hardware.nix
     inputs.home-manager.nixosModules.default
   ];
 
   home-manager.backupFileExtension = "backup";
-
-  hardware.enableAllFirmware = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -30,18 +30,6 @@
     videoDrivers = ["nvidia"];
   };
 
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
-  };
-
-  hardware.nvidia = {
-    modesetting.enable = true;
-    open = false;
-    nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.latest;
-  };
-
   users.users.nox = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager"]; 
@@ -54,6 +42,7 @@
     enable = true;
   };
 
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
   environment.systemPackages = with pkgs; [
     vim 
     usbutils
