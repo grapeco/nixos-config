@@ -8,7 +8,7 @@
         position = "top";
         height = 30;
         modules-left = [ "hyprland/workspaces" ];
-        modules-center = [ "cpu" "custom/mem" ];
+        modules-center = [ "custom/gpu" "cpu" "custom/mem" ];
         modules-right = [ "hyprland/language" "custom/weather" "pulseaudio" "battery" "clock" "tray" ];
         "hyprland/workspaces" = {
           disable-scroll = true;
@@ -35,15 +35,24 @@
         };
 
         "custom/mem" = {
-          format = " {} ";
+          format = "{} ";
           interval = 3;
           exec = "free -h | awk '/Mem:/{printf $3}'";
           tooltip = false;
+          min-length = 6;
         };
 
         "cpu" = {
           interval = 2;
-          format = "{usage}% ";
+          format = "  {usage}%    ";
+          min-length = 6;
+        };
+
+        "custom/gpu" = {
+          format = "{}% ";
+          interval = 2;
+          exec = "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits | awk '{print $1}'";
+          tooltip = false;
           min-length = 6;
         };
 
