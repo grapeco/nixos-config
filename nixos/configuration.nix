@@ -32,7 +32,7 @@
 
   users.users.nox = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager"]; 
+    extraGroups = ["wheel" "networkmanager"]; 
     packages = with pkgs; [
       tree
     ];

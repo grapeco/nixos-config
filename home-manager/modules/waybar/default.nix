@@ -7,9 +7,9 @@
         layer = "top";
         position = "top";
         height = 30;
-        modules-left = ["hyprland/workspaces"];
-        modules-center = ["custom/label"];
-        modules-right = ["hyprland/language" "custom/weather" "pulseaudio" "battery" "clock" "tray"];
+        modules-left = [ "hyprland/workspaces" ];
+        modules-center = [ "cpu" "custom/mem" ];
+        modules-right = [ "hyprland/language" "custom/weather" "pulseaudio" "battery" "clock" "tray" ];
         "hyprland/workspaces" = {
           disable-scroll = true;
           show-special = true;
@@ -34,20 +34,28 @@
           };
         };
 
-        "custom/label" = {
-          format = "I use Arch and NixOS btw";
+        "custom/mem" = {
+          format = " {} ";
+          interval = 3;
+          exec = "free -h | awk '/Mem:/{printf $3}'";
+          tooltip = false;
+        };
+
+        "cpu" = {
+          interval = 2;
+          format = "{usage}% ";
+          min-length = 6;
         };
 
         "hyprland/language" = {
           format-en = "🇺🇸";
           format-ru = "🇷🇺";
-          format-he = "🇮🇱";
           min-length = 5;
           tooltip = false;
         };
 
         "custom/weather" = {
-          format = " {} ";
+          format = "{} ";
           exec = "curl -s 'wttr.in/Pushkino?format=%c%t'";
           interval = 300;
           class = "weather";
