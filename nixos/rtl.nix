@@ -21,13 +21,6 @@ let
       linuxHeaders
     ];
 
-    prePatch = ''
-      substituteInPlace Makefile \
-        --replace /lib/modules/ "${config.boot.kernelPackages.kernel.dev}/lib/modules/" \
-        --replace /sbin/depmod "" \
-        --replace '$(shell uname -r)' "${config.boot.kernelPackages.kernel.modDirVersion}"
-    '';
-
     makeFlags = [
       "KSRC=${config.boot.kernelPackages.kernel.dev}/lib/modules/${config.boot.kernelPackages.kernel.modDirVersion}/build"
     ];
@@ -43,6 +36,5 @@ in
     extraModulePackages = [ rtl8192eu-linux-driver ];
     kernelModules = [ "8192eu" ];
     blacklistedKernelModules = [ "rtl8xxxu" ];
-    kernelParams = [ "8192eu.debug=1" ];
   };
 }
