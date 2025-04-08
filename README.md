@@ -5,6 +5,7 @@ This is my NixOs configuration. I'm a newbie so don't judge me too harshly.
 ## Features
 
 - 🪟 **Hyprland + waybar**
+- 🗿 **Gnome with extensions**
 - 🎨 **Catppuccin-mocha theme**
 - 🌟 **Fish terminal**
 
@@ -34,6 +35,11 @@ To get started with this setup, follow these steps:
   ```
 ## 🥳 Enjoy!
 
+**🪟 Hyprland**
 ![screenshot](./screenshots/Hyprland.png)
+
+**Gnome**
+![screenshot](./screenshots/Gnome.png)
+
+**Grub**
 ![screenshot](./screenshots/Grub.jpg)
-![screenshot](./screenshots/)

@@ -37,6 +37,7 @@
     gnomeExtensions.burn-my-windows
     gnomeExtensions.appindicator
     gnomeExtensions.blur-my-shell
+    gnomeExtensions.clipboard-history
 
     # idk
     papirus-icon-theme
