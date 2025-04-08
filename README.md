@@ -35,7 +35,7 @@ To get started with this setup, follow these steps:
   ```
 ## 🥳 Enjoy!
 
-**🪟 Hyprland**
+**Hyprland**
 ![screenshot](./screenshots/Hyprland.png)
 
 **Gnome**
