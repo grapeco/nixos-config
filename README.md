@@ -7,7 +7,7 @@ This is my NixOs configuration. I'm a newbie so don't judge me too harshly.
 - 🪟 **Hyprland + waybar**
 - 🗿 **Gnome with extensions**
 - 🎨 **Catppuccin-mocha theme**
-- 🌟 **Fish terminal**
+- 🐟 **Fish terminal**
 
 ## Installation
 
@@ -17,29 +17,32 @@ To get started with this setup, follow these steps:
 
 2. **Clone the Repository**:
 
-	```bash
-    git clone https://github.com/BitterLemon-git/nixos-config
-    cd nixos-config
-  ```
+   ```bash
+   git clone https://github.com/BitterLemon-git/nixos-config
+   cd nixos-config
+   ```
+
 3. **Put your `hardware-configuration.nix` file there**:
 
-  ```bash
-    cp /etc/nixos/hardware-configuration.nix ./
-  ```
+   ```bash
+   cp /etc/nixos/hardware-configuration.nix ./
+   ```
+
 4. **Rebuilding**:
 
-  ```bash
-    cd nixos-config-reborn
-    git add .
-    nixos-rebuild switch --flake ./
-  ```
-## 🥳 Enjoy!
+   ```bash
+   cd nixos-config-reborn
+   git add .
+   nixos-rebuild switch --flake ./
+   ```
 
-## Hyprland
+## 📸 Screenshots
+
+### Hyprland
 ![screenshot](./screenshots/Hyprland.png)
 
-## Gnome
+### Gnome
 ![screenshot](./screenshots/Gnome.png)
 
-## Grub
+### Grub
 ![screenshot](./screenshots/Grub.jpg)
