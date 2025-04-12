@@ -39,13 +39,13 @@
           interval = 3;
           exec = "free -h | awk '/Mem:/{printf $3}'";
           tooltip = false;
-          min-length = 6;
+          min-length = 9;
         };
 
         "cpu" = {
           interval = 2;
-          format = "  {usage}%    ";
-          min-length = 6;
+          format = "{usage}% ";
+          min-length = 8;
         };
 
         "custom/gpu" = {
@@ -53,7 +53,7 @@
           interval = 2;
           exec = "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits | awk '{print $1}'";
           tooltip = false;
-          min-length = 6;
+          min-length = 8;
         };
 
         "hyprland/language" = {

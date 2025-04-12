@@ -13,7 +13,7 @@
         text = "$TIME";
         font_size = 96;
         font_family = "JetBrains Mono";
-        color = "rgba(235, 219, 178, 1.0)";
+        color = "rgba(255, 255, 255, 1.0)";
         position = "0, 600";
         halign = "center";
         walign = "center";
@@ -35,7 +35,7 @@
           position = "0, -80";
           monitor = "";
           dots_center = true;
-          font_color = "rgb(235, 219, 178)";
+          font_color = "rgb(255, 255, 255)";
           inner_color = "rgb(40, 40, 40)";
           outer_color = "rgb(60, 56, 54)";
           outline_thickness = 5;

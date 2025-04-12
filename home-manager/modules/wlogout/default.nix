@@ -26,7 +26,7 @@
       {
         label = "logout";
         text = "Logout";
-        action = "hyprctl dispatch exit";
+        action = "sleep1; hyprctl dispatch exit";
         keybind = "q";
       }
 
