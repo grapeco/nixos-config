@@ -1,11 +1,12 @@
 { pkgs, ... }: {
   
   home.packages = with pkgs; [
-    # Gui utils
+    # GUI utils
     firefox
     telegram-desktop
     vesktop
     libreoffice-qt6-fresh
+    pavucontrol
 
     # CLI Utils
     wget
@@ -18,6 +19,7 @@
     unzip
     nix-prefetch-scripts
     speedtest-cli
+    lunarvim
 
     # Hyprland stuff
     wofi

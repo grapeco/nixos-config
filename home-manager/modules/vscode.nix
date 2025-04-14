@@ -20,6 +20,7 @@
       "editor.insertSpaces" = true;            
       "editor.detectIndentation" = true;       
       "editor.renderControlCharacters" = true;
+      "editor.minimap.enabled" = false;
     };
   };
 }
