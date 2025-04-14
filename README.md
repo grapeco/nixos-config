@@ -36,7 +36,8 @@ To get started with this setup, follow these steps:
    ```
 
 ### ⚠️ Warning
-**When you log out via wlogout, the waybar will not be displayed when you log back into hyprland. To solve this problem, I added a bind to launch the waybar "Super + Shift + W"**
+1. **When you log out via wlogout, the waybar will not be displayed when you log back into hyprland. To solve this problem, I added a bind to launch the waybar "Super + Shift + W"**
+2. **Waybar shows nvidia gpu usage, so if you have other gpu, you should change the waybar settings**
 
 ## 📸 Screenshots
 
