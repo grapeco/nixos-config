@@ -35,6 +35,9 @@ To get started with this setup, follow these steps:
    nixos-rebuild switch --flake ./
    ```
 
+### ⚠️ Warning
+**When you log out via wlogout, the waybar will not be displayed when you log back into hyprland. To solve this problem, I added a bind to launch the waybar "Super + Shift + W"**
+
 ## 📸 Screenshots
 
 ### Hyprland

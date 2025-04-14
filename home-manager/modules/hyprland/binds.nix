@@ -3,6 +3,7 @@
     bind = [
       "$mainMod,       T, exec, $terminal"
       "$mainMod,       W, exec, $browser"
+      "$mainMod SHIFT, W, exec, waybar"
       "$mainMod,       E, exec, $fileManager"
       "$mainMod,       C, exec, code"
 
