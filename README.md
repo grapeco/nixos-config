@@ -31,7 +31,6 @@ To get started with this setup, follow these steps:
 4. **Rebuilding**:
 
    ```bash
-   cd nixos-config-reborn
    git add .
    nixos-rebuild switch --flake ./
    ```
