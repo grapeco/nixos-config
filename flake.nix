@@ -15,6 +15,11 @@
       url = "github:danth/stylix/";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    spicetify-nix = {
+      url = "github:gerg-l/spicetify-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: 

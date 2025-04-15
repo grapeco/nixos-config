@@ -7,7 +7,7 @@
     ./stylix.nix
     ./eza.nix
     ./gammastep.nix
-    ./zed.nix
+    ./spicetify.nix
 
     ./hyprland
     ./wofi

@@ -1,5 +1,5 @@
-{ pkgs, ... }: {
-  
+{ pkgs, ... }: 
+{
   home.packages = with pkgs; [
     # GUI utils
     firefox
@@ -7,6 +7,7 @@
     vesktop
     libreoffice-qt6-fresh
     pavucontrol
+    godot
 
     # CLI Utils
     wget
