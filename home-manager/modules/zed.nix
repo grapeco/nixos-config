@@ -1,42 +1,43 @@
-{ pkgs, lib, ... }: {
+{ pkgs, lib, ... }: 
+{
   programs.zed-editor = {
     enable = true;
-    extensions = [ "nix" ];
-
+    
     userSettings = {
-      hour_format = "hour24";
-      auto_update = false;
-
-      terminal = {
-        alternate_scroll = "off";
-        blinking = "off";
-        copy_on_select = false;
-        dock = "bottom";
-        detect_venv = {
-          on = {
-            directories = [".env" "env" ".venv" "venv"];
-            activate_script = "default";
-          };
-        };
-
-        env = {
-          TERM = "kitty";
-        };
-
-        toolbar = {
-          title = true;
-        };
-
-        working_directory = "current_project_directory";
+      auto-update = false;
+      vim_mode = true;
+      telemetry = {
+        diagnostics = false;
+        metrics = false;
       };
 
-      lsp = {
-        rust-analyzer = {
-          binary.path_lookup = true;
+      ui_font_size = lib.mkForce 16;
+      buffer_font_size = lib.mkForce 16;
+
+      "lsp" = {
+        "rust-analyzer" = {
+          "binary" = {
+            "path" = "/run/current-system/sw/bin/bash";
+            # "path_lookup" = true;
+            "arguments" = [
+              "-c"
+              "if [ -e flake.nix ]; then nix develop --command rust-analyzer; else rust-analyzer; fi"
+            ];
+            "initialization_options" = {
+              "check" = {
+                "command" = "clippy";
+              };
+            };
+          };
         };
-        nix = {
-          binary.path_lookup = true;
+      };
+
+      "assistant" = {
+        "default_model" = {
+          "provider" = "ollama";
+          "model" = "deepseek-r1:7b";
         };
+        "version" = "2";
       };
     };
   };

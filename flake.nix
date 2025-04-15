@@ -25,7 +25,7 @@
     in {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = { inherit inputs; };
+        specialArgs = { inherit inputs user homeStateVersion; };
         modules = [ 
           ./nixos/configuration.nix 
 
