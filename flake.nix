@@ -29,7 +29,7 @@
         modules = [ 
           ./nixos/configuration.nix 
 
-          home-manager.nixosModules.home-manager 
+          inputs.home-manager.nixosModules.home-manager 
           {
             home-manager = {
               users.${user} = ./home-manager/home.nix;
