@@ -7,7 +7,6 @@
     vesktop
     libreoffice-qt6-fresh
     pavucontrol
-    godot
 
     # CLI Utils
     wget
@@ -20,7 +19,6 @@
     unzip
     nix-prefetch-scripts
     speedtest-cli
-    lunarvim
 
     # Hyprland stuff
     wofi
@@ -29,8 +27,6 @@
     cliphist
     libsForQt5.xwaylandvideobridge
     libnotify
-    xdg-desktop-portal-gtk
-    xdg-desktop-portal-hyprland
     hyprpicker
     grimblast
 

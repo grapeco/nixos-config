@@ -12,6 +12,7 @@
     ./bluetooth.nix
     ./steam.nix
     ./hardware.nix
+    ./hyprland.nix
     inputs.home-manager.nixosModules.default
   ];
 
@@ -38,15 +39,16 @@
     ];
   };
 
-  programs.hyprland = {
-    enable = true;
-  };
-
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   environment.systemPackages = with pkgs; [
     vim 
     usbutils
-    jre8
+    (jdk.override {
+      enableJavaFX = true;
+      openjfx21 = openjfx.override { withWebKit = true; };
+    })
+    appimage-run
+
 
     libsForQt5.qt5.qtquickcontrols2
     libsForQt5.qt5.qtgraphicaleffects

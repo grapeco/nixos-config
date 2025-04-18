@@ -11,6 +11,7 @@
         "XDG_SESSION_DESKTOP,Hyprland"
         "QT_QPA_PLATFORM,wayland"
         "XDG_SCREENSHOTS_DIR,$HOME/screens"
+        "XDG_DATA_DIRS, $HOME/.local/share:$XDG_DATA_DIRS"
       ];
 
       monitor = ",1920x1080@100,auto,1";
