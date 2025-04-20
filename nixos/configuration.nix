@@ -34,9 +34,6 @@
   users.users.${user} = {
     isNormalUser = true;
     extraGroups = ["wheel" "networkmanager"]; 
-    packages = with pkgs; [
-      tree
-    ];
   };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
