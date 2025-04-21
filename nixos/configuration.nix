@@ -13,6 +13,7 @@
     ./steam.nix
     ./hardware.nix
     ./hyprland.nix
+    ./sound.nix
     inputs.home-manager.nixosModules.default
   ];
 
