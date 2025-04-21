@@ -20,6 +20,10 @@
       url = "github:gerg-l/spicetify-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    minegrub-theme = {
+      url = "github:Lxtharia/minegrub-theme";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: 
@@ -33,6 +37,7 @@
         specialArgs = { inherit inputs user homeStateVersion; };
         modules = [ 
           ./nixos/configuration.nix 
+          inputs.minegrub-theme.nixosModules.default
 
           inputs.home-manager.nixosModules.home-manager 
           {
