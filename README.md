@@ -48,3 +48,6 @@ To get started with this setup, follow these steps:
 
 ### Grub
 ![screenshot](./screenshots/Grub.jpg)
+
+### Sddm
+![screenshot](./screenshots/Sddm.png)
