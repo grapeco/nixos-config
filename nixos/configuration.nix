@@ -8,12 +8,14 @@
     ./network.nix
     ./ssh.nix
     ./bash.nix
-    ./sddm.nix
     ./bluetooth.nix
     ./steam.nix
     ./hardware.nix
     ./hyprland.nix
     ./sound.nix
+    
+    ./sddm
+
     inputs.home-manager.nixosModules.default
   ];
 
@@ -46,11 +48,6 @@
       openjfx21 = openjfx.override { withWebKit = true; };
     })
     appimage-run
-
-
-    libsForQt5.qt5.qtquickcontrols2
-    libsForQt5.qt5.qtgraphicaleffects
-    libsForQt5.qt5.qtsvg
   ];
 
   nixpkgs.config.allowUnfree = true;
