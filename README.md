@@ -47,7 +47,7 @@ To get started with this setup, follow these steps:
 ![screenshot](./screenshots/Gnome.png)
 
 ### Grub
-![screenshot](./screenshots/Grub.jpg)
+![screenshot](./screenshots/Grub2.jpg)
 
 ### Sddm
 ![screenshot](./screenshots/Sddm.png)
