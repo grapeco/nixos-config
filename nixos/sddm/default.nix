@@ -4,6 +4,7 @@
       theme = "hyprland_kath";
     })
   ];
+  
   services.displayManager.sddm = {
     enable = true;
     package = pkgs.kdePackages.sddm;

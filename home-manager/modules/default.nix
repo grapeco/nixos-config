@@ -8,6 +8,7 @@
     ./eza.nix
     ./gammastep.nix
     ./spicetify.nix
+    ./starship.nix
 
     ./hyprland
     ./wofi

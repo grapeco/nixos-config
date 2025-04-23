@@ -37,7 +37,6 @@
         specialArgs = { inherit inputs user homeStateVersion; };
         modules = [ 
           ./nixos/configuration.nix 
-          inputs.minegrub-theme.nixosModules.default
 
           inputs.home-manager.nixosModules.home-manager 
           {

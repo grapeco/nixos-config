@@ -1,4 +1,6 @@
-{ pkgs, ... }: {
+{ pkgs, inputs, ... }: {
+  imports = [ inputs.minegrub-theme.nixosModules.default ];
+
   boot.loader = {
     grub = {
       enable = true;
