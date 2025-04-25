@@ -9,6 +9,7 @@
     ./gammastep.nix
     ./spicetify.nix
     ./starship.nix
+    # ./cava.nix
 
     ./hyprland
     ./wofi

@@ -14,7 +14,6 @@
     fastfetch
     wireguard-tools
     neovim
-    cava
     btop
     unzip
     nix-prefetch-scripts
