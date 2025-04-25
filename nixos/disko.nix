@@ -23,9 +23,22 @@
             root = {
               size = "720G";
               content = {
-                type = "filesystem";
+                type = "btrfs";
                 extraArgs = [ "-f" ];
-                format = "";
+                subvolumes = {
+                  "/root" = {
+                    mountpoint = "/";
+                    mountOptions = [ "compress=zstd" "noatime" ];
+                  };
+                  "/home" = {
+                    mountpoint = "/home";
+                    mountOptions = [ "compress=zstd" "noatime" ];
+                  };
+                  "/swap" = {
+                    mountpoint = "/.swapvol";
+                    swap.swapfile.size = "18G";
+                  };
+                };
               };
             };
           };
