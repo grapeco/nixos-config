@@ -28,6 +28,9 @@
   i18n.defaultLocale = "en_US.UTF-8";
   i18n.supportedLocales = ["en_US.UTF-8/UTF-8" "ru_RU.UTF-8/UTF-8"];
 
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
+
   services.xserver = {
     enable = true;
     desktopManager.gnome.enable = true;
@@ -53,4 +56,10 @@
   nixpkgs.config.allowUnfree = true;
 
   system.stateVersion = "24.11"; # Do not
+
+  swapDevices = [ 
+    {
+      device = "/.swapvol/swapfile";
+    }
+  ];
 }

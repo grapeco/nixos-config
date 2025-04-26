@@ -21,7 +21,7 @@
               };
             };
             root = {
-              size = "720G";
+              size = "100%";
               content = {
                 type = "btrfs";
                 extraArgs = [ "-f" ];
