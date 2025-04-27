@@ -28,8 +28,8 @@
   i18n.defaultLocale = "en_US.UTF-8";
   i18n.supportedLocales = ["en_US.UTF-8/UTF-8" "ru_RU.UTF-8/UTF-8"];
 
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
 
   services.xserver = {
     enable = true;
@@ -39,7 +39,7 @@
 
   users.users.${user} = {
     isNormalUser = true;
-    extraGroups = ["wheel" "networkmanager"]; 
+    extraGroups = ["wheel" "networkmanager" "libvirtd"]; 
   };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";

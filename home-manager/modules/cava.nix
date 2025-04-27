@@ -4,10 +4,9 @@
     enable = true;
     settings = {
       general = {
-        bars = 48;
         autosens = 1;
         framerate = 100;
-        sensitivity = 50;
+        sensitivity = 60;
         threading = 1;
         autobar_width = 1;
       };

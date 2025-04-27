@@ -14,10 +14,7 @@
         font_size = 96;
         font_family = "JetBrains Mono";
         color = "rgba(255, 255, 255, 1.0)";
-        position = "0, 600";
-        halign = "center";
-        walign = "center";
-
+        position = "0, 100";
         shadow_passes = 1;
       };
 
