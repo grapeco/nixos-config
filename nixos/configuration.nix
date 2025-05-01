@@ -3,19 +3,7 @@
 {
   imports = [  
     ./hardware-configuration.nix
-    ./rtl.nix
-    ./grub.nix
-    ./network.nix
-    ./ssh.nix
-    ./bash.nix
-    ./bluetooth.nix
-    ./steam.nix
-    ./hardware.nix
-    ./hyprland.nix
-    ./sound.nix
-    # ./wireguard.nix
-    
-    ./sddm
+    ./modules
 
     inputs.home-manager.nixosModules.default
   ];
@@ -43,20 +31,17 @@
     extraGroups = ["wheel" "networkmanager" "libvirtd"]; 
   };
 
-  environment.systemPackages = with pkgs; [
-    vim 
-    usbutils
-    jdk
-    appimage-run
-  ];
-
-  nixpkgs.config.allowUnfree = true;
-
-  system.stateVersion = "24.11"; # Do not
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
+  };
 
   swapDevices = [ 
     {
       device = "/.swapvol/swapfile";
     }
   ];
+
+  system.stateVersion = "24.11"; # Do not
 }
