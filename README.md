@@ -7,7 +7,7 @@ This is my NixOs configuration. I'm a newbie so don't judge me too harshly.
 - 🪟 **Hyprland + waybar**
 - 🗿 **Gnome with extensions**
 - 🎨 **Catppuccin-mocha theme**
-- 🐟 **Fish terminal**
+- 🐟 **Fish shell**
 
 ## Installation
 
