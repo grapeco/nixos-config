@@ -13,6 +13,7 @@
     ./hardware.nix
     ./hyprland.nix
     ./sound.nix
+    # ./wireguard.nix
     
     ./sddm
 
@@ -42,14 +43,10 @@
     extraGroups = ["wheel" "networkmanager" "libvirtd"]; 
   };
 
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
   environment.systemPackages = with pkgs; [
     vim 
     usbutils
-    (jdk.override {
-      enableJavaFX = true;
-      openjfx21 = openjfx.override { withWebKit = true; };
-    })
+    jdk
     appimage-run
   ];
 
