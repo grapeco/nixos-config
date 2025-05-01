@@ -14,6 +14,6 @@
     ./system-packages.nix
     # ./wireguard.nix
 
-    ../sddm
+    ./sddm
   ];
 }
