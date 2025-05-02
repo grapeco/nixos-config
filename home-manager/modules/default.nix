@@ -12,9 +12,5 @@
     ./cava.nix
 
     ./hyprland
-    ./wofi
-    ./waybar
-    ./swaync
-    ./wlogout
   ];
 }
