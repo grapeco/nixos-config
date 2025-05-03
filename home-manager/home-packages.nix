@@ -7,6 +7,7 @@
     vesktop
     libreoffice-qt6-fresh
     pavucontrol
+    mpv
 
     # CLI Utils
     wget

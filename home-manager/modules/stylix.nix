@@ -20,7 +20,6 @@
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
 
     targets = {
-      neovim.enable = false;
       waybar.enable = false;
       hyprlock.enable = false;
     };

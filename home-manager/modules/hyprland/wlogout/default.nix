@@ -26,7 +26,7 @@
       {
         label = "logout";
         text = "Logout";
-        action = "uwsm stop";
+        action = "hyprctl dispatch exit";
         keybind = "q";
       }
 
