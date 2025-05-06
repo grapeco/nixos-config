@@ -12,6 +12,6 @@
     ./cava.nix
 
     ./hyprland
-    # ./vesktop
+    ./vesktop
   ];
 }

@@ -7,7 +7,8 @@
     vesktop
     libreoffice-qt6-fresh
     pavucontrol
-    mpv
+    vlc
+    chromium
 
     # CLI Utils
     wget

@@ -5,6 +5,7 @@
     usbutils
     jdk
     appimage-run
+    gcc
   ];
 
   nixpkgs.config.allowUnfree = true;

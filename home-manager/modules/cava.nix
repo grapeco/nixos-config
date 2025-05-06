@@ -6,7 +6,7 @@
       general = {
         autosens = 1;
         framerate = 100;
-        sensitivity = 60;
+        sensitivity = 80;
         threading = 1;
         autobar_width = 1;
       };
