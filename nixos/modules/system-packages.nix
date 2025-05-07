@@ -1,4 +1,4 @@
-{ pkgs, user, ... }:
+{ pkgs, user, inputs, ... }:
 {
   environment.systemPackages = with pkgs; [
     vim 
@@ -6,9 +6,14 @@
     jdk
     appimage-run
     gcc
+
+    nixd
+    alejandra
   ];
 
   nixpkgs.config.allowUnfree = true;
+
+  nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
 
   nix.settings = {
     builders-use-substitutes = true;

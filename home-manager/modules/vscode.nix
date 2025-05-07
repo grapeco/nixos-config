@@ -5,7 +5,7 @@
     mutableExtensionsDir = false;
     profiles.default.extensions = with pkgs.vscode-extensions; [
       rust-lang.rust-analyzer
-      bbenoist.nix
+      jnoortheen.nix-ide
       catppuccin.catppuccin-vsc-icons
       github.copilot
       github.copilot-chat
@@ -20,6 +20,10 @@
       "editor.detectIndentation" = true;       
       "editor.renderControlCharacters" = true;
       "editor.minimap.enabled" = false;
+
+      "nix.serverPath" = "nixd";
+      "nix.enableLanguageServer" = true;
+      "formatting.command" = [ "alejandra" ];
     };
   };
 }
