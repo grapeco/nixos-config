@@ -12,6 +12,7 @@
     ./ssh.nix
     ./steam.nix
     ./system-packages.nix
+    ./postgresql.nix
     # ./wireguard.nix
 
     ./sddm

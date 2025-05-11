@@ -9,6 +9,8 @@
     pavucontrol
     vlc
     chromium
+    dbeaver-bin
+    postman
 
     # CLI Utils
     wget

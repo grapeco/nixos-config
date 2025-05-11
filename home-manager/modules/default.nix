@@ -10,6 +10,7 @@
     ./spicetify.nix
     ./starship.nix
     ./cava.nix
+    ./ssh.nix
 
     ./hyprland
     ./vesktop
