@@ -1,4 +1,4 @@
-{ pkgs, user, inputs, ... }:
+{ pkgs, inputs, ... }:
 {
   environment.systemPackages = with pkgs; [
     vim 
@@ -14,6 +14,12 @@
   nixpkgs.config.allowUnfree = true;
 
   nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
+
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
+  };
 
   nix.settings = {
     builders-use-substitutes = true;

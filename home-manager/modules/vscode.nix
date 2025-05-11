@@ -6,7 +6,10 @@
     profiles.default.extensions = with pkgs.vscode-extensions; [
       rust-lang.rust-analyzer
       jnoortheen.nix-ide
+
       catppuccin.catppuccin-vsc-icons
+      tamasfe.even-better-toml
+      
       github.copilot
       github.copilot-chat
     ];

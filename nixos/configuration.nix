@@ -1,4 +1,4 @@
-{ config, lib, pkgs, inputs, user, homeStateVersion, ... }:
+{ config, lib, pkgs, inputs, user, ... }:
 
 {
   imports = [  
@@ -17,9 +17,6 @@
   i18n.defaultLocale = "en_US.UTF-8";
   i18n.supportedLocales = ["en_US.UTF-8/UTF-8" "ru_RU.UTF-8/UTF-8"];
 
-  virtualisation.libvirtd.enable = true;
-  programs.virt-manager.enable = true;
-
   services.xserver = {
     enable = true;
     desktopManager.gnome.enable = true;
@@ -28,13 +25,7 @@
 
   users.users.${user} = {
     isNormalUser = true;
-    extraGroups = ["wheel" "networkmanager" "libvirtd"]; 
-  };
-
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 7d";
+    extraGroups = ["wheel" "networkmanager"]; 
   };
 
   swapDevices = [ 
