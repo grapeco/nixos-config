@@ -13,6 +13,10 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  nixpkgs.overlays = [
+    inputs.nix-vscode-extensions.overlays.default
+  ];
+
   nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
 
   nix.gc = {

@@ -21,9 +21,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    minegrub-theme = {
-      url = "github:Lxtharia/minegrub-theme";
+    nix-vscode-extensions = {
+      url = "github:nix-community/nix-vscode-extensions";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    minegrub-theme.url = "github:Lxtharia/minegrub-theme";
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: 

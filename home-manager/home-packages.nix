@@ -5,12 +5,12 @@
     firefox
     telegram-desktop
     vesktop
-    libreoffice-qt6-fresh
+    libreoffice
     pavucontrol
     vlc
-    chromium
     dbeaver-bin
     postman
+    dino
 
     # CLI Utils
     wget
