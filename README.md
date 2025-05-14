@@ -37,6 +37,7 @@ To get started with this setup, follow these steps:
 
 ## ⚠️ Warning
 1. **Waybar shows nvidia gpu usage, so if you have other gpu, you should change the waybar settings**
+2. **In this config i use animated sddm, but when video is ends sddm freezes deadly, to fix that i change BackgroundSpeed to 0.0001**
 
 ## 📸 Screenshots
 
