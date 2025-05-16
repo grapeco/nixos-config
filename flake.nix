@@ -27,6 +27,10 @@
     };
 
     minegrub-theme.url = "github:Lxtharia/minegrub-theme";
+  
+    prismlauncher = {
+      url = "github:Diegiwg/PrismLauncher-Cracked";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: 

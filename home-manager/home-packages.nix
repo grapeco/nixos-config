@@ -1,4 +1,4 @@
-{ pkgs, ... }: 
+{ pkgs, inputs, ... }: 
 {
   home.packages = with pkgs; [
     # GUI utils
@@ -11,6 +11,7 @@
     dbeaver-bin
     postman
     dino
+    inputs.prismlauncher.packages.${system}.default
 
     # CLI Utils
     wget

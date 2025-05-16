@@ -1,7 +1,7 @@
 { pkgs, ... }: 
 {
-  imports = [
-    # ./extensions.nix
+  home.packages = with pkgs; [
+    direnv
   ];
   
   programs.vscode = {
@@ -13,10 +13,14 @@
       extensions = with pkgs.vscode-marketplace; [
         rust-lang.rust-analyzer
         jnoortheen.nix-ide
+        mkhl.direnv
 
         catppuccin.catppuccin-vsc-icons
         miguelsolorio.symbols
         tamasfe.even-better-toml
+        usernamehw.errorlens
+        formulahendry.code-runner
+        postman.postman-for-vscode
         
         github.copilot
         github.copilot-chat

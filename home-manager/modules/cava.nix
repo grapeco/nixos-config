@@ -1,4 +1,3 @@
-{ ... }: 
 {
   programs.cava = {
     enable = true;
@@ -25,6 +24,9 @@
         gradient_color_4 = "'#FF0000'";
         gradient_color_5 = "'#FFFF00'";
         foreground_alpha = 0.7;
+      };
+      smoothing = {
+        gravity = 110;
       };
     };
   };
