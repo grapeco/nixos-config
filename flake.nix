@@ -26,10 +26,22 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    minegrub-theme.url = "github:Lxtharia/minegrub-theme";
+    minegrub-theme = {
+      url = "github:Lxtharia/minegrub-theme";
+    };
   
     prismlauncher = {
       url = "github:Diegiwg/PrismLauncher-Cracked";
+    };
+
+    catppuccin-cava = {
+      url = "github:catppuccin/cava";
+      flake = false;
+    };
+    
+    catppuccin-starship = {
+      url = "github:catppuccin/starship";
+      flake = false;
     };
   };
 

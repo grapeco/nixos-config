@@ -1,25 +1,27 @@
+{ ... }: 
 {
   programs.starship = {
     enable = true;
     settings = {
-      add_newline = true;
-      hostname = {
-        ssh_only = false;
-        format = "[$ssh_symbol$hostname]($style) ";
-        style = "bold purple";
-      };
-      character = {
-        success_symbol = "[](bold green)";
-        error_symbol = "[](bold red)";
-      };
-      username = {
-        show_always = true;
-        format = "[$user]($style)@";
-      };
+      # right_format = "$cmd_duration";
       directory = {
-        read_only = " 🔒";
-        truncation_symbol = "…/";
+        format = "[ ](bold #89b4fa)[ $path ]($style)";
+        style = "bold #b4befe";
       };
-    };
+
+      character = {
+        success_symbol = "[ ](bold #89b4fa)[ ➜](bold green)";
+        error_symbol = "[ ](bold #89b4fa)[ ➜](bold red)";
+        # error_symbol = "[ ](bold #89dceb)[ ✗](bold red)";
+      };
+
+      cmd_duration = {
+        format = "[󰔛 $duration]($style)";
+        disabled = false;
+        style = "bg:none fg:#f9e2af";
+        show_notifications = false;
+        min_time_to_notify = 60000;
+      };        
+    }; 
   };
 }

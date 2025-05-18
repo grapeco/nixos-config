@@ -11,6 +11,8 @@
     dbeaver-bin
     postman
     dino
+    chromium
+
     inputs.prismlauncher.packages.${system}.default
 
     # CLI Utils
