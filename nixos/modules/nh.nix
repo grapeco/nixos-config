@@ -1,4 +1,4 @@
-{ user, ... }: 
+{ ... }: 
 {
   programs.nh = {
     enable = true;

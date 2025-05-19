@@ -1,15 +1,10 @@
-{ pkgs, user, ... }: 
+{ pkgs, ... }: 
 
 let 
 in {
   environment.systemPackages = with pkgs; [
     (pkgs.callPackage ./sddm-astronaut-theme.nix {
-      theme = "hyprland_kath";
-      themeConfig = {
-        General = {
-          BackgroundSpeed = "0.0001";
-        };
-      };
+      theme = "black_hole";
     })
   ];
 

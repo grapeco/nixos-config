@@ -13,6 +13,7 @@
     ./steam.nix
     ./system-packages.nix
     ./postgresql.nix
+    ./nvidia.nix
     # ./wireguard.nix
 
     ./sddm

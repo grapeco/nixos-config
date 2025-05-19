@@ -1,5 +1,5 @@
-{ config, pkgs, ... }: {
-  config.services.postgresql = {
+{ ... }: {
+  services.postgresql = {
     enable = true;
   };
 }
