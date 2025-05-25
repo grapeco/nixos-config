@@ -7,9 +7,11 @@
         layer = "top";
         position = "top";
         height = 30;
+
         modules-left = [ "hyprland/workspaces" ];
         modules-center = [ "custom/gpu" "cpu" "custom/mem" ];
-        modules-right = [ "hyprland/language" "custom/weather" "pulseaudio" "battery" "clock" "tray" ];
+        modules-right = [ "hyprland/language" "custom/weather" "network" "pulseaudio" "battery" "clock" "tray" ];
+
         "hyprland/workspaces" = {
           disable-scroll = true;
           show-special = true;
@@ -46,15 +48,16 @@
         "hyprland/language" = {
           format-en = "🇺🇸";
           format-ru = "🇷🇺";
-          min-length = 5;
+          min-length = 4;
           tooltip = false;
         };
 
-        "custom/weather" = {
-          format = "{} ";
-          exec = "curl -s 'wttr.in/Pushkino?format=%c%t'";
-          interval = 300;
-          class = "weather";
+        "network" = {
+          interface = "wlp0s20u2";
+          interval = 2;
+          format = " {bandwidthUpBytes}  {bandwidthDownBytes}";
+          format-disconnected = "";
+          min-length = 24;
         };
 
         "pulseaudio" = {
