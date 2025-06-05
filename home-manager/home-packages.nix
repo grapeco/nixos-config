@@ -7,10 +7,12 @@
     vesktop
     libreoffice
     pavucontrol
-    vlc
+    audacious
+    mpv
     dbeaver-bin
     postman
     dino
+    qbittorrent
 
     inputs.prismlauncher.packages.${system}.default
 

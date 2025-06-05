@@ -14,6 +14,8 @@
     ./system-packages.nix
     ./postgresql.nix
     ./nvidia.nix
+    ./flatpak.nix
+    ./virtualization.nix
     # ./wireguard.nix
 
     ./sddm

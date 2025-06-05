@@ -9,7 +9,7 @@
         height = 30;
 
         modules-left = [ "hyprland/workspaces" ];
-        modules-center = [ "custom/gpu" "cpu" "custom/mem" ];
+        modules-center = [ "custom/gpu" "cpu" "memory" ];
         modules-right = [ "hyprland/language" "custom/weather" "network" "pulseaudio" "battery" "clock" "tray" ];
 
         "hyprland/workspaces" = {
@@ -23,12 +23,12 @@
           };
         };
 
-        "custom/mem" = {
-          format = "{} ";
-          interval = 3;
-          exec = "free -h | awk '/Mem:/{printf $3}'";
+        "custom/gpu" = {
+          format = "{}% ";
+          interval = 2;
+          exec = "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits | awk '{print $1}'";
           tooltip = false;
-          min-length = 9;
+          min-length = 8;
         };
 
         "cpu" = {
@@ -37,12 +37,12 @@
           min-length = 8;
         };
 
-        "custom/gpu" = {
-          format = "{}% ";
-          interval = 2;
-          exec = "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits | awk '{print $1}'";
-          tooltip = false;
-          min-length = 8;
+        "memory" = {
+          format = "{used:0.1f}GB ";
+          tooltip = true;
+          tooltip-format = "Memory Used: {used:0.1f} GB / {total:0.1f} GB \nSwap Used: {swapUsed:0.1f} GB / {swapTotal:0.1f} GB";
+          interval = 5;
+          min-length = 9;
         };
 
         "hyprland/language" = {
@@ -57,7 +57,8 @@
           interval = 2;
           format = " {bandwidthUpBytes}  {bandwidthDownBytes}";
           format-disconnected = "";
-          min-length = 24;
+          min-length = 20;
+          max-length = 24;
         };
 
         "pulseaudio" = {

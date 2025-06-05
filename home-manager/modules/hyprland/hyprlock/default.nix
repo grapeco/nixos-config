@@ -1,4 +1,5 @@
-{ user ,... }: 
+{ ... }: 
+
 {
   programs.hyprlock = {
     enable = true;
@@ -20,9 +21,9 @@
 
       background = [
         {
-          path = "/home/${user}/nixos-config/screenshots/wallpaper.png";
-          blur_passes = 3;
-          blur_size = 5;
+          path = "screenshot";
+          blur_passes = 2;
+          blur_size = 2;
         }
       ];
 
