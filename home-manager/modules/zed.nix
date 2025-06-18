@@ -5,7 +5,7 @@
       auto-update = false;
       autosave = "on_focus_change";
 
-      vim_mode = true;
+      vim_mode = false;
 
       telemetry = {
         diagnostics = false;

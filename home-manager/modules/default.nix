@@ -15,6 +15,5 @@
     ./hyprland
     ./vesktop
     ./vscode
-    ./firefox
   ];
 }
