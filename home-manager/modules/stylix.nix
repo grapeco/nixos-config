@@ -61,6 +61,6 @@
       light = "Papirus-Light";
     };
 
-    image = ../../screenshots/wallpaper.png;
+    image = ../../screenshots/BlackHole.jpg;
   };
 }

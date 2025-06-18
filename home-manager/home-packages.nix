@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }: 
+{ pkgs, inputs, ... }:
 {
   home.packages = with pkgs; [
     # GUI utils
@@ -13,6 +13,8 @@
     postman
     dino
     qbittorrent
+    gimp
+    obs-studio
 
     inputs.prismlauncher.packages.${system}.default
 
@@ -26,6 +28,9 @@
     unzip
     nix-prefetch-scripts
     speedtest-cli
+    lunarvim
+    unrar
+    yt-dlp
 
     # Hyprland stuff
     wofi

@@ -1,4 +1,4 @@
-# NixOS Configuration 
+# NixOS Configuration
 
 This is my NixOs configuration. I'm a newbie so don't judge me too harshly.
 
@@ -36,7 +36,7 @@ To get started with this setup, follow these steps:
    ```
 
 ## ⚠️ Warning
-1. **Dont forget to change username in flake.nix**
+1. **Dont forget to change username in flake.nix and git.nix**
 2. **Waybar shows nvidia gpu usage, so if you have other gpu, you should change the waybar settings**
 
 ## 📸 Screenshots

@@ -10,9 +10,11 @@
     ./starship.nix
     ./cava.nix
     ./ssh.nix
+    ./zed.nix
 
     ./hyprland
     ./vesktop
     ./vscode
+    ./firefox
   ];
 }

@@ -6,6 +6,7 @@
     jdk
     appimage-run
     gcc
+    nftables
 
     nixd
     alejandra
@@ -30,7 +31,6 @@
 
     substituters = [
       "https://cache.nixos.org"
-      "https://cache.iog.io"
       "https://hyprland.cachix.org"
     ];
 
