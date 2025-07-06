@@ -1,4 +1,4 @@
-{ config, pkgs, user, ... }:
+{ pkgs, user, ... }:
 {
   # Add user to libvirtd group
   users.users.${user}.extraGroups = [ "libvirtd" ];

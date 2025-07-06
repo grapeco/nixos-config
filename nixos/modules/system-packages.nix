@@ -1,7 +1,7 @@
 { pkgs, inputs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    vim 
+    vim
     usbutils
     jdk
     appimage-run
@@ -19,6 +19,7 @@
   ];
 
   nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   nix.gc = {
     automatic = true;

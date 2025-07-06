@@ -9,6 +9,7 @@
     pavucontrol
     audacious
     mpv
+    vlc
     dbeaver-bin
     postman
     dino
@@ -31,6 +32,7 @@
     lunarvim
     unrar
     yt-dlp
+    umu-launcher
 
     # Hyprland stuff
     wofi

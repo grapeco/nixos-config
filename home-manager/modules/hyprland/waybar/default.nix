@@ -10,7 +10,7 @@
 
         modules-left = [ "hyprland/workspaces" ];
         modules-center = [ "custom/gpu" "cpu" "memory" ];
-        modules-right = [ "hyprland/language" "custom/weather" "network" "pulseaudio" "battery" "clock" "tray" ];
+        modules-right = [ "hyprland/language" "custom/weather" "network" "pulseaudio" "battery" "clock#time" "clock#date" "tray" ];
 
         "hyprland/workspaces" = {
           disable-scroll = true;
@@ -48,17 +48,20 @@
         "hyprland/language" = {
           format-en = "🇺🇸";
           format-ru = "🇷🇺";
-          min-length = 4;
+          min-length = 3;
           tooltip = false;
         };
 
         "network" = {
-          interface = "wlp0s20u2";
-          interval = 2;
-          format = " {bandwidthUpBytes}  {bandwidthDownBytes}";
-          format-disconnected = "";
-          min-length = 20;
-          max-length = 24;
+          format-wifi = "";
+          format-ethernet = "";
+          format-linked = "{ifname} (No IP) ";
+          format-disconnected = "";
+          family = "ipv4";
+          tooltip-format-wifi = "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n {bandwidthUpBits}  {bandwidthDownBits}";
+          tooltip-format-ethernet = " {ifname}\nIP: {ipaddr}\n {bandwidthUpBits}  {bandwidthDownBits}";
+          interval = 1;
+          min-length = 3;
         };
 
         "pulseaudio" = {
@@ -88,9 +91,23 @@
           format-icons = ["" "" "" "" ""];
         };
 
-        "clock" = {
-          format = "{:%d.%m.%Y - %H:%M}";
-          format-alt = "{:%A, %B %d at %R}";
+        "clock#time" = {
+          format = "󱑂 {:%H:%M}";
+          tooltip = true;
+          tooltip-format = "12-hour Format: {:%I:%M %p}";
+        };
+
+        "clock#date" = {
+          format = "󰨳 {:%d-%m}";
+          tooltip-format = "<tt>{calendar}</tt>";
+          calendar = {
+            mode = "month";
+            format = {
+              today = "<span color='#f38ba8'><b>{}</b></span>";
+              months = "<span color='#89B4FA'><b>{}</b></span>";
+              weekdays = "<span color='#CBA6F7'><b>{}</b></span>";
+            };
+          };
         };
 
         "tray" = {

@@ -19,5 +19,6 @@
     # ./wireguard.nix
 
     ./sddm
+    ./zapret
   ];
 }

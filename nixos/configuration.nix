@@ -1,7 +1,7 @@
 { config, lib, pkgs, inputs, user, ... }:
 
 {
-  imports = [  
+  imports = [
     ./hardware-configuration.nix
     ./modules
 
@@ -10,12 +10,12 @@
 
   home-manager.backupFileExtension = "backup";
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
   time.timeZone = "Europe/Moscow";
 
   i18n.defaultLocale = "en_US.UTF-8";
-  i18n.supportedLocales = ["en_US.UTF-8/UTF-8" "ru_RU.UTF-8/UTF-8"];
+  i18n.extraLocaleSettings = {
+    LC_TIME = "en_GB.UTF-8";
+  };
 
   services = {
     desktopManager.gnome.enable = true;
@@ -23,10 +23,10 @@
 
   users.users.${user} = {
     isNormalUser = true;
-    extraGroups = ["wheel" "networkmanager"]; 
+    extraGroups = ["wheel" "networkmanager"];
   };
 
-  swapDevices = [ 
+  swapDevices = [
     {
       device = "/.swapvol/swapfile";
     }
