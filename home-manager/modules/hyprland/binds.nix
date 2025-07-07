@@ -6,6 +6,7 @@
       "$mainMod SHIFT, W, exec, waybar"
       "$mainMod,       E, exec, $fileManager"
       "$mainMod,       C, exec, codium"
+      "$mainMod,       S, exec, steam"
 
       "$mainMod,       Q, killactive,"
       # "$mainMod,       M, exit,"
@@ -66,10 +67,6 @@
       "$mainMod ALT, 8, movetoworkspacesilent, 8"
       "$mainMod ALT, 9, movetoworkspacesilent, 9"
       "$mainMod ALT, 0, movetoworkspacesilent, 10"
-
-      # Scratchpad
-      "$mainMod,       S, togglespecialworkspace,  magic"
-      "$mainMod ALT, S, movetoworkspace, special:magic"
     ];
 
     # Move/resize windows with mainMod + LMB/RMB and dragging

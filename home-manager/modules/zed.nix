@@ -32,6 +32,14 @@
           };
         };
 
+        agent = {
+          default_model = {
+            provider = "ollama";
+            model = "deepseek-r1:7b";
+          };
+          version = "2";
+        };
+
         nixd = {
           binary = {
             path_lookup = true;

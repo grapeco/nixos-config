@@ -16,7 +16,6 @@
     ./nvidia.nix
     ./flatpak.nix
     ./virtualization.nix
-    # ./wireguard.nix
 
     ./sddm
     ./zapret
