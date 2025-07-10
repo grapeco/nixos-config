@@ -14,7 +14,7 @@
     postman
     dino
     qbittorrent
-    gimp
+    inkscape
     obs-studio
 
     inputs.prismlauncher.packages.${system}.default
