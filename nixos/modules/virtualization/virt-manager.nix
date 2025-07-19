@@ -1,5 +1,7 @@
 { pkgs, user, ... }:
 {
+  boot.kernelParams = [ "intel_iommu=on" "iommu=pt" ];
+
   # Add user to libvirtd group
   users.users.${user}.extraGroups = [ "libvirtd" ];
 
@@ -18,13 +20,20 @@
   virtualisation = {
     libvirtd = {
       enable = true;
+      onBoot = "ignore";
+      onShutdown = "shutdown";
       qemu = {
+        runAsRoot = true;
         swtpm.enable = true;
         ovmf.enable = true;
         ovmf.packages = [ pkgs.OVMFFull.fd ];
       };
+      hooks = {
+        qemu = {
+          "win10" = ./hooks;
+        };
+      };
     };
-    spiceUSBRedirection.enable = true;
   };
   services.spice-vdagentd.enable = true;
 }

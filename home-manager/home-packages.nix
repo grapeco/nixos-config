@@ -16,6 +16,7 @@
     qbittorrent
     inkscape
     obs-studio
+    tigervnc
 
     inputs.prismlauncher.packages.${system}.default
 

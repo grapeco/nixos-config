@@ -31,5 +31,6 @@
       "--dpi-desync-split-pos=2"
       ''--dpi-desync-split-seqovl-pattern="${./bin/tls_clienthello_www_google_com.bin}"''
     ];
+    # httpSupport = false;
   };
 }
