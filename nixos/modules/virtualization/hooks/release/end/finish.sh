@@ -1,23 +1,32 @@
 #!/run/current-system/sw/bin/bash
 set -x
 
-modprobe -r vfio-pci
-
+# Attach GPU devices to host
+# Use your GPU and HDMI Audio PCI host device
 virsh nodedev-reattach pci_0000_03_00_0
 virsh nodedev-reattach pci_0000_03_00_1
 
-nvidia-xconfig --query-gpu-info > /dev/null 2>&1
+# Unload vfio module
+modprobe -r vfio-pci
 
-modprobe nvidia
-modprobe nvidia_modeset
-modprobe nvidia_uvm
-modprobe nvidia_drm
-
-sleep 5
-
+# Rebind framebuffer to host
 echo "efi-framebuffer.0" > /sys/bus/platform/drivers/efi-framebuffer/bind
 
+# Load NVIDIA kernel modules
+modprobe nvidia_drm
+modprobe nvidia_modeset
+modprobe nvidia_uvm
+modprobe nvidia
+
+# Bind VTconsoles: might not be needed
 echo 1 > /sys/class/vtconsole/vtcon0/bind
 echo 1 > /sys/class/vtconsole/vtcon1/bind
 
-systemctl start display-manager.service
+# Restart Display Manager
+systemctl start display-manager
+
+systemctl set-property --runtime -- user.slice AllowedCPUs=0-23
+systemctl set-property --runtime -- system.slice AllowedCPUs=0-23
+systemctl set-property --runtime -- init.scope AllowedCPUs=0-23
+
+echo powersave | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor

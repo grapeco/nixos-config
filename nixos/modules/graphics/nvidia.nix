@@ -2,7 +2,6 @@
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
-    extraPackages = with pkgs; [ nvidia-vaapi-driver ];
   };
 
   hardware.nvidia = {
@@ -10,6 +9,8 @@
     open = false;
     nvidiaSettings = true;
     package = config.boot.kernelPackages.nvidiaPackages.beta;
+    powerManagement.enable = false;
+    powerManagement.finegrained = false;
   };
 
   services.xserver.videoDrivers = ["nvidia"];
