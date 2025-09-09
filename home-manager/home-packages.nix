@@ -9,14 +9,13 @@
     pavucontrol
     audacious
     mpv
-    vlc
     dbeaver-bin
     postman
     dino
     qbittorrent
-    inkscape
     obs-studio
-    tigervnc
+    lutris
+    mangohud
 
     inputs.prismlauncher.packages.${system}.default
 
@@ -25,7 +24,6 @@
     cmatrix
     fastfetch
     wireguard-tools
-    neovim
     btop
     unzip
     nix-prefetch-scripts
@@ -34,10 +32,20 @@
     unrar
     yt-dlp
     umu-launcher
+    wine
+    rust-analyzer
+    rustc
+    cargo
+    usbutils
+    jdk
+    appimage-run
+    gcc
+    nftables
+    nixd
+    alejandra
 
     # Hyprland stuff
     wofi
-    waybar
     wl-clipboard
     cliphist
     libsForQt5.xwaylandvideobridge

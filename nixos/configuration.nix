@@ -17,6 +17,8 @@
     LC_TIME = "en_GB.UTF-8";
   };
 
+  powerManagement.cpuFreqGovernor = "performance";
+
   services = {
     desktopManager.gnome.enable = true;
   };

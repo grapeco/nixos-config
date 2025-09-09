@@ -61,6 +61,6 @@
       light = "Papirus-Light";
     };
 
-    image = ../../screenshots/BlackHole.jpg;
+    image = ../../screenshots/MKS.jpg;
   };
 }

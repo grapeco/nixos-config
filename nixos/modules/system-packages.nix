@@ -2,14 +2,6 @@
 {
   environment.systemPackages = with pkgs; [
     vim
-    usbutils
-    jdk
-    appimage-run
-    gcc
-    nftables
-
-    nixd
-    alejandra
   ];
 
   nixpkgs.config.allowUnfree = true;
