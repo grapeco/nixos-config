@@ -10,7 +10,7 @@
   };
 
   users.users.${user}.openssh.authorizedKeys.keys = [
-    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIaWqLGysB0u20RDjUD0iTrbRFNUej2x5Jb6f58l1muS u0_a421@localhost"
-    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHA/Vi1wLHNEPExl4B2t2j59tO4EHirxs88yrjyo3NOn neverny@DESKTOP-A7BP46G"
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAteV/2wcOQgkWvFBvJp+RV6Bgh54i72X/FwkAmvbRQP u0_a467@localhost"
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKzAWJmvahvgg3b9tNsbT8Y0rt/4Z2AyzfRCSomHv3CK buravchik@DESKTOP-GS611P3"
   ];
 }

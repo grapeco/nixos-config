@@ -1,4 +1,4 @@
-{ pkgs, config, ... }: {
+{ config, ... }: {
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
@@ -8,7 +8,7 @@
     modesetting.enable = true;
     open = false;
     nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.beta;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
     powerManagement.enable = false;
     powerManagement.finegrained = false;
   };

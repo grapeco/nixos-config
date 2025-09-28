@@ -11,6 +11,7 @@
     ./cava.nix
     ./ssh.nix
     ./zed.nix
+    ./firefox.nix
 
     ./hyprland
     ./vesktop

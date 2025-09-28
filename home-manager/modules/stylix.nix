@@ -22,6 +22,7 @@
     targets = {
       waybar.enable = false;
       hyprlock.enable = false;
+      firefox.profileNames = [ "default" ];
     };
 
     cursor = {
@@ -61,6 +62,6 @@
       light = "Papirus-Light";
     };
 
-    image = ../../screenshots/MKS.jpg;
+    image = ../../screenshots/Astronaut.png;
   };
 }

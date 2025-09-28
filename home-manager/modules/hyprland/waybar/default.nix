@@ -10,7 +10,7 @@
 
       modules-left = [ "hyprland/workspaces" ];
       modules-center = [ "custom/gpu" "cpu" "memory" ];
-      modules-right = [ "hyprland/language" "custom/weather" "network" "pulseaudio" "battery" "clock" "tray" ];
+      modules-right = [ "hyprland/language" "custom/weather" "network" "pulseaudio" /*"battery"*/ "clock" "tray" ];
 
       "hyprland/workspaces" = {
         disable-scroll = true;
@@ -60,7 +60,7 @@
       "pulseaudio" = {
         format = "{icon} {volume}%";
         format-bluetooth = "{icon} {volume}% ";
-        format-muted = "";
+        format-muted = "󰝟";
         format-icons = {
           "headphones" = "";
           "handsfree" = "";
@@ -68,24 +68,24 @@
           "phone" = "";
           "portable" = "";
           "car" = "";
-          "default" = ["" ""];
+          "default" = ["󰕿" "󰖀" "󰕾"];
         };
         on-click = "pavucontrol";
       };
 
-      "battery" = {
-        states = {
-          warning = 30;
-          critical = 1;
-        };
-        format = "{icon} {capacity}%";
-        format-charging = " {capacity}%";
-        format-alt = "{time} {icon}";
-        format-icons = ["" "" "" "" ""];
-      };
+      # "battery" = {
+      #   states = {
+      #     warning = 30;
+      #     critical = 1;
+      #   };
+      #   format = "{icon} {capacity}%";
+      #   format-charging = " {capacity}%";
+      #   format-alt = "{time} {icon}";
+      #   format-icons = ["" "" "" "" ""];
+      # };
 
       "clock" = {
-        format = " {:%H:%M}";
+        format = " {:%H:%M}";
         tooltip-format = "<tt>{calendar}</tt>";
         calendar = {
           mode = "month";

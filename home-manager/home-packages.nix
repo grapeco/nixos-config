@@ -2,20 +2,19 @@
 {
   home.packages = with pkgs; [
     # GUI utils
-    firefox
     telegram-desktop
     vesktop
     libreoffice
     pavucontrol
     audacious
     mpv
-    dbeaver-bin
     postman
     dino
     qbittorrent
     obs-studio
     lutris
     mangohud
+    chromium
 
     inputs.prismlauncher.packages.${system}.default
 
@@ -29,26 +28,23 @@
     nix-prefetch-scripts
     speedtest-cli
     lunarvim
-    unrar
     yt-dlp
     umu-launcher
     wine
-    rust-analyzer
     rustc
     cargo
-    usbutils
     jdk
     appimage-run
-    gcc
     nftables
     nixd
-    alejandra
+    clang
+    clang-tools
 
     # Hyprland stuff
     wofi
     wl-clipboard
     cliphist
-    libsForQt5.xwaylandvideobridge
+    kdePackages.xwaylandvideobridge
     libnotify
     hyprpicker
     grimblast
@@ -64,5 +60,6 @@
     # idk
     papirus-icon-theme
     pcmanfm-qt
+    corefonts
   ];
 }

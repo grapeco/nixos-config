@@ -10,7 +10,6 @@
         "XDG_SESSION_TYPE,wayland"
         "XDG_SESSION_DESKTOP,Hyprland"
         "QT_QPA_PLATFORM,wayland"
-        "XDG_SCREENSHOTS_DIR,$HOME/screens"
         "XDG_DATA_DIRS, $HOME/.local/share:$XDG_DATA_DIRS"
       ];
 
@@ -84,15 +83,11 @@
           "windowsOut, 1, 2, md3_accel, popin 60%"
           "border, 1, 10, default"
           "fade, 1, 2, md3_decel"
-          #"layers, 1, 2, md3_decel, slide"
           "layersIn, 1, 2, menu_decel, slide"
           "layersOut, 1, 1.6, menu_accel"
           "fadeLayersIn, 1, 2, menu_decel"
           "fadeLayersOut, 1, 2.5, menu_accel"
           "workspaces, 1, 5, menu_decel, slide"
-          #"workspaces, 1, 2.5, softAcDecel, slide"
-          #"workspaces, 1, 7, menu_decel, slidefade 15%"
-          #"specialWorkspace, 1, 3, md3_decel, slidefadevert 15%"
           "specialWorkspace, 1, 2.5, md3_decel, slidevert"
         ];
       };
@@ -100,12 +95,6 @@
       input = {
         kb_layout = "us,ru";
         kb_options = "grp:alt_shift_toggle";
-      };
-
-      gestures = {
-        workspace_swipe = true;
-        workspace_swipe_invert = false;
-        workspace_swipe_forever	= true;
       };
 
       dwindle = {

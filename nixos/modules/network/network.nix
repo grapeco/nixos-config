@@ -1,15 +1,16 @@
 { ... }: {
   networking = {
     hostName = "nixos";
+    nameservers = [ "9.9.9.9" "142.112.112.112" ];
     networkmanager.enable = true;
-    firewall = {
-      enable = true;
-      allowedTCPPorts = [ 22 80 5900 ];
-      allowedUDPPorts = [ 59010 59011 ];
-      trustedInterfaces = [ "virbr0" ];
-    };
   };
   services.resolved = {
     enable = true;
+    fallbackDns = [ "" ];
+    dnsovertls = "true";
+    dnssec = "true";
+    extraConfig = ''
+      Cache=yes
+    '';
   };
 }
