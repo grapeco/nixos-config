@@ -19,10 +19,6 @@
 
   powerManagement.cpuFreqGovernor = "performance";
 
-  services = {
-    desktopManager.gnome.enable = true;
-  };
-
   users.users.${user} = {
     isNormalUser = true;
     extraGroups = ["wheel" "networkmanager"];

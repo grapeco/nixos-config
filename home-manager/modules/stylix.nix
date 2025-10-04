@@ -62,6 +62,6 @@
       light = "Papirus-Light";
     };
 
-    image = ../../screenshots/Astronaut.png;
+    image = ../../screenshots/NixOs.png;
   };
 }

@@ -1,7 +1,7 @@
 { ... }: {
   networking = {
     hostName = "nixos";
-    nameservers = [ "9.9.9.9" "142.112.112.112" ];
+    nameservers = [ "9.9.9.9" ];
     networkmanager.enable = true;
   };
   services.resolved = {

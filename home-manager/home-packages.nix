@@ -15,6 +15,8 @@
     lutris
     mangohud
     chromium
+    nautilus
+    eog
 
     inputs.prismlauncher.packages.${system}.default
 
@@ -48,14 +50,6 @@
     libnotify
     hyprpicker
     grimblast
-
-    # Gnome stuff
-    gnome-extension-manager
-    gnomeExtensions.dash-to-dock
-    gnomeExtensions.burn-my-windows
-    gnomeExtensions.appindicator
-    gnomeExtensions.blur-my-shell
-    gnomeExtensions.clipboard-history
 
     # idk
     papirus-icon-theme

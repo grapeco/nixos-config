@@ -8,9 +8,9 @@
       position = "top";
       height = 30;
 
-      modules-left = [ "hyprland/workspaces" ];
+      modules-left = [ "hyprland/workspaces" "cava" ];
       modules-center = [ "custom/gpu" "cpu" "memory" ];
-      modules-right = [ "hyprland/language" "custom/weather" "network" "pulseaudio" /*"battery"*/ "clock" "tray" ];
+      modules-right = [ "hyprland/language" "custom/weather" "network" "pulseaudio" "battery" "clock" "tray" ];
 
       "hyprland/workspaces" = {
         disable-scroll = true;
@@ -20,6 +20,14 @@
         persistent-workspaces = {
           "*" = 9;
         };
+      };
+
+      "cava" = {
+        framerate = 100;
+        bars = 12;
+        bar_delimiter = 0;
+        source = "auto";
+        format-icons = ["▁" "▂" "▃" "▄" "▅" "▆" "▇" "█" ];
       };
 
       "custom/gpu" = {
@@ -73,16 +81,16 @@
         on-click = "pavucontrol";
       };
 
-      # "battery" = {
-      #   states = {
-      #     warning = 30;
-      #     critical = 1;
-      #   };
-      #   format = "{icon} {capacity}%";
-      #   format-charging = " {capacity}%";
-      #   format-alt = "{time} {icon}";
-      #   format-icons = ["" "" "" "" ""];
-      # };
+      "battery" = {
+        states = {
+          warning = 30;
+          critical = 1;
+        };
+        format = "{icon} {capacity}%";
+        format-charging = " {capacity}%";
+        format-alt = "{time} {icon}";
+        format-icons = ["" "" "" "" ""];
+      };
 
       "clock" = {
         format = " {:%H:%M}";

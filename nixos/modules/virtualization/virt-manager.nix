@@ -31,6 +31,7 @@
       hooks = {
         qemu = {
           "win10" = ./hooks;
+          "nixos-25.05" = ./hooks;
         };
       };
     };
