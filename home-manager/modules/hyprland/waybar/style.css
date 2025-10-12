@@ -14,7 +14,7 @@
 }
 
 #workspaces,
-/*#custom-cava,*/
+#cava,
 #tray {
   background-color: @background;
   padding: 4px 4px;
