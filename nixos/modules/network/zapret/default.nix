@@ -1,5 +1,5 @@
 {
   imports = [
-    # ./zapret_alt2.nix
+    # ./zapret.nix
   ];
 }

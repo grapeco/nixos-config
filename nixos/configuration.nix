@@ -19,6 +19,10 @@
 
   powerManagement.cpuFreqGovernor = "performance";
 
+  services = {
+    gvfs.enable = true;
+  };
+
   users.users.${user} = {
     isNormalUser = true;
     extraGroups = ["wheel" "networkmanager"];

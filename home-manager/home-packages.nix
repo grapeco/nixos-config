@@ -12,11 +12,12 @@
     dino
     qbittorrent
     obs-studio
-    lutris
+    # lutris
     mangohud
     chromium
     nautilus
     eog
+    fluffychat
 
     inputs.prismlauncher.packages.${system}.default
 

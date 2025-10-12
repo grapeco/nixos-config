@@ -30,6 +30,8 @@
         "files.autoSave" = "afterDelay";
         "workbench.iconTheme" = "symbols";
 
+        "markdown-pdf.executablePath" = "${pkgs.chromium}/bin/chromium";
+
         "editor.insertSpaces" = true;
         "editor.detectIndentation" = true;
         "editor.renderControlCharacters" = true;

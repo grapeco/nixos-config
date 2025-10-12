@@ -23,9 +23,10 @@
       };
 
       "cava" = {
-        framerate = 100;
+        framerate = 30;
         bars = 12;
         bar_delimiter = 0;
+        autosens = 1;
         source = "auto";
         format-icons = ["▁" "▂" "▃" "▄" "▅" "▆" "▇" "█" ];
       };
