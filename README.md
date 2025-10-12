@@ -24,7 +24,7 @@ To get started with this setup, follow these steps:
 3. **Put your `hardware-configuration.nix` file there**:
 
    ```bash
-   cp /etc/nixos/hardware-configuration.nix ./
+   cp /etc/nixos/hardware-configuration.nix ./nixos/
    ```
 
 4. **Rebuilding**:
