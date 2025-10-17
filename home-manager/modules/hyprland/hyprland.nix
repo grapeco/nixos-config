@@ -67,7 +67,6 @@
           "md3_accel, 0.3, ${toString (0 * speed)}, 0.8, 0.15"
           "overshot, 0.05, ${toString (0.9 * speed)}, 0.1, 1.1"
           "crazyshot, 0.1, ${toString (1.5 * speed)}, 0.76, 0.92"
-          "hyprnostretch, ${toString (0.05 * speed)}, 0.9, 0.1, 1.0H"
           "menu_decel, 0.1, ${toString (1 * speed)}, 0, 1"
           "menu_accel, 0.38, ${toString (0.04 * speed)}, 1, 0.07"
           "easeInOutCirc, 0.85, ${toString (0 * speed)}, 0.15, 1"

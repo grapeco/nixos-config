@@ -2,7 +2,8 @@
   imports = [
     ./network.nix
     ./ssh.nix
-    ./rtl.nix
+    ./ddns.nix
+    ./nginx.nix
 
     ./zapret
   ];

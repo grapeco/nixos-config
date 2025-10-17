@@ -8,6 +8,8 @@
     inputs.home-manager.nixosModules.default
   ];
 
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
   home-manager.backupFileExtension = "backup";
 
   time.timeZone = "Europe/Moscow";

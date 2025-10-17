@@ -1,7 +1,7 @@
 { user, ... }: {
   services.openssh = {
     enable = true;
-    ports = [ 22 ];
+    ports = [ 222 ];
     settings = {
       PasswordAuthentication = false;
       PubkeyAuthentication = true;
