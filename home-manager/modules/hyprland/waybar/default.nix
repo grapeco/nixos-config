@@ -10,7 +10,7 @@
 
       modules-left = [ "hyprland/workspaces" "custom/cava" ];
       modules-center = [ "custom/gpu" "cpu" "memory" ];
-      modules-right = [ "hyprland/language" "custom/weather" "network" "pulseaudio" "battery" "clock" "tray" ];
+      modules-right = [ "hyprland/language" "network" "pulseaudio" "battery" "clock" "tray" ];
 
       "hyprland/workspaces" = {
         disable-scroll = true;
@@ -32,6 +32,7 @@
 
         format = "{}";
         exec = ./cava.sh;
+        tooltip = false;
       };
 
       "custom/gpu" = {

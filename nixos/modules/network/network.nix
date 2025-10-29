@@ -1,7 +1,7 @@
 { ... }: {
   networking = {
     hostName = "nixos";
-    nameservers = [ "9.9.9.9#dns.quad9.net" ];
+    nameservers = [ "9.9.9.9" "149.112.112.112" ];
     networkmanager.enable = true;
   };
   services.resolved = {

@@ -12,12 +12,13 @@
     dino
     qbittorrent
     obs-studio
-    # lutris
+    lutris
     mangohud
     chromium
     nautilus
     eog
     fluffychat
+    qalculate-qt
 
     inputs.prismlauncher.packages.${system}.default
 
@@ -47,7 +48,6 @@
     wofi
     wl-clipboard
     cliphist
-    kdePackages.xwaylandvideobridge
     libnotify
     hyprpicker
     grimblast

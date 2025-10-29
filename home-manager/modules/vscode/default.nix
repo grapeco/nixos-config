@@ -22,7 +22,6 @@
         "tamasfe.even-better-toml"
         "usernamehw.errorlens"
         "formulahendry.code-runner"
-        "postman.postman-for-vscode"
         "mkhl.direnv"
       ];
       userSettings = {
