@@ -8,7 +8,7 @@
       position = "top";
       height = 30;
 
-      modules-left = [ "hyprland/workspaces" "cava" ];
+      modules-left = [ "hyprland/workspaces" "custom/cava" ];
       modules-center = [ "custom/gpu" "cpu" "memory" ];
       modules-right = [ "hyprland/language" "custom/weather" "network" "pulseaudio" "battery" "clock" "tray" ];
 
@@ -22,13 +22,16 @@
         };
       };
 
-      "cava" = {
-        framerate = 30;
-        bars = 12;
-        bar_delimiter = 0;
-        autosens = 1;
-        source = "auto";
-        format-icons = ["▁" "▂" "▃" "▄" "▅" "▆" "▇" "█" ];
+      "custom/cava" = {
+        # framerate = 30;
+        # bars = 12;
+        # bar_delimiter = 0;
+        # autosens = 1;
+        # source = "auto";
+        # format-icons = ["▁" "▂" "▃" "▄" "▅" "▆" "▇" "█" ];
+
+        format = "{}";
+        exec = ./cava.sh;
       };
 
       "custom/gpu" = {
@@ -94,7 +97,7 @@
       };
 
       "clock" = {
-        format = " {:%H:%M}";
+        format = "{:%H:%M}";
         tooltip-format = "<tt>{calendar}</tt>";
         calendar = {
           mode = "month";
