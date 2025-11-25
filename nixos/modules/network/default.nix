@@ -3,6 +3,6 @@
     ./network.nix
     ./ssh.nix
 
-    ./zapret
+    ./zapret.nix
   ];
 }

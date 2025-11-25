@@ -9,7 +9,7 @@
     audacious
     mpv
     postman
-    dino
+    dbeaver-bin
     qbittorrent
     obs-studio
     lutris
@@ -19,6 +19,8 @@
     eog
     fluffychat
     qalculate-qt
+    gimp
+    krita
 
     inputs.prismlauncher.packages.${system}.default
 
@@ -37,12 +39,15 @@
     wine
     rustc
     cargo
+    rust-analyzer
     jdk
     appimage-run
     nftables
     nixd
     clang
     clang-tools
+    nasm
+    gdb
 
     # Hyprland stuff
     wofi

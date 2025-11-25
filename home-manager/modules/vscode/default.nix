@@ -7,9 +7,8 @@
   programs.vscode = {
     enable = true;
     package = pkgs.vscodium;
+    mutableExtensionsDir = false;
     profiles.default = {
-      enableUpdateCheck = false;
-      enableExtensionUpdateCheck = false;
       extensions = pkgs.nix4vscode.forVscode [
         "rust-lang.rust-analyzer"
         "jnoortheen.nix-ide"
@@ -19,6 +18,7 @@
         "yzane.markdown-pdf"
         "fill-labs.dependi"
         "miguelsolorio.symbols"
+        "catppuccin.catppuccin-vsc-icons"
         "tamasfe.even-better-toml"
         "usernamehw.errorlens"
         "formulahendry.code-runner"
@@ -27,7 +27,7 @@
       userSettings = {
         "window.titleBarStyle" = "custom";
         "files.autoSave" = "afterDelay";
-        "workbench.iconTheme" = "symbols";
+        "workbench.iconTheme" = "catppuccin-mocha";
 
         "markdown-pdf.executablePath" = "${pkgs.chromium}/bin/chromium";
 
