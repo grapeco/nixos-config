@@ -13,11 +13,11 @@
         "XDG_DATA_DIRS, $HOME/.local/share:$XDG_DATA_DIRS"
       ];
 
-      monitor = ",1920x1080@100,auto,1";
+      monitor = ", 1920x1080@100, auto, 1";
       "$mainMod" = "SUPER";
       "$terminal" = "kitty";
       "$fileManager" = "nautilus";
-      "$menu" = "wofi";
+      "$menu" = "wofi --show drun";
       "$browser" = "firefox";
 
       exec-once = [
@@ -93,7 +93,7 @@
 
       input = {
         kb_layout = "us,ru";
-        kb_options = "grp:alt_shift_toggle";
+        kb_options = "grp:caps_toggle";
       };
 
       dwindle = {

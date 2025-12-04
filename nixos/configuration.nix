@@ -1,4 +1,4 @@
-{ config, lib, pkgs, inputs, user, ... }:
+{ pkgs, inputs, user, ... }:
 
 {
   imports = [
@@ -27,7 +27,7 @@
 
   users.users.${user} = {
     isNormalUser = true;
-    extraGroups = ["wheel" "networkmanager"];
+    extraGroups = ["wheel" "networkmanager" "wireshark"];
   };
 
   swapDevices = [

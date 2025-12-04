@@ -65,7 +65,7 @@
         format-linked = "{ifname} (No IP) ";
         format-disconnected = "";
         family = "ipv4";
-        tooltip-format-wifi = " {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n {bandwidthUpBits}  {bandwidthDownBits}";
+        tooltip-format-wifi = " {ifname} @ {essid}\nIP: {ipaddr}\nFreq: {frequency}MHz\n {bandwidthUpBits}  {bandwidthDownBits}";
         tooltip-format-ethernet = " {ifname}\nIP: {ipaddr}\n {bandwidthUpBits}  {bandwidthDownBits}";
         interval = 1;
       };

@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   programs.wofi = {
     enable = true;
     settings = {
@@ -7,5 +7,12 @@
       width = 450;
       height = 450;
     };
+  };
+
+  programs.rofi = {
+    enable = true;
+    cycle = true;
+    # Set terminal to kitty
+    terminal = "${pkgs.kitty}/bin/kitty";
   };
 }

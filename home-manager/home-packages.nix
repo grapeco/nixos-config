@@ -21,6 +21,7 @@
     qalculate-qt
     gimp
     krita
+    wireshark
 
     inputs.prismlauncher.packages.${system}.default
 
@@ -43,6 +44,7 @@
     jdk
     appimage-run
     nftables
+    aircrack-ng
     nixd
     clang
     clang-tools
