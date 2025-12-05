@@ -9,7 +9,6 @@
 
     hyprland = {
       url = "github:hyprwm/Hyprland";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     waybar = {
@@ -20,6 +19,10 @@
     stylix = {
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    swww = {
+      url = "github:LGFae/swww";
     };
 
     zapret = {

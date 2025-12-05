@@ -24,6 +24,7 @@
     wireshark
 
     inputs.prismlauncher.packages.${system}.default
+    inputs.swww.packages.${pkgs.system}.swww
 
     # CLI Utils
     wget

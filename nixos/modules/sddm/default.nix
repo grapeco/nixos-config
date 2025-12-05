@@ -1,6 +1,6 @@
-{ pkgs, ... }: 
+{ pkgs, ... }:
 
-let 
+let
 in {
   environment.systemPackages = with pkgs; [
     (pkgs.callPackage ./sddm-astronaut-theme.nix {

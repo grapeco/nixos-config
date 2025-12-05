@@ -1,7 +1,6 @@
 {
   wayland.windowManager.hyprland = {
     enable = true;
-    systemd.enable = true;
     settings = {
       env = [
         # Hint Electron apps to use Wayland
@@ -13,7 +12,7 @@
         "XDG_DATA_DIRS, $HOME/.local/share:$XDG_DATA_DIRS"
       ];
 
-      monitor = ", 1920x1080@100, auto, 1";
+      monitor = ", 1920x1080@100, 0x0, 1";
       "$mainMod" = "SUPER";
       "$terminal" = "kitty";
       "$fileManager" = "nautilus";
@@ -22,6 +21,7 @@
 
       exec-once = [
         "waybar"
+        "swww-daemon"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
       ];
@@ -29,12 +29,8 @@
       general = {
         gaps_in = 5;
         gaps_out = 0;
-
         border_size = 2;
-
         resize_on_border = true;
-
-        allow_tearing = false;
         layout = "dwindle";
       };
 
@@ -43,14 +39,6 @@
 
         active_opacity = 1.0;
         inactive_opacity = 1.0;
-
-        shadow = {
-          enabled = false;
-        };
-
-        blur = {
-          enabled = true;
-        };
       };
 
       animations = {
@@ -105,11 +93,6 @@
         new_status = "slave";
         new_on_top = true;
         mfact = 0.5;
-      };
-
-      misc = {
-        force_default_wallpaper = 0;
-        disable_hyprland_logo = true;
       };
     };
   };

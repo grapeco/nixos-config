@@ -13,21 +13,21 @@
 
 #workspaces,
 #custom-cava,
-#tray,
 #custom-gpu,
-#language,
-#memory,
-#clock,
 #cpu,
+#memory,
+#language,
 #network,
-#pulseaudio {
+#pulseaudio,
+#clock,
+#tray {
     background-color: #1E1E2E;
     margin-top: 4px;
     margin-bottom: 4px;
     margin-right: 4px;
     margin-left: 4px;
-    padding: 4px 6px;
     border-width: 0px;
+    padding: 4px 4px;
 }
 
 #cpu,
@@ -61,9 +61,7 @@
 #tray {
   border-radius: 10px;
 }
-#workspaces {
-    padding: 4px 4px;
-}
+
 
 #workspaces button {
   background: transparent;
