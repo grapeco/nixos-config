@@ -26,12 +26,17 @@
         "wl-paste --type image --watch cliphist store"
       ];
 
+      debug = {
+        disable_logs = false;
+      };
+
       general = {
         gaps_in = 5;
         gaps_out = 0;
         border_size = 2;
         resize_on_border = true;
         layout = "dwindle";
+        allow_tearing = true;
       };
 
       decoration = {
@@ -44,11 +49,9 @@
       animations = {
         enabled = true;
 
-        bezier =
-        let
+        bezier = let
           speed = 0.6;
-        in
-        [
+        in [
           "linear, 0, ${toString (0 * speed)}, 1, 1"
           "md3_standard, 0.2, ${toString (0 * speed)}, 0, 1"
           "md3_decel, 0.05,  ${toString (0.7 * speed)}, 0.07, 1"
@@ -89,10 +92,9 @@
         preserve_split = true;
       };
 
-      master = {
-        new_status = "slave";
-        new_on_top = true;
-        mfact = 0.5;
+      misc = {
+        vrr = 2;
+        vfr = 0;
       };
     };
   };

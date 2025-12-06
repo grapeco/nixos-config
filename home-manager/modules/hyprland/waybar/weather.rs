@@ -1,23 +1,16 @@
-use std::process::Command;
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let emoji = reqwest::get("https://wttr.in/Pushkino?format=%c")
+        .await?
+        .text()
+        .await?;
 
-fn main() {
-    let emoji = String::from_utf8(
-    Command::new("curl")
-            .arg("-s")
-            .arg("https://wttr.in/Pushkino?format=%c")
-            .output()
-            .unwrap()
-            .stdout
-    ).unwrap();
+    let temperature = reqwest::get("https://wttr.in/Pushkino?format=%t")
+        .await?
+        .text()
+        .await?;
 
-    let temp = String::from_utf8(
-    Command::new("curl")
-            .arg("-s")
-            .arg("https://wttr.in/Pushkino?format=%t")
-            .output()
-            .unwrap()
-            .stdout
-    ).unwrap();
+    println!("{} {}", emoji.trim(), temperature);
 
-    println!("{} {}", emoji.trim(), temp);
+    Ok(())
 }

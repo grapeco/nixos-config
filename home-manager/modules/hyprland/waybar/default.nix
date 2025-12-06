@@ -63,6 +63,7 @@
         exec = ./weather;
         format = {};
         interval = 300;
+        tooltip = false;
       };
 
       "network" = {

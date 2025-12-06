@@ -50,7 +50,6 @@
     clang
     clang-tools
     nasm
-    gdb
 
     # Hyprland stuff
     wofi

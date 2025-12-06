@@ -15,7 +15,6 @@
         "fill-labs.dependi"
         "miguelsolorio.symbols"
         "catppuccin.catppuccin-vsc-icons"
-        "shalldie.background"
         "tamasfe.even-better-toml"
         "usernamehw.errorlens"
         "formulahendry.code-runner"
