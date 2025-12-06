@@ -17,6 +17,7 @@
 #cpu,
 #memory,
 #language,
+#custom-weather,
 #network,
 #pulseaudio,
 #clock,
@@ -32,6 +33,7 @@
 
 #cpu,
 #memory,
+#custom-weather,
 #network,
 #pulseaudio,
 #clock {
@@ -41,6 +43,7 @@
 #custom-gpu,
 #cpu,
 #language,
+#custom-weather,
 #network,
 #pulseaudio {
     margin-right: 0px;

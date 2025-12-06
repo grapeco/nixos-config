@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }: {
   programs.vscode = {
     enable = true;
     package = pkgs.vscodium;
@@ -10,15 +9,16 @@
         "jnoortheen.nix-ide"
         "llvm-vs-code-extensions.vscode-clangd"
         "13xforever.language-x86-64-assembly"
+        "mkhl.direnv"
 
         "yzane.markdown-pdf"
         "fill-labs.dependi"
         "miguelsolorio.symbols"
         "catppuccin.catppuccin-vsc-icons"
+        "shalldie.background"
         "tamasfe.even-better-toml"
         "usernamehw.errorlens"
         "formulahendry.code-runner"
-        "mkhl.direnv"
       ];
       userSettings = {
         "window.titleBarStyle" = "custom";
