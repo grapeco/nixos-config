@@ -2,6 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     vim
+    home-manager
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -12,6 +13,7 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   nix.settings = {
+    auto-optimise-store = true;
     builders-use-substitutes = true;
 
     substituters = [

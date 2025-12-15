@@ -6,7 +6,7 @@
     ./fish.nix
     ./gammastep.nix
     ./git.nix
-    ./kitty.nix
+    ./terminal.nix
     ./ssh.nix
     ./starship.nix
     ./stylix.nix

@@ -1,7 +1,7 @@
 {
   imports = [
     ./firefox.nix
-    ./spicetify.nix
+    # ./spicetify.nix
     ./zed.nix
 
     ./vesktop

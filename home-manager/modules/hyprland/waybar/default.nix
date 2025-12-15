@@ -6,7 +6,6 @@
     settings.mainBar = {
       layer = "top";
       position = "top";
-      height = 30;
 
       modules-left = [ "hyprland/workspaces" "custom/cava" ];
       modules-center = [ "custom/gpu" "cpu" "memory" ];
@@ -88,7 +87,7 @@
           "phone" = "";
           "portable" = "";
           "car" = "";
-          "default" = ["󰕿" "󰖀" "󰕾"];
+          "default" = "";
         };
         on-click = "pavucontrol";
       };

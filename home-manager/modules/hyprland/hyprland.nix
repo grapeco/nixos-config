@@ -14,14 +14,14 @@
 
       monitor = ", 1920x1080@100, 0x0, 1";
       "$mainMod" = "SUPER";
-      "$terminal" = "kitty";
+      "$terminal" = "alacritty";
       "$fileManager" = "nautilus";
       "$menu" = "wofi --show drun";
       "$browser" = "firefox";
 
       exec-once = [
         "waybar"
-        "swww-daemon"
+        "awww-daemon"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
       ];

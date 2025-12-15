@@ -5,7 +5,7 @@
     ./hyprland.nix
     ./nh.nix
     ./steam.nix
-    ./system-packages.nix
+    ./system.nix
     ./postgresql.nix
     ./flatpak.nix
 

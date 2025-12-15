@@ -9,6 +9,7 @@
 
     hyprland = {
       url = "github:hyprwm/Hyprland";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     waybar = {
@@ -21,8 +22,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    swww = {
-      url = "github:LGFae/swww";
+    awww = {
+      url = "git+https://codeberg.org/LGFae/awww";
     };
 
     zapret = {
@@ -56,29 +57,37 @@
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
-    let
-      system = "x86_64-linux";
-      homeStateVersion = "24.11";
-      user = "nox";
-    in {
-      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        inherit system;
-        specialArgs = { inherit inputs user homeStateVersion; };
-        modules = [
-          ./nixos/configuration.nix
+  let
+    system = "x86_64-linux";
+    homeStateVersion = "24.11";
+    user = "nox";
+  in {
+    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+      inherit system;
+      specialArgs = { inherit inputs user homeStateVersion; };
+      modules = [
+        ./nixos/configuration.nix
 
-          inputs.home-manager.nixosModules.home-manager
-          {
-            home-manager = {
-              users.${user} = ./home-manager/home.nix;
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              extraSpecialArgs = {
-                inherit inputs homeStateVersion user;
-              };
+        inputs.home-manager.nixosModules.home-manager
+        {
+          home-manager = {
+            users.${user} = ./home-manager/home.nix;
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            extraSpecialArgs = {
+              inherit inputs homeStateVersion user;
             };
-          }
-        ];
-      };
+          };
+        }
+      ];
     };
+
+    # homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
+    #   pkgs = nixpkgs.legacyPackages.${system};
+    #   extraSpecialArgs = {
+    #     inherit inputs homeStateVersion user;
+    #   };
+    #   modules = [ ./home-manager/home.nix ];
+    # };
+  };
 }

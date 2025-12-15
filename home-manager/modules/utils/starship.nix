@@ -4,6 +4,9 @@ with config.lib.stylix.colors.withHashtag;
 {
   programs.starship = {
     enable = true;
+    enableBashIntegration = true;
+    enableZshIntegration = true;
+
     settings = {
       directory = {
         format = "[ ](bold ${base0D})[ $path ]($style)";

@@ -1,5 +1,8 @@
 { pkgs, inputs, ... }:
 {
+  # nixpkgs.config.allowUnfree = true;
+  # nixpkgs.overlays = [ inputs.nix4vscode.overlays.forVscode ];
+
   home.packages = with pkgs; [
     # GUI utils
     telegram-desktop
@@ -21,10 +24,10 @@
     qalculate-qt
     gimp
     krita
-    wireshark
+    gnome-text-editor
 
-    inputs.prismlauncher.packages.${system}.default
-    inputs.swww.packages.${pkgs.system}.swww
+    inputs.prismlauncher.packages.${pkgs.system}.default
+    inputs.awww.packages.${pkgs.system}.awww
 
     # CLI Utils
     wget
