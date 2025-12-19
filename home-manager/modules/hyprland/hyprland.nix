@@ -6,15 +6,13 @@
         # Hint Electron apps to use Wayland
         "NIXOS_OZONE_WL,1"
         "XDG_CURRENT_DESKTOP,Hyprland"
-        "XDG_SESSION_TYPE,wayland"
         "XDG_SESSION_DESKTOP,Hyprland"
-        "QT_QPA_PLATFORM,wayland"
         "XDG_DATA_DIRS, $HOME/.local/share:$XDG_DATA_DIRS"
       ];
 
       monitor = ", 1920x1080@100, 0x0, 1";
       "$mainMod" = "SUPER";
-      "$terminal" = "alacritty";
+      "$terminal" = "kitty";
       "$fileManager" = "nautilus";
       "$menu" = "wofi --show drun";
       "$browser" = "firefox";
@@ -41,9 +39,6 @@
 
       decoration = {
         rounding = 10;
-
-        active_opacity = 1.0;
-        inactive_opacity = 1.0;
       };
 
       animations = {
@@ -80,6 +75,10 @@
           "workspaces, 1, 5, menu_decel, slide"
           "specialWorkspace, 1, 2.5, md3_decel, slidevert"
         ];
+      };
+
+      cursor = {
+        no_hardware_cursors = true;
       };
 
       input = {

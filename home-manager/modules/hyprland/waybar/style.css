@@ -30,6 +30,24 @@
     padding: 4px 6px;
 }
 
+/* Workspace buttons */
+
+#workspaces button {
+  background: transparent;
+  border: none;
+  padding: 0px 4px;
+  margin: 0px 2px;
+  font-weight: bold;
+}
+#workspaces button:hover{
+  background-color: rgba(97, 175, 239, 0.2);
+  border-radius: 10px;
+}
+#workspaces button.active {
+  background: #325B8F;
+  border-radius: 10px;
+}
+
 /* Margins */
 
 #cpu,
@@ -67,22 +85,5 @@
 #workspaces,
 #custom-cava,
 #tray {
-  border-radius: 10px;
-}
-
-
-#workspaces button {
-  background: transparent;
-  border: none;
-  padding: 0px 4px;
-  margin: 0px 2px;
-  font-weight: bold;
-}
-#workspaces button:hover{
-  background-color: rgba(97, 175, 239, 0.2);
-  border-radius: 10px;
-}
-#workspaces button.active {
-  background: #325B8F;
   border-radius: 10px;
 }

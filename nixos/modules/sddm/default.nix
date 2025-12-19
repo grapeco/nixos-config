@@ -3,11 +3,10 @@
 let
 in {
   environment.systemPackages = with pkgs; [
-    (pkgs.callPackage ./sddm-astronaut-theme.nix {
-      theme = "black_hole";
+    (sddm-astronaut.override {
+      embeddedTheme = "hyprland_kath";
     })
   ];
-
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;

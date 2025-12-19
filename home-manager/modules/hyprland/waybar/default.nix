@@ -1,7 +1,7 @@
 { inputs, pkgs, ... }: {
   programs.waybar = {
     enable = true;
-    package = inputs.waybar.packages.${pkgs.system}.waybar;
+    # package = inputs.waybar.packages.${pkgs.system}.waybar;
     style = ./style.css;
     settings.mainBar = {
       layer = "top";

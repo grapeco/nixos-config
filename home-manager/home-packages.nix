@@ -16,6 +16,7 @@
     qbittorrent
     obs-studio
     lutris
+    bottles
     mangohud
     chromium
     nautilus
@@ -42,6 +43,7 @@
     yt-dlp
     umu-launcher
     wine
+    winetricks
     rustc
     cargo
     rust-analyzer
