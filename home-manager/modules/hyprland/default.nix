@@ -4,9 +4,7 @@
     ./binds.nix
 
     ./wofi
-    ./waybar
     ./swaync
     ./wlogout
-    ./hyprlock
   ];
 }

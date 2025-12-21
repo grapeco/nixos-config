@@ -8,11 +8,14 @@
     ./system.nix
     ./postgresql.nix
     ./flatpak.nix
+    ./stylix.nix
+    ./packages.nix
 
     ./sddm
     ./graphics/nvidia.nix
     ./network
     ./virtualization
     ./hardware
+    ./../config
   ];
 }

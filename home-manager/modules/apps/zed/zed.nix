@@ -1,9 +1,9 @@
 { ... }: {
   programs.zed-editor = {
-    enable = true;
+    # enable = true;
     userSettings = {
       auto-update = false;
-      autosave = "on_focus_change";
+      autosave.after_delay.milliseconds = 500;
 
       vim_mode = false;
 
@@ -16,7 +16,6 @@
         rust-analyzer = {
           binary = {
             path = "/run/current-system/sw/bin/bash";
-            # "path_lookup" = true;
             arguments = [
               "-c"
               "if [ -e flake.nix ]; then nix develop --command rust-analyzer; else rust-analyzer; fi"

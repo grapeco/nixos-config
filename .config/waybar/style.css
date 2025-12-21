@@ -1,12 +1,12 @@
 * {
-  font-family: "JetBrains Mono";
-  font-weight: bold;
-  font-size: 16px;
-  color: #cdd6f4;
+    font-family: "JetBrains Mono";
+    font-weight: bold;
+    font-size: 16px;
+    color: #cdd6f4;
 }
 
 #waybar {
-  background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #workspaces,
@@ -21,7 +21,7 @@
 #battery,
 #clock,
 #tray {
-    background-color: #1E1E2E;
+    background-color: #1e1e2e;
     margin-top: 4px;
     margin-bottom: 4px;
     margin-right: 4px;
@@ -33,19 +33,19 @@
 /* Workspace buttons */
 
 #workspaces button {
-  background: transparent;
-  border: none;
-  padding: 0px 4px;
-  margin: 0px 2px;
-  font-weight: bold;
+    background: transparent;
+    border: none;
+    padding: 0px 4px;
+    margin: 0px 2px;
+    font-weight: bold;
 }
-#workspaces button:hover{
-  background-color: rgba(97, 175, 239, 0.2);
-  border-radius: 10px;
+#workspaces button:hover {
+    background-color: rgba(97, 175, 239, 0.2);
+    border-radius: 10px;
 }
 #workspaces button.active {
-  background: #325B8F;
-  border-radius: 10px;
+    background: #325b8f;
+    border-radius: 10px;
 }
 
 /* Margins */
@@ -74,16 +74,16 @@
 
 #custom-gpu,
 #language {
-  border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px;
 }
 
 #memory,
 #clock {
-  border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0;
 }
 
 #workspaces,
 #custom-cava,
 #tray {
-  border-radius: 10px;
+    border-radius: 10px;
 }

@@ -6,7 +6,6 @@
       "$mainMod SHIFT, W, exec, waybar"
       "$mainMod,       E, exec, $fileManager"
       "$mainMod,       C, exec, codium"
-      "$mainMod,       S, exec, steam"
 
       "$mainMod,       Q, killactive,"
       # "$mainMod,       M, exit,"

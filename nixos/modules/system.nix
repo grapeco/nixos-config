@@ -1,12 +1,6 @@
 { pkgs, inputs, ... }:
 {
-  environment.systemPackages = with pkgs; [
-    vim
-    home-manager
-  ];
-
   nixpkgs.config.allowUnfree = true;
-
   nixpkgs.overlays = [ inputs.nix4vscode.overlays.forVscode ];
 
   nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
