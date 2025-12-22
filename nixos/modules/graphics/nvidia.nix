@@ -1,7 +1,8 @@
-{ config, ... }: {
+{ config, pkgs, ... }: {
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
+    extraPackages = [ pkgs.nvidia-vaapi-driver ];
   };
 
   boot.kernelModules = [
@@ -15,7 +16,7 @@
     modesetting.enable = true;
     open = false;
     nvidiaSettings = false;
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    package = config.boot.kernelPackages.nvidiaPackages.latest;
     powerManagement.enable = false;
     powerManagement.finegrained = false;
   };

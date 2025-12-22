@@ -1,16 +1,20 @@
 {
   wayland.windowManager.hyprland = {
     enable = true;
+    systemd.enable = false;
     settings = {
       env = [
         # Hint Electron apps to use Wayland
         "NIXOS_OZONE_WL,1"
-        "XDG_CURRENT_DESKTOP,Hyprland"
-        "XDG_SESSION_DESKTOP,Hyprland"
+        "XDG_SESSION_TYPE,wayland"
         "XDG_DATA_DIRS, $HOME/.local/share:$XDG_DATA_DIRS"
+        
+        "LIBVA_DRIVER_NAME,nvidia"
+        "__GLX_VENDOR_LIBRARY_NAME,nvidia"
+        "NVD_BACKEND,direct"
       ];
 
-      monitor = ", 1920x1080@100, 0x0, 1";
+      monitor = ", 1920x1080@100, auto, 1";
       "$mainMod" = "SUPER";
       "$terminal" = "kitty";
       "$fileManager" = "nautilus";

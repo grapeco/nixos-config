@@ -16,7 +16,6 @@
     qbittorrent
     obs-studio
     lutris
-    bottles
     mangohud
     chromium
     nautilus
@@ -27,8 +26,8 @@
     krita
     gnome-text-editor
 
-    inputs.prismlauncher.packages.${pkgs.system}.default
-    inputs.awww.packages.${pkgs.system}.awww
+    inputs.prismlauncher.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.awww.packages.${pkgs.stdenv.hostPlatform.system}.awww
 
     # CLI Utils
     wget
@@ -43,21 +42,18 @@
     yt-dlp
     umu-launcher
     wine
-    winetricks
     rustc
     cargo
     rust-analyzer
     jdk
     appimage-run
     nftables
-    aircrack-ng
     nixd
     clang
     clang-tools
     nasm
 
     # Hyprland stuff
-    wofi
     wl-clipboard
     cliphist
     libnotify

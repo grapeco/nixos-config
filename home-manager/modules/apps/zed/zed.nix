@@ -3,7 +3,7 @@
     enable = true;
     userSettings = {
       auto-update = false;
-      autosave = "on_focus_change";
+      autosave.after_delay.milliseconds = 500;
 
       vim_mode = false;
 
