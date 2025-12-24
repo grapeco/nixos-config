@@ -4,7 +4,6 @@
     ./binds.nix
 
     ./wofi
-    ./swaync
     ./wlogout
   ];
 }

@@ -9,10 +9,10 @@
     };
   };
 
-  programs.rofi = {
-    enable = true;
-    cycle = true;
-    # Set terminal to kitty
-    terminal = "${pkgs.kitty}/bin/kitty";
-  };
+  # programs.rofi = {
+  #   # enable = true;
+  #   cycle = true;
+  #   # Set terminal to kitty
+  #   terminal = "${pkgs.kitty}/bin/kitty";
+  # };
 }

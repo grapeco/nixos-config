@@ -20,8 +20,7 @@
     qalculate-qt
     gimp
     gnome-text-editor
-    zed-editor
-    # vscodium
+    steam
 
     inputs.prismlauncher.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.awww.packages.${pkgs.stdenv.hostPlatform.system}.awww
@@ -50,8 +49,11 @@
     vim
     home-manager
     stow
+    steamcmd
     
     waybar
+    rofi
+    swaynotificationcenter
     hyprlock
     wl-clipboard
     cliphist

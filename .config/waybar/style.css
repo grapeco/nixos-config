@@ -1,12 +1,13 @@
+@import url("../base16.css"); 
 * {
     font-family: "JetBrains Mono";
     font-weight: bold;
-    font-size: 16px;
-    color: #cdd6f4;
+    font-size: 15px;
+    color: @base05;
 }
 
 #waybar {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
 }
 
 #workspaces,
@@ -21,7 +22,7 @@
 #battery,
 #clock,
 #tray {
-    background-color: #1e1e2e;
+    background-color: @base00;
     margin-top: 4px;
     margin-bottom: 4px;
     margin-right: 4px;
@@ -40,11 +41,11 @@
     font-weight: bold;
 }
 #workspaces button:hover {
-    background-color: rgba(97, 175, 239, 0.2);
+    background-color: @base02;
     border-radius: 10px;
 }
 #workspaces button.active {
-    background: #325b8f;
+    background: @base03;
     border-radius: 10px;
 }
 

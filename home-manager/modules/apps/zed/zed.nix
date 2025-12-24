@@ -1,6 +1,6 @@
 { ... }: {
   programs.zed-editor = {
-    # enable = true;
+    enable = true;
     userSettings = {
       auto-update = false;
       autosave.after_delay.milliseconds = 500;

@@ -45,6 +45,9 @@
 
       decoration = {
         rounding = 10;
+        shadow = {
+          enabled = false;
+        };
       };
 
       animations = {

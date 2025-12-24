@@ -80,7 +80,7 @@
       "headphones": "",
       "handsfree": "",
       "headset": "",
-      "default": "",
+      "default": "󰕾",
     },
     "on-click": "pavucontrol",
   },
