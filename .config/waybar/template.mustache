@@ -1,0 +1,89 @@
+* {
+    font-family: "JetBrains Mono";
+    font-weight: bold;
+    font-size: 15px;
+    color: #{{base05}};
+}
+
+#waybar {
+    background-color: transparent;
+}
+
+#workspaces,
+#custom-cava,
+#custom-gpu,
+#cpu,
+#memory,
+#language,
+#custom-weather,
+#network,
+#pulseaudio,
+#battery,
+#clock,
+#tray {
+    background-color: #{{base00}};
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    margin-left: 4px;
+    border-width: 0px;
+    padding: 4px 6px;
+}
+
+/* Workspace buttons */
+
+#workspaces button {
+    background: transparent;
+    border: none;
+    padding: 0px 4px;
+    margin: 0px 2px;
+    font-weight: bold;
+}
+#workspaces button:hover {
+    background-color: #{{base02}};
+    border-radius: 10px;
+}
+#workspaces button.active {
+    background: #{{base03}};
+    border-radius: 10px;
+}
+
+/* Margins */
+
+#cpu,
+#memory,
+#custom-weather,
+#network,
+#pulseaudio,
+#battery,
+#clock {
+    margin-left: 0px;
+}
+
+#custom-gpu,
+#cpu,
+#language,
+#custom-weather,
+#network,
+#pulseaudio,
+#battery {
+    margin-right: 0px;
+}
+
+/* Borders */
+
+#custom-gpu,
+#language {
+    border-radius: 10px 0 0 10px;
+}
+
+#memory,
+#clock {
+    border-radius: 0 10px 10px 0;
+}
+
+#workspaces,
+#custom-cava,
+#tray {
+    border-radius: 10px;
+}
