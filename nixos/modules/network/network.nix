@@ -9,7 +9,6 @@
   };
   services.resolved = {
     enable = true;
-    fallbackDns = [ "" ];
     dnsovertls = "true";
     dnssec = "true";
   };

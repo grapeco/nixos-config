@@ -36,7 +36,6 @@
     lunarvim
     yt-dlp
     umu-launcher
-    wine
     rustc
     cargo
     jdk
@@ -50,6 +49,7 @@
     home-manager
     stow
     steamcmd
+    exfatprogs
     
     waybar
     rofi

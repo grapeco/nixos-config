@@ -1,0 +1,15 @@
+[
+    {
+        "label" : "lock",
+        "action" : "hyprlock",
+        "text" : "Lock",
+        "keybind" : "l"
+    },
+    
+    {
+        "label" : "hibernate",
+        "action" : "loginctl terminate-user $USER",
+        "text" : "Logout",
+        "keybind" : "e"
+    },
+]
