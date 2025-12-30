@@ -1,6 +1,7 @@
 {
   "layer": "top",
   "position": "top",
+  "reload_style_on_change": true,
 
   "modules-left": ["hyprland/workspaces", "custom/cava"],
   "modules-center": ["custom/gpu", "cpu", "memory"],

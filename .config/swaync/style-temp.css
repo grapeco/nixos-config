@@ -6,36 +6,36 @@
 *
 */
 
-@define-color base   #{{base00}};
-@define-color mantle #{{base01}};
+@define-color base   {{base00}};
+@define-color mantle {{base01}};
 @define-color crust  #11111b;
 
-@define-color text     #{{base05}};
+@define-color text     {{base05}};
 @define-color subtext0 #a6adc8;
 @define-color subtext1 #bac2de;
 
-@define-color surface0 #{{base02}};
-@define-color surface1 #{{base03}};
-@define-color surface2 #{{base04}};
+@define-color surface0 {{base02}};
+@define-color surface1 {{base03}};
+@define-color surface2 {{base04}};
 
 @define-color overlay0 #6c7086;
 @define-color overlay1 #7f849c;
 @define-color overlay2 #9399b2;
 
-@define-color blue      #{{base0D}};
-@define-color lavender  #{{base07}};
+@define-color blue      {{base0D}};
+@define-color lavender  {{base07}};
 @define-color sapphire  #74c7ec;
 @define-color sky       #89dceb;
-@define-color teal      #{{base0C}};
-@define-color green     #{{base0B}};
-@define-color yellow    #{{base0A}};
-@define-color peach     #{{base09}};
+@define-color teal      {{base0C}};
+@define-color green     {{base0B}};
+@define-color yellow    {{base0A}};
+@define-color peach     {{base09}};
 @define-color maroon    #eba0ac;
-@define-color red       #{{base08}};
-@define-color mauve     #{{base0E}};
+@define-color red       {{base08}};
+@define-color mauve     {{base0E}};
 @define-color pink      #f5c2e7;
-@define-color flamingo  #{{base0F}};
-@define-color rosewater #{{base06}};
+@define-color flamingo  {{base0F}};
+@define-color rosewater {{base06}};
 
 * {
     font-family: "NotoSansMono Nerd Font";

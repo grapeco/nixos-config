@@ -1,7 +1,7 @@
 * {
     font-family: "JetBrains Mono";
     font-weight: bold;
-    font-size: 15px;
+    font-size: 14px;
     color: #cdd6f4;
 }
 
@@ -23,7 +23,6 @@
 #tray {
     background-color: #1e1e2e;
     margin-top: 4px;
-    margin-bottom: 4px;
     margin-right: 4px;
     margin-left: 4px;
     border-width: 0px;

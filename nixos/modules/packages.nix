@@ -20,7 +20,6 @@
     qalculate-qt
     gimp
     gnome-text-editor
-    steam
 
     inputs.prismlauncher.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.awww.packages.${pkgs.stdenv.hostPlatform.system}.awww
@@ -45,13 +44,12 @@
     clang
     clang-tools
     nasm
+    mustache-go
     vim
     home-manager
     stow
     steamcmd
-    exfatprogs
     
-    waybar
     rofi
     swaynotificationcenter
     hyprlock
