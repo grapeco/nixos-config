@@ -3,7 +3,6 @@
     # GUI apps
     chromium
     telegram-desktop
-    vesktop
     libreoffice
     pavucontrol
     audacious
@@ -51,7 +50,6 @@
     steamcmd
     
     rofi
-    swaynotificationcenter
     hyprlock
     wl-clipboard
     cliphist

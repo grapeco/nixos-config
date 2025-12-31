@@ -9,6 +9,10 @@
     vesktop
     waybar
     rofi
-    starship
+    starship    eza
+    alacritty
+    kitty
+    vesktop
+    swaynotificationcenter
   ];
 }
