@@ -1,0 +1,3 @@
+/home/nox/nixos-config/.config/waybar/style.css
+/home/nox/nixos-config/.config/swaync/style.css
+/home/nox/nixos-config/.config/cava/config
