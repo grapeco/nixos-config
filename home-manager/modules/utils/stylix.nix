@@ -1,10 +1,10 @@
 { ... }:
 {
-  stylix = {
-    enable = true;
-    targets = {
-      hyprlock.enable = false;
-      firefox.profileNames = [ "default" ];
-    };
-  };
+  # stylix = {
+  #   enable = true;
+  #   targets = {
+  #     hyprlock.enable = false;
+  #     firefox.profileNames = [ "default" ];
+  #   };
+  # };
 }

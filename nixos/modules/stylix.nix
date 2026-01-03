@@ -15,12 +15,10 @@ in {
 
   environment.systemPackages = with pkgs; [
     papirus-icon-theme
-    pcmanfm-qt
   ];
 
   stylix = {
-    enable = true;
-    autoEnable = true;
+    # enable = true;
     polarity = "dark";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
 

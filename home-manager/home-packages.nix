@@ -9,10 +9,12 @@
     vesktop
     waybar
     rofi
-    starship    eza
+    starship    
+    eza
     alacritty
     kitty
     vesktop
     swaynotificationcenter
+    zed-editor-fhs
   ];
 }
