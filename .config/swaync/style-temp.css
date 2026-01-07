@@ -1,6 +1,4 @@
-@import '/home/nox/.cache/wal/colors-waybar.css';
-
-@define-color text            @foreground;
+@define-color text            {{base05}};
 @define-color background      {{base00}};
 @define-color background-alt  {{base01}};
 @define-color selected        {{base0D}};
@@ -104,7 +102,7 @@
   background-color: @selected;
 }
 
-@define-color text            @foreground;
+@define-color text            {{base05}};
 @define-color background-alt  {{base01}};
 @define-color selected        {{base0D}};
 @define-color hover           alpha(@selected, .4);
@@ -310,7 +308,7 @@ progressbar {
 
   /* NOTE: Background need *opacity 1* otherwise will turn into the album art blurred  */
 .widget-mpris-player {
-    background-color: @background-sec;
+    background-color: @background-alt;
     border-radius: 22px;
     padding: 6px 14px;
     margin: 6px;
@@ -349,7 +347,7 @@ picture.mpris-background {
 
 /* Volume */
 .widget-volume {
-  background: @background-sec;
+  background: @background-alt;
   color: @background;
   padding: 4px;
   margin: 6px;

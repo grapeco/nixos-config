@@ -16,5 +16,6 @@
     vesktop
     swaynotificationcenter
     zed-editor-fhs
+    fish
   ];
 }

@@ -12,13 +12,21 @@ in {
     nerd-fonts.symbols-only
     corefonts
   ];
+  
+  fonts.fontconfig = {
+    defaultFonts = {
+      serif = ["Noto Serif"];
+      sansSerif = ["Noto Sans"];
+      monospace = ["JetBrainsMono"];
+    };
+  };
 
   environment.systemPackages = with pkgs; [
     papirus-icon-theme
   ];
 
   stylix = {
-    # enable = true;
+    enable = true;
     polarity = "dark";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
 
