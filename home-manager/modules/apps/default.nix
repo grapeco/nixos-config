@@ -3,7 +3,7 @@
     ./firefox.nix
     # ./spicetify.nix
     
-    ./zed
+    # ./zed
     ./vscode
   ];
 }
