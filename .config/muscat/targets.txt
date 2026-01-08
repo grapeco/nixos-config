@@ -5,3 +5,4 @@
 /home/user/arch-config/.config/kitty/kitty.conf
 /home/user/arch-config/.config/gtk-3.0/gtk.css
 /home/user/arch-config/.config/gtk-4.0/gtk.css
+/home/user/arch-config/.config/vesktop/themes/theme.css
