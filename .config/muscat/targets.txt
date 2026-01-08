@@ -1,5 +1,7 @@
-/home/nox/nixos-config/.config/waybar/style.css
-/home/nox/nixos-config/.config/swaync/style.css
-/home/nox/nixos-config/.config/cava/config
-/home/nox/nixos-config/.config/starship.toml
-/home/nox/nixos-config/.config/kitty/kitty.conf
+/home/user/arch-config/.config/waybar/style.css
+/home/user/arch-config/.config/swaync/style.css
+/home/user/arch-config/.config/cava/config
+/home/user/arch-config/.config/starship.toml
+/home/user/arch-config/.config/kitty/kitty.conf
+/home/user/arch-config/.config/gtk-3.0/gtk.css
+/home/user/arch-config/.config/gtk-4.0/gtk.css

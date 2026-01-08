@@ -1,22 +1,12 @@
-@import '/home/nox/.cache/wal/colors-waybar.css';
-
-@define-color text            @foreground;
-@define-color background      #1e1e2e;
-@define-color background-alt  #181825;
-@define-color selected        #89b4fa;
+@define-color text            #ebdbb2;
+@define-color background      #282828;
+@define-color background-alt  #3c3836;
+@define-color selected        #458588;
 @define-color hover           alpha(@selected, .4);
-@define-color urgent          #f38ba8;
+@define-color urgent          #cc241d;
 
 * {
-
-  /*background-alt:        @color1;      Buttons background */
-  /*selected:              @color2;      Button selected */
-  /*hover:                 @color5;      Hover button */
-  /*urgent:                @color6;      Urgency critical */
-  /*text-selected:         @background; */
-
   color: @text;
-
   all: unset;
   font-size: 14px;
   font-family: "JetBrains Mono Nerd Font 10";
@@ -112,11 +102,11 @@
   background-color: @selected;
 }
 
-@define-color text            @foreground;
-@define-color background-alt  #181825;
-@define-color selected        #89b4fa;
+@define-color text            #ebdbb2;
+@define-color background-alt  #3c3836;
+@define-color selected        #458588;
 @define-color hover           alpha(@selected, .4);
-@define-color urgent          #f38ba8;
+@define-color urgent          #cc241d;
 
 * {
   color: @text;

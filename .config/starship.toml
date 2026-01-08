@@ -1,12 +1,12 @@
 [directory]
-format = "[ ](bold #89b4fa)[ $path ]($style)"
-style = "bold #89b4fa"
+format = "[ ](bold #458588)[ $path ]($style)"
+style = "bold #458588"
 
 [character]
-success_symbol = "[ ](bold #89b4fa)[ ➜](bold green)"
-error_symbol = "[ ](bold #89b4fa)[ ➜](bold red)"
+success_symbol = "[ ](bold #458588)[ ➜](bold green)"
+error_symbol = "[ ](bold #458588)[ ➜](bold red)"
 
 [cmd_duration]
 format = "[󰔛 $duration]($style)"
-style = "bg:none fg:#f9e2af"
+style = "bg:none fg:#d79921"
 show_notifications = false

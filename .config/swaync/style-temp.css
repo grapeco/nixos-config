@@ -1,6 +1,4 @@
-@import '/home/nox/.cache/wal/colors-waybar.css';
-
-@define-color text            @foreground;
+@define-color text            {{base05}};
 @define-color background      {{base00}};
 @define-color background-alt  {{base01}};
 @define-color selected        {{base0D}};
@@ -104,7 +102,7 @@
   background-color: @selected;
 }
 
-@define-color text            @foreground;
+@define-color text            {{base05}};
 @define-color background-alt  {{base01}};
 @define-color selected        {{base0D}};
 @define-color hover           alpha(@selected, .4);
