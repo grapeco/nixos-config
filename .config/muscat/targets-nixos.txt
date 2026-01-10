@@ -1,0 +1,9 @@
+/home/nox/nixos-config/.config/waybar/style.css
+/home/nox/nixos-config/.config/waybar/config.jsonc
+/home/nox/nixos-config/.config/swaync/style.css
+/home/nox/nixos-config/.config/cava/config
+/home/nox/nixos-config/.config/starship.toml
+/home/nox/nixos-config/.config/kitty/kitty.conf
+/home/nox/nixos-config/.config/gtk-3.0/gtk.css
+/home/nox/nixos-config/.config/gtk-4.0/gtk.css
+/home/nox/nixos-config/.config/vesktop/themes/theme.css
