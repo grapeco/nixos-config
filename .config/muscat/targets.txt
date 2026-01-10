@@ -1,4 +1,5 @@
 /home/user/arch-config/.config/waybar/style.css
+/home/user/arch-config/.config/waybar/config.jsonc
 /home/user/arch-config/.config/swaync/style.css
 /home/user/arch-config/.config/cava/config
 /home/user/arch-config/.config/starship.toml
