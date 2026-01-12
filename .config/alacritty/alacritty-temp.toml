@@ -10,32 +10,32 @@ draw_bold_text_with_bright_colors = false
 
 # Default colors
 [colors.primary]
-background = '{{base00}}'
-foreground = '{{base05}}'
+background = '#{{base00}}'
+foreground = '#{{base05}}'
 
 # Colors the cursor will use if `custom_cursor_colors` is true
 [colors.cursor]
-text = '{{base00}}'
-cursor = '{{base05}}'
+text = '#{{base00}}'
+cursor = '#{{base05}}'
 
 # Normal colors
 [colors.normal]
-black = '{{base00}}'
-red = '{{base08}}'
-green = '{{base0B}}'
-yellow = '{{base0A}}'
-blue = '{{base0D}}'
-magenta = '{{base0E}}'
-cyan = '{{base0C}}'
-white = '{{base05}}'
+black = '#{{base00}}'
+red = '#{{base08}}'
+green = '#{{base0B}}'
+yellow = '#{{base0A}}'
+blue = '#{{base0D}}'
+magenta = '#{{base0E}}'
+cyan = '#{{base0C}}'
+white = '#{{base05}}'
 
 # Bright colors
 [colors.bright]
-black = '{{base03}}'
-red = '{{base09}}'
-green = '{{base01}}'
-yellow = '{{base02}}'
-blue = '{{base04}}'
-magenta = '{{base06}}'
-cyan = '{{base0F}}'
-white = '{{base07}}'
+black = '#{{base03}}'
+red = '#{{base09}}'
+green = '#{{base01}}'
+yellow = '#{{base02}}'
+blue = '#{{base04}}'
+magenta = '#{{base06}}'
+cyan = '#{{base0F}}'
+white = '#{{base07}}'

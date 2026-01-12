@@ -103,9 +103,9 @@
     "calendar": {
       "mode": "month",
       "format": {
-        "today": "<span color='{{base08}}'><b>{}</b></span>",
-        "months": "<span color='{{base0D}}'><b>{}</b></span>",
-        "weekdays": "<span color='{{base0E}}'><b>{}</b></span>",
+        "today": "<span color='#{{base08}}'><b>{}</b></span>",
+        "months": "<span color='#{{base0D}}'><b>{}</b></span>",
+        "weekdays": "<span color='#{{base0E}}'><b>{}</b></span>",
       },
     },
   },
