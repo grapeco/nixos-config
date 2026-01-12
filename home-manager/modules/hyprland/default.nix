@@ -1,6 +1,6 @@
 {
   imports = [
-    ./hyprland.nix
+    # ./hyprland.nix
     ./binds.nix
 
     ./wofi
