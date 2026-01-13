@@ -63,7 +63,7 @@
   },
 
   "network": {
-    "format-wifi": "",
+    "format-wifi": " ",
     "format-ethernet": "",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "",

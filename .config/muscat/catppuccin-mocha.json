@@ -1,4 +1,5 @@
 {
+  "scheme": "Catppuccin Mocha",
   "base00": "1e1e2e",
   "base01": "181825",
   "base02": "313244",
@@ -14,8 +15,5 @@
   "base0C": "94e2d5",
   "base0D": "89b4fa",
   "base0E": "cba6f7",
-  "base0F": "f2cdcd",
-  "author": "https://github.com/catppuccin/catppuccin",
-  "scheme": "Catppuccin Mocha",
-  "slug": "catppuccin-mocha"
+  "base0F": "f2cdcd"
 }

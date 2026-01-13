@@ -11,3 +11,4 @@
 ~/arch-config/.config/zed/themes/base16.json
 ~/arch-config/.config/hypr/hyprland.conf
 ~/arch-config/.config/alacritty/alacritty.toml
+~/arch-config/.config/rofi/theme.rasi
