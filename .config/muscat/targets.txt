@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
 ~/dotfiles/.config/waybar/config.jsonc
 ~/dotfiles/.config/waybar/style.css
+=======
+~/dotfiles/.config/waybar/style.css
+~/dotfiles/.config/waybar/config.jsonc
+>>>>>>> Stashed changes
 ~/dotfiles/.config/swaync/style.css
 ~/dotfiles/.config/cava/config
 ~/dotfiles/.config/starship.toml

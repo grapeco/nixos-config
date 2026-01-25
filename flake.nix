@@ -11,18 +11,9 @@
       url = "github:hyprwm/Hyprland";
     };
 
-    waybar = {
-      url = "github:Alexays/Waybar";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     stylix = {
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    awww = {
-      url = "git+https://codeberg.org/LGFae/awww";
     };
 
     zapret = {
@@ -47,11 +38,6 @@
 
     prismlauncher = {
       url = "github:Diegiwg/PrismLauncher-Cracked";
-    };
-
-    catppuccin-cava = {
-      url = "github:catppuccin/cava";
-      flake = false;
     };
   };
 

@@ -15,7 +15,7 @@
     kitty
     vesktop
     swaynotificationcenter
-    zed-editor-fhs
+    zed-editor
     fish
   ];
 }

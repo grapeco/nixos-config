@@ -5,9 +5,6 @@ blink_interval = 500
 blinking = "On"
 shape = "Beam"
 
-[colors]
-draw_bold_text_with_bright_colors = false
-
 # Default colors
 [colors.primary]
 background = '#1e1e2e'
@@ -31,11 +28,34 @@ white = '#cdd6f4'
 
 # Bright colors
 [colors.bright]
-black = '#45475a'
-red = '#fab387'
-green = '#181825'
-yellow = '#313244'
-blue = '#585b70'
-magenta = '#f5e0dc'
-cyan = '#f2cdcd'
-white = '#b4befe'
+black = "#45475a"
+blue = "#89b4fa"
+cyan = "#94e2d5"
+green = "#a6e3a1"
+magenta = "#cba6f7"
+red = "#f38ba8"
+white = "#b4befe"
+yellow = "#f9e2af"
+
+[colors.cursor]
+cursor = "#cdd6f4"
+text = "#1e1e2e"
+
+[colors.normal]
+black = "#1e1e2e"
+blue = "#89b4fa"
+cyan = "#94e2d5"
+green = "#a6e3a1"
+magenta = "#cba6f7"
+red = "#f38ba8"
+white = "#cdd6f4"
+yellow = "#f9e2af"
+
+[colors.primary]
+background = "#1e1e2e"
+bright_foreground = "#b4befe"
+foreground = "#cdd6f4"
+
+[colors.selection]
+background = "#313244"
+text = "#cdd6f4"

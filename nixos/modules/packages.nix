@@ -22,7 +22,6 @@
     blueman
 
     inputs.prismlauncher.packages.${pkgs.stdenv.hostPlatform.system}.default
-    inputs.awww.packages.${pkgs.stdenv.hostPlatform.system}.awww
     
     # CLI Utils
     wget
@@ -37,6 +36,7 @@
     umu-launcher
     rustc
     cargo
+    swww
     jdk
     appimage-run
     nftables

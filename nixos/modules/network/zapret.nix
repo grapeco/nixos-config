@@ -5,6 +5,6 @@
 
   services.zapret-discord-youtube = {
     enable = true;
-    config = "general (FAKE_TLS_AUTO)";
+    config = "general (FAKE_TLS_AUTO_ALT3)";
   };
 }
