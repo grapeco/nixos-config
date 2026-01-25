@@ -36,26 +36,3 @@ magenta = "#{{base0E}}"
 red = "#{{base08}}"
 white = "#{{base07}}"
 yellow = "#{{base0A}}"
-
-[colors.cursor]
-cursor = "#{{base05}}"
-text = "#{{base00}}"
-
-[colors.normal]
-black = "#{{base00}}"
-blue = "#{{base0D}}"
-cyan = "#{{base0C}}"
-green = "#{{base0B}}"
-magenta = "#{{base0E}}"
-red = "#{{base08}}"
-white = "#{{base05}}"
-yellow = "#{{base0A}}"
-
-[colors.primary]
-background = "#{{base00}}"
-bright_foreground = "#{{base07}}"
-foreground = "#{{base05}}"
-
-[colors.selection]
-background = "#{{base02}}"
-text = "#{{base05}}"
