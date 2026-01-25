@@ -9,6 +9,7 @@
     background-color: transparent;
 }
 
+tooltip,
 #workspaces,
 #custom-cava,
 #custom-gpu,
@@ -23,10 +24,9 @@
 #tray {
     background-color: #1e1e2e;
     margin-top: 4px;
-    margin-right: 4px;
-    margin-left: 4px;
-    border-width: 0px;
-    padding: 4px 6px;
+    margin-right: 2px;
+    margin-left: 2px;
+    padding: 2px 6px;
 }
 
 /* Workspace buttons */
@@ -73,16 +73,16 @@
 
 #custom-gpu,
 #language {
-    border-radius: 10px 0 0 10px;
+    border-radius: 15px 0 0 15px;
 }
 
 #memory,
 #clock {
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 15px 15px 0;
 }
 
 #workspaces,
 #custom-cava,
 #tray {
-    border-radius: 10px;
+    border-radius: 15px;
 }

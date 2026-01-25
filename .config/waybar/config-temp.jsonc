@@ -27,7 +27,7 @@
 
   "custom/cava": {
     "format": "{}",
-    "exec": "~/nixos-config/.config/waybar/cava.sh",
+    "exec": "~/dotfiles/.config/waybar/cava.sh",
     "tooltip": false,
   },
 
