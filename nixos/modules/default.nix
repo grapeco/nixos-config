@@ -8,7 +8,7 @@
     ./system.nix
     ./postgresql.nix
     ./flatpak.nix
-    ./stylix.nix
+    ./fonts.nix
     ./packages.nix
 
     ./sddm
@@ -16,6 +16,5 @@
     ./network
     ./virtualization
     ./hardware
-    ./../config
   ];
 }

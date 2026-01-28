@@ -1,7 +1,8 @@
-{ homeStateVersion, user, ... }: {
+{ homeStateVersion, user, inputs, ... }: {
+  nixpkgs.config.allowUnfree = true;
+  nixpkgs.overlays = [ inputs.nix4vscode.overlays.forVscode ];
 
   imports = [
-    ./home-packages.nix
     ./modules
   ];
 

@@ -53,26 +53,26 @@
       modules = [
         ./nixos/configuration.nix
 
-        inputs.home-manager.nixosModules.home-manager
-        {
-          home-manager = {
-            users.${user} = ./home-manager/home.nix;
-            useGlobalPkgs = true;
-            useUserPackages = true;
-            extraSpecialArgs = {
-              inherit inputs homeStateVersion user;
-            };
-          };
-        }
+        # inputs.home-manager.nixosModules.home-manager
+        # {
+        #   home-manager = {
+        #     users.${user} = ./home-manager/home.nix;
+        #     useGlobalPkgs = true;
+        #     useUserPackages = true;
+        #     extraSpecialArgs = {
+        #       inherit inputs homeStateVersion user;
+        #     };
+        #   };
+        # }
       ];
     };
 
-    # homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
-    #   pkgs = nixpkgs.legacyPackages.${system};
-    #   extraSpecialArgs = {
-    #     inherit inputs homeStateVersion user;
-    #   };
-    #   modules = [ ./home-manager/home.nix ];
-    # };
+    homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
+      pkgs = nixpkgs.legacyPackages.${system};
+      extraSpecialArgs = {
+        inherit inputs homeStateVersion user;
+      };
+      modules = [ ./home-manager/home.nix ];
+    };
   };
 }

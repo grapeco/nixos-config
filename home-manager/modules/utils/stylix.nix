@@ -1,10 +1,53 @@
-{ ... }:
+{ pkgs, inputs, ... }:
 {
-  # stylix = {
-  #   enable = true;
-  #   targets = {
-  #     hyprlock.enable = false;
-  #     firefox.profileNames = [ "default" ];
-  #   };
-  # };
+  imports = [ inputs.stylix.homeModules.stylix ];
+  
+  stylix = {
+    # enable = true;
+    polarity = "dark";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+
+    targets = {
+      firefox.profileNames = [ "default" ];
+    };
+    
+    cursor = {
+      name = "Bibata-Modern-Classic";
+      size = 24;
+      package = pkgs.bibata-cursors;
+    };
+
+    # fonts = {
+    #   emoji = {
+    #     name = "Noto Color Emoji";
+    #     package = pkgs.noto-fonts-color-emoji;
+    #   };
+    #   monospace = {
+    #     name = "JetBrains Mono";
+    #     package = pkgs.jetbrains-mono;
+    #   };
+    #   sansSerif = {
+    #     name = "Noto Sans";
+    #     package = pkgs.noto-fonts;
+    #   };
+    #   serif = {
+    #     name = "Noto Serif";
+    #     package = pkgs.noto-fonts;
+    #   };
+
+    #   sizes = {
+    #     terminal = 13;
+    #     applications = 11;
+    #   };
+    # };
+
+    icons = {
+      enable = true;
+      package = pkgs.papirus-icon-theme;
+      dark = "Papirus-Dark";
+      light = "Papirus-Light";
+    };
+
+    # image = ../../../screenshots/NixOs.png;
+  };
 }
