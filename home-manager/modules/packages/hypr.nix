@@ -11,6 +11,5 @@
     swaynotificationcenter
     
     adw-gtk3
-    bibata-cursors
   ];
 }

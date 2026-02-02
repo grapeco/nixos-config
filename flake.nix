@@ -2,11 +2,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     hyprland = {
       url = "github:hyprwm/Hyprland";
     };
@@ -46,26 +41,28 @@
     system = "x86_64-linux";
     homeStateVersion = "24.11";
     user = "nox";
-  in {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      inherit system;
-      specialArgs = { inherit inputs user homeStateVersion; };
-      modules = [
-        ./nixos/configuration.nix
+    hosts = [
+      { hostname = "nixos"; stateVersion = "24.11"; }
+      { hostname = "laptop"; stateVersion = "25.05"; }
+    ];
+    
+    makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
+      system = system;
+      specialArgs = {
+        inherit inputs stateVersion hostname user;
+      };
 
-        # inputs.home-manager.nixosModules.home-manager
-        # {
-        #   home-manager = {
-        #     users.${user} = ./home-manager/home.nix;
-        #     useGlobalPkgs = true;
-        #     useUserPackages = true;
-        #     extraSpecialArgs = {
-        #       inherit inputs homeStateVersion user;
-        #     };
-        #   };
-        # }
+      modules = [
+        ./hosts/${hostname}/configuration.nix
       ];
     };
+  in {
+    nixosConfigurations = nixpkgs.lib.foldl' (configs: host:
+      configs // {
+        "${host.hostname}" = makeSystem {
+          inherit (host) hostname stateVersion;
+        };
+      }) {} hosts;
 
     homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};

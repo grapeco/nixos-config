@@ -26,10 +26,8 @@
         runAsRoot = true;
         swtpm.enable = true;
       };
-      hooks = {
-        qemu = {
-          "win10" = ./hooks;
-        };
+      hooks.qemu = {
+        "win10" = ./hooks;
       };
     };
     spiceUSBRedirection.enable = true;

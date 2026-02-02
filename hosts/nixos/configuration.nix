@@ -1,16 +1,13 @@
-{ pkgs, inputs, user, ... }:
+{ pkgs, stateVersion, ... }:
 
 {
   imports = [
     ./hardware-configuration.nix
+    ../../nixos/modules
     ./modules
-
-    inputs.home-manager.nixosModules.default
   ];
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
-
-  home-manager.backupFileExtension = "backup";
 
   time.timeZone = "Europe/Moscow";
 
@@ -21,20 +18,11 @@
 
   powerManagement.cpuFreqGovernor = "performance";
 
-  services = {
-    gvfs.enable = true;
-  };
-
-  users.users.${user} = {
-    isNormalUser = true;
-    extraGroups = ["wheel" "networkmanager" "wireshark"];
-  };
-
   swapDevices = [
     {
       device = "/.swapvol/swapfile";
     }
   ];
-
-  system.stateVersion = "24.11"; # Do not
+  
+  system.stateVersion = stateVersion;
 }

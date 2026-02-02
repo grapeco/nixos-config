@@ -4,15 +4,14 @@
     ./grub.nix
     ./hyprland.nix
     ./nh.nix
-    ./steam.nix
     ./system.nix
     ./postgresql.nix
     ./flatpak.nix
     ./fonts.nix
     ./packages.nix
+    ./user.nix
 
     ./sddm
-    ./graphics/nvidia.nix
     ./network
     ./virtualization
     ./hardware

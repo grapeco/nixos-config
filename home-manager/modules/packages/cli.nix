@@ -2,7 +2,6 @@
   home.packages = with pkgs; [
     # Games
     umu-launcher
-    steamcmd
     
     # Rice  
     cmatrix
@@ -17,7 +16,6 @@
     # Languages
     rustc
     cargo
-    jdk
     nixd
     clang
     clang-tools
