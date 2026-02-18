@@ -4,6 +4,7 @@
   imports = [
     ./hardware-configuration.nix
     ../../nixos/modules
+    ./modules
   ];
 
   boot.kernelPackages = pkgs.linuxPackages_latest;

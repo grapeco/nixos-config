@@ -2,7 +2,7 @@
     font-family: "JetBrains Mono";
     font-weight: bold;
     font-size: 14px;
-    color: #cdd6f4;
+    color: #d5c4a1;
 }
 
 #waybar {
@@ -22,7 +22,7 @@ tooltip,
 #battery,
 #clock,
 #tray {
-    background-color: #1e1e2e;
+    background-color: #1d2021;
     margin-top: 4px;
     margin-right: 2px;
     margin-left: 2px;
@@ -39,11 +39,11 @@ tooltip,
     font-weight: bold;
 }
 #workspaces button:hover {
-    background-color: #313244;
+    background-color: #504945;
     border-radius: 10px;
 }
 #workspaces button.active {
-    background: #45475a;
+    background: #665c54;
     border-radius: 10px;
 }
 

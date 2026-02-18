@@ -4,9 +4,11 @@
     lutris
     mangohud
     inputs.prismlauncher.packages.${pkgs.stdenv.hostPlatform.system}.default
+    mindustry
     
     # Studying
     libreoffice
+    onlyoffice-desktopeditors
     postman
     dbeaver-bin
     qalculate-qt
@@ -15,7 +17,6 @@
     
     # Other
     alacritty
-    chromium
     telegram-desktop
     pavucontrol
     mpv   

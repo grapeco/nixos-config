@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
     wget
-    vim
+    neovim
     home-manager
     git
   ];

@@ -7,3 +7,6 @@ alias update='sudo nix flake update'
 
 alias ls='eza --color=always --git --icons=always'
 alias tree='eza --color=always --git --icons=always --tree'
+
+alias stop-zapret='sudo systemctl stop zapret-discord-youtube'
+alias start-zapret='sudo systemctl start zapret-discord-youtube'

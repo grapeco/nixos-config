@@ -43,7 +43,7 @@
     user = "nox";
     hosts = [
       { hostname = "nixos"; stateVersion = "24.11"; }
-      { hostname = "laptop"; stateVersion = "25.05"; }
+      { hostname = "laptop"; stateVersion = "25.11"; }
     ];
     
     makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
