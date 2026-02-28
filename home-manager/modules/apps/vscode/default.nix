@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   programs.vscode = {
     enable = true;
-    package = pkgs.vscodium-fhs;
+    package = pkgs.vscodium;
     mutableExtensionsDir = false;
     profiles.default = {
       extensions = pkgs.nix4vscode.forVscode [

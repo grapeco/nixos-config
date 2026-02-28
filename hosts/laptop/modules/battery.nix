@@ -9,8 +9,8 @@ services.tlp = {
         CPU_ENERGY_PERF_POLICY_ON_AC = "performance";
         
         #Optional helps save long term battery health
-        START_CHARGE_THRESH_BAT0 = 70; # 40 and below it starts to charge
-        STOP_CHARGE_THRESH_BAT0 = 80; # 80 and above it stops charging 
+        START_CHARGE_THRESH_BAT0 = 0;
+        STOP_CHARGE_THRESH_BAT0 = 100;
     };
 };
 }

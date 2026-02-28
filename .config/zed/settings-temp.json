@@ -21,7 +21,7 @@
   "lsp": {
     "nixd": {
       "binary": {
-        "path": "/run/current-system/sw/bin/bash"
+        "path_lookup": true
       }
     },
     "rust-analyzer": {

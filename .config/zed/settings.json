@@ -1,6 +1,6 @@
 {
   "icon_theme": "Zed (Default)",
-  "theme": "Base16 Gruvbox Dark Hard",
+  "theme": "Base16 Catppuccin Mocha",
   "auto-update": false,
   "autosave": {
     "after_delay": {
@@ -21,7 +21,7 @@
   "lsp": {
     "nixd": {
       "binary": {
-        "path": "/run/current-system/sw/bin/bash"
+        "path_lookup": true
       }
     },
     "rust-analyzer": {
