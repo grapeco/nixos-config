@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }: {
+{ pkgs, inputs, ... }: {  
   home.packages = with pkgs; [
     # Games
     lutris
@@ -14,19 +14,26 @@
     qalculate-qt
     gimp
     zed-editor
+    ghidra
+    
+    # Browsing
+    firefox
+    chromium
+    
+    # Communication
+    element-desktop
+    telegram-desktop
+    vesktop
     
     # Other
     alacritty
-    telegram-desktop
     pavucontrol
     mpv   
     qbittorrent
     obs-studio
     nautilus
     eog
-    fluffychat
     gnome-text-editor
     blueman
-    vesktop   
   ];
 }

@@ -1,19 +1,30 @@
-{ pkgs, ... }: {
+{ pkgs, ... }: 
+{
   services.tor = {
     enable = true;
-    client.enable = true;
+    client = {
+      enable = true;
+    };
     settings = {
       UseBridges = true;
-      BandwidthRate = "500KB";
+      ExcludeNodes = "{cn},{ru},{hk},{mo}"; 
+      
+      AvoidDiskWrites = 1; 
+      
+      SOCKSPort = [
+        { addr = "0.0.0.0"; port = 9090; }
+      ];
+      
       ClientTransportPlugin = "obfs4 exec ${pkgs.obfs4}/bin/lyrebird";
-      HTTPTunnelPort = 8118;
-      Bridge = "obfs4 45.89.127.227:9111 F115B8D1A5F6D31F90197DA9C6EC87914D7753E6 cert=meQuUToGFnzg5dnlW1or8jbQgKAImmntGkUgv+I82H3hbOPUlCLpzM6cHdphYoCxoSaHOQ iat-mode=0";    
+      Bridge = [  
+        "obfs4 45.89.127.227:9111 F115B8D1A5F6D31F90197DA9C6EC87914D7753E6 cert=meQuUToGFnzg5dnlW1or8jbQgKAImmntGkUgv+I82H3hbOPUlCLpzM6cHdphYoCxoSaHOQ iat-mode=0"
+        "obfs4 89.234.140.172:9003 6D9484C1E4C367D4469361B420126BECCFB7F0AF cert=fcI1z9Ze0B7bgrQJy8ipLlX41LiYp53zBZ8Z0/luJ/A9hmQ9uywySMSgAbkMHe3ltt+WKA iat-mode=0"
+      ];
     };
   };
   
   programs.proxychains = {
     enable = true;
-    
     proxies = {
       tor = {
         enable = true;
@@ -22,11 +33,10 @@
         port = 9050;            
       };
     };
-    
     chain = {
       type = "dynamic";          # dynamic chain - работает, даже если некоторые прокси недоступны
     };
-    proxyDNS = true;                   # Проксировать DNS через Tor (предотвращает утечки)
+    proxyDNS = true;
     quietMode = true; 
   };
 }

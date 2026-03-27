@@ -1,16 +1,17 @@
 {
-services.tlp = {
+  services.tlp = {
     enable = true;
     settings = {
-        CPU_SCALING_GOVERNOR_ON_AC = "performance";
-        CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
-        
-        CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
-        CPU_ENERGY_PERF_POLICY_ON_AC = "performance";
-        
-        #Optional helps save long term battery health
-        START_CHARGE_THRESH_BAT0 = 0;
-        STOP_CHARGE_THRESH_BAT0 = 100;
+      CPU_SCALING_GOVERNOR_ON_AC = "performance";
+      CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
+      
+      START_CHARGE_THRESH_BAT0 = 70;
+      STOP_CHARGE_THRESH_BAT0 = 90;
     };
-};
+  };
+  
+  # services.logind = {
+  #   lidSwitch = "ignore";
+  #   lidSwitchExternalPower = "ignore";
+  # };
 }

@@ -14,9 +14,6 @@
         user = "git";
         identityFile = "/home/${user}/.ssh/github";
       };
-      "*" = {
-        hostname = "*";
-      };
     };
   };
 }

@@ -20,14 +20,12 @@
     clang
     clang-tools
     nasm
-    lunarvim
     
     # Other
     wireguard-tools
     btop
     unzip
     nix-prefetch-scripts
-    lunarvim
     yt-dlp
     appimage-run
   ];

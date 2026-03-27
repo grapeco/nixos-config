@@ -1,7 +1,9 @@
 { inputs, ... }:
 {
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.overlays = [ inputs.nix4vscode.overlays.forVscode ];
+  nixpkgs.overlays = [ 
+    inputs.nix4vscode.overlays.forVscode 
+  ];
 
   nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

@@ -5,6 +5,6 @@
 
   services.zapret-discord-youtube = {
     enable = true;
-    config = "general(ALT9)";
+    configName = "general(ALT9)";
   };
 }

@@ -7,7 +7,7 @@
   "modules-center": ["cpu", "memory"],
   "modules-right": [
     "hyprland/language",
-    "custom/weather",
+    // "custom/weather",
     "network",
     "pulseaudio",
     "battery",
