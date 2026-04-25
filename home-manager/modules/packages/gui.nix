@@ -1,7 +1,8 @@
-{ pkgs, inputs, ... }: {  
+{ pkgs, inputs, ... }: 
+{  
   home.packages = with pkgs; [
     # Games
-    lutris
+    # lutris
     mangohud
     inputs.prismlauncher.packages.${pkgs.stdenv.hostPlatform.system}.default
     mindustry
@@ -14,7 +15,7 @@
     qalculate-qt
     gimp
     zed-editor
-    ghidra
+    obsidian
     
     # Browsing
     firefox
@@ -33,7 +34,6 @@
     obs-studio
     nautilus
     eog
-    gnome-text-editor
     blueman
   ];
 }

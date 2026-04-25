@@ -1,9 +1,9 @@
 {
-  "name": "Base16 {{scheme}}",
+  "name": "Base16",
   "author": "You!",
   "themes": [
     {
-      "name": "Base16 {{scheme}}",
+      "name": "Base16",
       "appearance": "dark",
       "style": {
         "border": "#{{base02}}",

@@ -1,9 +1,9 @@
 {
-  "name": "Base16 Catppuccin Mocha",
+  "name": "Base16",
   "author": "You!",
   "themes": [
     {
-      "name": "Base16 Catppuccin Mocha",
+      "name": "Base16",
       "appearance": "dark",
       "style": {
         "border": "#313244",

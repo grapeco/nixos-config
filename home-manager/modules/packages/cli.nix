@@ -1,7 +1,8 @@
-{ pkgs, ... }: {
+{ pkgs, inputs, ... }: {
   home.packages = with pkgs; [
     # Games
     umu-launcher
+    javaPackages.compiler.temurin-bin.jre-25
     
     # Rice  
     cmatrix
@@ -11,7 +12,7 @@
     starship 
     eza
     fish
-    swww
+    awww
     
     # Languages
     rustc
@@ -28,5 +29,6 @@
     nix-prefetch-scripts
     yt-dlp
     appimage-run
+    inputs.nix-alien.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }

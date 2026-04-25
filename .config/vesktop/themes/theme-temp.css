@@ -1,1 +1,120 @@
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha-blue.theme.css");
+/**
+* @name my-{{scheme}}
+* @description Custom theme based on refact0r's midnight
+* @author refact0r
+* @version 0.1.0
+* @website https://github.com/refact0r/midnight-discord
+* @source https://github.com/refact0r/midnight-discord/blob/master/themes/midnight.theme.css
+* @authorId 508863359777505290
+* @authorLink https://www.refact0r.dev
+*/
+
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+
+body {
+    --gap: 12px;
+    --divider-thickness: 4px;
+
+    --animations: on;
+    --list-item-transition: 0.2s ease;
+    --dms-icon-svg-transition: 0.4s ease;
+
+    --move-top-bar-buttons: off;
+    --custom-app-top-bar-height: 30px;
+
+    --custom-window-controls: on;
+    --window-control-size: 14px;
+
+    --dms-icon: on;
+    --dms-icon-svg-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg');
+    --dms-icon-svg-size: 90%;
+    --dms-icon-color-before: var(--icon-secondary);
+    --dms-icon-color-after: var(--white);
+
+    --dms-background: off;
+    --dms-background-image-url: url("");
+    --dms-background-image-size: cover;
+    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2));
+
+    --background-image: off;
+    --background-image-url: url("");
+
+    --transparency-tweaks: on;
+    --remove-bg-layer: off;
+    --panel-blur: off;
+    --blur-amount: 12px;
+    --bg-floating: var(--bg-3);
+
+    --small-user-panel: on;
+}
+
+:root {
+    --colors: on;
+
+    --text-0: #{{base06}};
+    --text-1: #{{base05}};
+    --text-2: #{{base06}};
+    --text-3: #{{base05}};
+    --text-4: #{{base05}};
+    --text-5: #{{base04}};
+
+    --bg-1: #{{base02}};
+    --bg-2: #{{base01}};
+    --bg-3: #{{base00}};
+    --bg-4: #{{base00}};
+    --hover: #{{base04}}56;
+    --active: #{{base05}}56;
+    --active-2: #{{base03}}96;
+    --message-hover: #00000028;
+
+    --accent-1: var(--blue-1);
+    --accent-2: var(--blue-2);
+    --accent-3: var(--blue-3);
+    --accent-4: var(--blue-4);
+    --accent-5: var(--blue-5);
+    --accent-new: var(--red-1);
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 90%) 40%, transparent);
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 95%) 40%, transparent);
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent);
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent);
+
+    --online: #{{base0B}};
+    --dnd: #{{base08}};
+    --idle: #{{base0A}};
+    --streaming: #{{base0E}};
+    --offline: #{{base03}};
+
+    --border-light: #00000000;
+    --border: #00000000;
+    --button-border: #FFFFFF32;
+
+    --red-1: #{{base08}};
+    --red-2: #{{base08}};
+    --red-3: #{{base08}};
+    --red-4: #{{base08}};
+    --red-5: #{{base08}};
+
+    --green-1: #{{base0B}};
+    --green-2: #{{base0B}};
+    --green-3: #{{base0B}};
+    --green-4: #{{base0B}};
+    --green-5: #{{base0B}};
+
+    --blue-1: #{{base0D}};
+    --blue-2: #{{base0D}};
+    --blue-3: #{{base0D}};
+    --blue-4: #{{base0D}};
+    --blue-5: #{{base0D}};
+
+    --yellow-1: #{{base0A}};
+    --yellow-2: #{{base0A}};
+    --yellow-3: #{{base0A}};
+    --yellow-4: #{{base0A}};
+    --yellow-5: #{{base0A}};
+
+    --purple-1: #{{base0E}};
+    --purple-2: #{{base0E}};
+    --purple-3: #{{base0E}};
+    --purple-4: #{{base0E}};
+    --purple-5: #{{base0E}};
+}

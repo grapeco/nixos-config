@@ -19,6 +19,8 @@
   ],
   
   "restarts": [
-    
+    "waybar",
+    "swaync",
+    "zed",
   ]
 }

@@ -10,6 +10,7 @@
     ./fonts.nix
     ./packages.nix
     ./user.nix
+    # ./nix-ld.nix
 
     ./sddm
     ./network

@@ -2,9 +2,7 @@
 {
   services.tor = {
     enable = true;
-    client = {
-      enable = true;
-    };
+    client.enable = true;
     settings = {
       UseBridges = true;
       ExcludeNodes = "{cn},{ru},{hk},{mo}"; 
@@ -34,7 +32,7 @@
       };
     };
     chain = {
-      type = "dynamic";          # dynamic chain - работает, даже если некоторые прокси недоступны
+      type = "dynamic";
     };
     proxyDNS = true;
     quietMode = true; 

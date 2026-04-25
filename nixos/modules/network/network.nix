@@ -11,7 +11,10 @@
     
     firewall = {
       enable = true;
-      allowedTCPPorts = [ 9090 ]; # For TOR
+      allowedTCPPorts = [ 
+        9090 # For TOR
+        8080 # For my test web server
+      ]; 
     };
   };
   
