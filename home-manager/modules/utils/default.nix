@@ -4,5 +4,6 @@
     ./gammastep.nix
     ./ssh.nix
     ./stylix.nix
+    ./gtk.nix
   ];
 }

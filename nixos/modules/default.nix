@@ -6,11 +6,11 @@
     ./nh.nix
     ./system.nix
     ./postgresql.nix
-    ./flatpak.nix
+    ./services.nix
     ./fonts.nix
     ./packages.nix
     ./user.nix
-    # ./nix-ld.nix
+    ./nix-ld.nix
 
     ./sddm
     ./network

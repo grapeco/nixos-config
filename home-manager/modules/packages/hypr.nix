@@ -10,7 +10,5 @@
     grimblast
     swaynotificationcenter
     brightnessctl
-    
-    adw-gtk3
   ];
 }

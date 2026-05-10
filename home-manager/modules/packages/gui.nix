@@ -1,8 +1,8 @@
-{ pkgs, inputs, ... }: 
+{ pkgs, inputs, stable, ... }: 
 {  
   home.packages = with pkgs; [
     # Games
-    # lutris
+    stable.lutris
     mangohud
     inputs.prismlauncher.packages.${pkgs.stdenv.hostPlatform.system}.default
     mindustry
@@ -23,6 +23,7 @@
     
     # Communication
     element-desktop
+    fluffychat
     telegram-desktop
     vesktop
     

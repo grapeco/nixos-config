@@ -7,5 +7,9 @@
     portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
   };
   
-  programs.niri.enable = true;
+  # services.xserver = {
+  #   desktopManager = {
+  #     xfce.enable = true;
+  #   };
+  # };
 }

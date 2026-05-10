@@ -3,6 +3,7 @@
     # Games
     umu-launcher
     javaPackages.compiler.temurin-bin.jre-25
+    wine
     
     # Rice  
     cmatrix

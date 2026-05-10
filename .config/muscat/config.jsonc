@@ -1,5 +1,7 @@
 {
   "data": "~/dotfiles/.config/muscat/themes/catppuccin.json",
+  
+  "data_dir": "~/.config/muscat/themes",
     
   "targets": [
     "~/dotfiles/.config/waybar/config.jsonc",
@@ -15,7 +17,16 @@
     "~/dotfiles/.config/zed/themes/base16.json",
     "~/dotfiles/.config/hypr/hyprland.conf",
     "~/dotfiles/.config/alacritty/alacritty.toml",
-    "~/dotfiles/.config/rofi/theme.rasi"
+    "~/dotfiles/.config/rofi/theme.rasi",
+  ],
+  
+  "wallpapers": [
+    { "catppuccin": "~/Pictures/Wallpapers/NixOs.png" },
+    { "gruvbox": "~/Pictures/Wallpapers/gruv-abstract-maze.png" },
+    { "everforest": "~/Pictures/Wallpapers/green-code.png" },
+    { "kanagawa": "~/Pictures/Wallpapers/monochrome.png" },
+    { "monochrome": "~/Pictures/Wallpapers/monochrome.png" },
+    { "da-one-black": "~/Pictures/Wallpapers/monochrome.png" },
   ],
   
   "restarts": [

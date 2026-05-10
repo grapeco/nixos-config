@@ -35,7 +35,7 @@
       libxinerama
       libxcursor
       libxrender
-      libxScrnSaver
+      libxscrnsaver
       libxi
       libsm
       libice
@@ -49,7 +49,7 @@
       mesa
       libdrm
       libva
-      webkitgtk_4_0
+      # webkitgtk_4_0
       libsoup_2_4
       libelf
       libvdpau
@@ -107,7 +107,7 @@
       SDL2_mixer
       SDL2_ttf
       SDL_image
-      glew110
+      glew_1_10
       freeglut
       
       # Мультимедиа

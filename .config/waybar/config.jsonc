@@ -7,7 +7,7 @@
   "modules-center": ["cpu", "memory"],
   "modules-right": [
     "hyprland/language",
-    // "custom/weather",
+    "custom/weather",
     "network",
     "pulseaudio",
     "battery",
@@ -68,7 +68,7 @@
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "",
     "family": "ipv4",
-    "tooltip-format-wifi": " {ifname} @ {essid}\nIP: {ipaddr}\nFreq: {frequency}MHz\n {bandwidthUpBits}  {bandwidthDownBits}",
+    "tooltip-format-wifi": " {ifname} @ {essid}\nIP: {ipaddr}\nFreq: {frequency}GHz\n {bandwidthUpBits}  {bandwidthDownBits}",
     "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n {bandwidthUpBits}  {bandwidthDownBits}",
     "interval": 1,
   },

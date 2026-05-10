@@ -46,6 +46,12 @@
     system = "x86_64-linux";
     homeStateVersion = "24.11";
     user = "nox";
+    
+    stable = import inputs.nixpkgs-stable {
+      inherit system;
+      config.allowUnfree = true;
+    };
+    
     hosts = [
       { hostname = "nixos"; stateVersion = "24.11"; }
       { hostname = "laptop"; stateVersion = "25.11"; }
@@ -72,7 +78,7 @@
     homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
       extraSpecialArgs = {
-        inherit inputs homeStateVersion user;
+        inherit inputs homeStateVersion user stable;
       };
       modules = [ ./home-manager/home.nix ];
     };
