@@ -3,18 +3,46 @@
   imports = [ inputs.stylix.homeModules.stylix ];
   
   stylix = {
-    # enable = true;
+    enable = true;
+    autoEnable = true;
     polarity = "dark";
-    image = ../../../screenshots/NixOs.png;
+    base16Scheme = ./theme.yaml;
 
     targets = {
+      waybar.enable = false;
+      hyprlock.enable = false;
+      qt.enable = true;
       firefox.profileNames = [ "default" ];
     };
-    
+
     cursor = {
       name = "Bibata-Modern-Classic";
       size = 24;
       package = pkgs.bibata-cursors;
+    };
+
+    fonts = {
+      emoji = {
+        name = "Noto Color Emoji";
+        package = pkgs.noto-fonts-color-emoji;
+      };
+      monospace = {
+        name = "JetBrains Mono";
+        package = pkgs.jetbrains-mono;
+      };
+      sansSerif = {
+        name = "Noto Sans";
+        package = pkgs.noto-fonts;
+      };
+      serif = {
+        name = "Noto Serif";
+        package = pkgs.noto-fonts;
+      };
+
+      sizes = {
+        terminal = 13;
+        applications = 11;
+      };
     };
 
     icons = {
@@ -23,5 +51,7 @@
       dark = "Papirus-Dark";
       light = "Papirus-Light";
     };
+
+    # image = ../../../screenshots/NixOs.png;
   };
 }

@@ -14,6 +14,7 @@
       allowedTCPPorts = [ 
         9090 # For TOR
         8080 # For my test web server
+        5900 # For VNC vm
       ]; 
     };
   };

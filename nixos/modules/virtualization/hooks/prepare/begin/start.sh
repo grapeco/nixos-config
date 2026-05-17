@@ -1,11 +1,6 @@
 #!/run/current-system/sw/bin/bash
 set -x
 
-# Isolate host to core 0
-systemctl set-property --runtime -- user.slice AllowedCPUs=0,1
-systemctl set-property --runtime -- system.slice AllowedCPUs=0,1
-systemctl set-property --runtime -- init.scope AllowedCPUs=0,1
-
 # Stop display manager
 systemctl stop display-manager
 
