@@ -8,7 +8,7 @@
     ./postgresql.nix
     ./services.nix
     ./fonts.nix
-    ./packages.nix
+    ./base-packages.nix
     ./user.nix
     ./nix-ld.nix
 
@@ -16,5 +16,6 @@
     ./network
     ./virtualization
     ./hardware
+    ./packages
   ];
 }

@@ -1,6 +1,6 @@
 { pkgs, inputs, stable, ... }: 
 {  
-  home.packages = with pkgs; [
+  environment.systemPackages = with pkgs; [
     # Games
     stable.lutris
     mangohud

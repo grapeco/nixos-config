@@ -19,5 +19,6 @@
     powerManagement.finegrained = false;
   };
 
+  services.xserver.enable = true;
   services.xserver.videoDrivers = ["nvidia"];
 }

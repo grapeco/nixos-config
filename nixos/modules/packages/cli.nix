@@ -1,5 +1,5 @@
 { pkgs, inputs, ... }: {
-  home.packages = with pkgs; [
+  environment.systemPackages = with pkgs; [
     # Games
     umu-launcher
     javaPackages.compiler.temurin-bin.jre-25

@@ -3,6 +3,5 @@
     ./apps
     ./utils
     ./hyprland
-    ./packages
   ];
 }

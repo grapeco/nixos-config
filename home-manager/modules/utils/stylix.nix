@@ -3,8 +3,8 @@
   imports = [ inputs.stylix.homeModules.stylix ];
   
   stylix = {
-    enable = true;
-    autoEnable = true;
+    # enable = true;
+    # autoEnable = true;
     polarity = "dark";
     base16Scheme = ./theme.yaml;
 

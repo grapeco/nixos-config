@@ -1,4 +1,4 @@
-{ hostname, ... }: {
+{ hostname, pkgs, ... }: {
   networking = {
     hostName = hostname;
     nameservers = [ 
@@ -7,6 +7,9 @@
     ];
     networkmanager = {
       enable = true;
+      plugins = with pkgs; [
+        networkmanager-sstp
+      ];
     };
     
     firewall = {
@@ -18,6 +21,10 @@
       ]; 
     };
   };
+  
+  environment.systemPackages = with pkgs; [
+    networkmanagerapplet
+  ];
   
   services.resolved = {
     enable = true;
