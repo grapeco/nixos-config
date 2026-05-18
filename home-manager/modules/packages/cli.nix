@@ -25,6 +25,7 @@
     
     # Other
     wireguard-tools
+    sstp
     btop
     unzip
     nix-prefetch-scripts
