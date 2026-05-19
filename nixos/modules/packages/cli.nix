@@ -17,6 +17,7 @@
     
     # Languages
     rustc
+    rust-analyzer
     cargo
     nixd
     clang

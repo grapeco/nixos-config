@@ -1,9 +1,9 @@
-{ pkgs, ... }: {  
+{ pkgs, lib, ... }: {  
   home.packages = with pkgs; [
     adw-gtk3
   ];
 
-  dconf.settings = {
+  dconf.settings = lib.mkForce {
     "org/gnome/desktop/interface" = {
       gtk-theme = "adw-gtk3-dark";
       color-scheme = "prefer-dark";
