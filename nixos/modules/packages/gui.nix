@@ -16,6 +16,7 @@
     gimp
     zed-editor
     obsidian
+    (pkgs.callPackage ./custom/muscat.nix {})
     
     # Browsing
     firefox
