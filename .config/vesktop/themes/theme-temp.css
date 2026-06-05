@@ -51,9 +51,9 @@ body {
 :root {
     --colors: on;
 
-    --text-0: #{{base06}};
+    --text-0: #{{base05}};
     --text-1: #{{base05}};
-    --text-2: #{{base06}};
+    --text-2: #{{base05}};
     --text-3: #{{base05}};
     --text-4: #{{base05}};
     --text-5: #{{base04}};
