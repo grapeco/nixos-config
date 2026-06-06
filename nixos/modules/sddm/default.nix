@@ -4,12 +4,12 @@ let
 in {
   environment.systemPackages = with pkgs; [
     (sddm-astronaut.override {
-      embeddedTheme = "hyprland_kath";
+      embeddedTheme = "black_hole";
     })
   ];
   services.displayManager.sddm = {
     enable = true;
-    wayland.enable = true;
+    # wayland.enable = true;
     theme = "sddm-astronaut-theme";
     package = pkgs.kdePackages.sddm;
     extraPackages = with pkgs; [

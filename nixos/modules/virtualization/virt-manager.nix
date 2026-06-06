@@ -11,7 +11,7 @@
     virt-viewer
     spice spice-gtk
     spice-protocol
-    virtio-win
+    # virtio-win
     win-spice
     adwaita-icon-theme
   ];
@@ -25,11 +25,10 @@
       qemu = {
         runAsRoot = true;
         swtpm.enable = true;
+        vhostUserPackages = with pkgs; [ virtiofsd ];
       };
-      hooks = {
-        qemu = {
-          "win10" = ./hooks;
-        };
+      hooks.qemu = {
+        "win10" = ./hooks;
       };
     };
     spiceUSBRedirection.enable = true;

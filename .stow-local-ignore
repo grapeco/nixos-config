@@ -1,0 +1,12 @@
+home-manager
+hosts
+nixos
+other
+screenshots
+
+.git
+.gitignore
+flake.lock
+flake.nix
+LICENSE
+README.md

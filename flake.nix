@@ -1,28 +1,15 @@
-{
+{ 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-
-    home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.11";
 
     hyprland = {
       url = "github:hyprwm/Hyprland";
     };
 
-    waybar = {
-      url = "github:Alexays/Waybar";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     stylix = {
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    awww = {
-      url = "git+https://codeberg.org/LGFae/awww";
     };
 
     zapret = {
@@ -33,6 +20,10 @@
     spicetify-nix = {
       url = "github:gerg-l/spicetify-nix";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+    
+    nix-alien = {
+      url = "github:thiagokokada/nix-alien";
     };
 
     nix4vscode = {
@@ -48,10 +39,10 @@
     prismlauncher = {
       url = "github:Diegiwg/PrismLauncher-Cracked";
     };
-
-    catppuccin-cava = {
-      url = "github:catppuccin/cava";
-      flake = false;
+    
+    muscat = {
+      url = "github:grapeco/muscat/master";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
@@ -60,33 +51,41 @@
     system = "x86_64-linux";
     homeStateVersion = "24.11";
     user = "nox";
-  in {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+    
+    stable = import inputs.nixpkgs-stable {
       inherit system;
-      specialArgs = { inherit inputs user homeStateVersion; };
-      modules = [
-        ./nixos/configuration.nix
+      config.allowUnfree = true;
+    };
+    
+    hosts = [
+      { hostname = "nixos"; stateVersion = "24.11"; }
+      { hostname = "laptop"; stateVersion = "25.11"; }
+    ];
+    
+    makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
+      system = system;
+      specialArgs = {
+        inherit inputs stateVersion hostname user stable;
+      };
 
-        inputs.home-manager.nixosModules.home-manager
-        {
-          home-manager = {
-            users.${user} = ./home-manager/home.nix;
-            useGlobalPkgs = true;
-            useUserPackages = true;
-            extraSpecialArgs = {
-              inherit inputs homeStateVersion user;
-            };
-          };
-        }
+      modules = [
+        ./hosts/${hostname}/configuration.nix
       ];
     };
+  in {
+    nixosConfigurations = nixpkgs.lib.foldl' (configs: host:
+      configs // {
+        "${host.hostname}" = makeSystem {
+          inherit (host) hostname stateVersion;
+        };
+      }) {} hosts;
 
-    # homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
-    #   pkgs = nixpkgs.legacyPackages.${system};
-    #   extraSpecialArgs = {
-    #     inherit inputs homeStateVersion user;
-    #   };
-    #   modules = [ ./home-manager/home.nix ];
-    # };
+    homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
+      pkgs = nixpkgs.legacyPackages.${system};
+      extraSpecialArgs = {
+        inherit inputs homeStateVersion user stable;
+      };
+      modules = [ ./home-manager/home.nix ];
+    };
   };
 }

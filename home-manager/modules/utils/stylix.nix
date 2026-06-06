@@ -1,27 +1,17 @@
-{ pkgs, inputs, ... }: {
+{ pkgs, inputs, ... }:
+{
   imports = [ inputs.stylix.homeModules.stylix ];
-
-  home.packages = with pkgs; [
-    dejavu_fonts
-    jetbrains-mono
-    noto-fonts
-    noto-fonts-lgc-plus
-    texlivePackages.hebrew-fonts
-    noto-fonts-color-emoji
-    font-awesome
-    powerline-fonts
-    powerline-symbols
-    nerd-fonts.symbols-only
-  ];
-
+  
   stylix = {
-    enable = true;
+    # enable = true;
+    # autoEnable = true;
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+    base16Scheme = ./theme.yaml;
 
     targets = {
       waybar.enable = false;
       hyprlock.enable = false;
+      qt.enable = true;
       firefox.profileNames = [ "default" ];
     };
 
@@ -55,7 +45,7 @@
       };
     };
 
-    iconTheme = {
+    icons = {
       enable = true;
       package = pkgs.papirus-icon-theme;
       dark = "Papirus-Dark";
