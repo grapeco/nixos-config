@@ -2,6 +2,5 @@
   imports = [
     ./apps
     ./utils
-    ./hyprland
   ];
 }
