@@ -9,26 +9,26 @@
     '';
   };
   
-  systemd.services.rudesktop = {
-    after = [ "systemd-user-sessions.service" ];
-    wantedBy = [ "multi-user.target" ];
-    requires = [ "network.target" ];
-    serviceConfig = {
-      ExecStart = "/home/nox/Downloads/temping/usr/bin/rudesktop --dispatcher";
-      Restart = "always";
-    };
-  };
+  # systemd.services.rudesktop = {
+  #   after = [ "systemd-user-sessions.service" ];
+  #   wantedBy = [ "multi-user.target" ];
+  #   requires = [ "network.target" ];
+  #   serviceConfig = {
+  #     ExecStart = "/home/nox/Downloads/temping/usr/bin/rudesktop --dispatcher";
+  #     Restart = "always";
+  #   };
+  # };
   
-  systemd.user.services.rudesktop-user = {
-    serviceConfig = {
-      Type = "simple";
-      ExecStart = "/usr/bin/env /home/nox/Downloads/temping/usr/bin/rudesktop --session";
-      KillMode = "process";
-      TimeoutStopSec=30;
-      LimitNOFILE=100000;
-      Restart="on-failure";
-      RestartSec=1;
-      SuccessExitStatus=0;
-    };
-  };
+  # systemd.user.services.rudesktop-user = {
+  #   serviceConfig = {
+  #     Type = "simple";
+  #     ExecStart = "/usr/bin/env /home/nox/Downloads/temping/usr/bin/rudesktop --session";
+  #     KillMode = "process";
+  #     TimeoutStopSec=30;
+  #     LimitNOFILE=100000;
+  #     Restart="on-failure";
+  #     RestartSec=1;
+  #     SuccessExitStatus=0;
+  #   };
+  # };
 }

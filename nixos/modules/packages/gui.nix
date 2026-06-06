@@ -16,7 +16,7 @@
     gimp
     zed-editor
     obsidian
-    (pkgs.callPackage ./custom/muscat.nix {})
+    inputs.muscat.packages.${pkgs.stdenv.hostPlatform.system}.default
     
     # Browsing
     firefox
