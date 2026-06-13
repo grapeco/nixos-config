@@ -9,6 +9,10 @@
       
       AvoidDiskWrites = 1; 
       
+      HTTPTunnelPort = [
+        { addr = "0.0.0.0"; port = 8118; }
+      ];
+      
       SOCKSPort = [
         { addr = "0.0.0.0"; port = 9090; }
       ];
