@@ -27,6 +27,12 @@
   
   programs.proxychains = {
     enable = true;
+    proxyDNS = true;
+    quietMode = true; 
+    chain = {
+      type = "strict";
+    };
+    
     proxies = {
       tor = {
         enable = true;
@@ -35,10 +41,5 @@
         port = 9050;            
       };
     };
-    chain = {
-      type = "dynamic";
-    };
-    proxyDNS = true;
-    quietMode = true; 
   };
 }

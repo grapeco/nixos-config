@@ -35,6 +35,8 @@
       url = "github:Lxtharia/minegrub-theme";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    
+    qylock.url = "github:Darkkal44/qylock";
 
     prismlauncher = {
       url = "github:Diegiwg/PrismLauncher-Cracked";
