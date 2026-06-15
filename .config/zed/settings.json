@@ -1,5 +1,4 @@
 {
-  "cli_default_open_behavior": "existing_window",
   "icon_theme": "Zed (Default)",
   "theme": "Base16",
   "auto-update": false,
