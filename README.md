@@ -47,4 +47,4 @@ To get started with this setup, follow these steps:
 ![screenshot](./screenshots/Grub.jpg)
 
 ### Sddm
-![screenshot](./screenshots/Sddm.gif)
+![screenshot](./screenshots/Sddm.png)
