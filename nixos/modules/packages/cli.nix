@@ -21,7 +21,6 @@
     cargo
     nixd
     clang
-    clang-tools
     nasm
     
     # Other
