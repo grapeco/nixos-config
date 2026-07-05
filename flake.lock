@@ -687,7 +687,6 @@
       },
       "original": {
         "owner": "grapeco",
-        "ref": "master",
         "repo": "muscat",
         "type": "github"
       }

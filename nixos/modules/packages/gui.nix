@@ -2,7 +2,7 @@
 {  
   environment.systemPackages = with pkgs; [
     # Games
-    stable.lutris
+    # stable.lutris
     mangohud
     inputs.prismlauncher.packages.${pkgs.stdenv.hostPlatform.system}.default
     mindustry

@@ -43,7 +43,7 @@
     };
     
     muscat = {
-      url = "github:grapeco/muscat/master";
+      url = "github:grapeco/muscat";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

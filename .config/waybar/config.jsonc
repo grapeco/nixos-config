@@ -57,7 +57,7 @@
 
   "custom/weather": {
     "exec": "~/.config/waybar/weather",
-    "format": {},
+    "format": "{}",
     "interval": 300,
     "tooltip": false,
   },
