@@ -50,7 +50,7 @@
       libdrm
       libva
       # webkitgtk_4_0
-      libsoup_2_4
+      libsoup_3
       libelf
       libvdpau
       

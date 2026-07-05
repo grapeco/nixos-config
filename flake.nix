@@ -5,6 +5,7 @@
 
     hyprland = {
       url = "github:hyprwm/Hyprland";
+      # inputs.nixpkgs.follows = "nixpkgs";
     };
 
     stylix = {
@@ -24,6 +25,7 @@
     
     nix-alien = {
       url = "github:thiagokokada/nix-alien";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     nix4vscode = {
@@ -36,10 +38,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     
-    qylock.url = "github:Darkkal44/qylock";
+    qylock = {
+      url = "github:Darkkal44/qylock";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     prismlauncher = {
       url = "github:Diegiwg/PrismLauncher-Cracked";
+      # inputs.nixpkgs.follows = "nixpkgs";
     };
     
     muscat = {
