@@ -8,15 +8,21 @@
       # inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    stylix = {
-      url = "github:danth/stylix";
+    home-manager = {
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    zapret = {
-      url = "github:kartavkun/zapret-discord-youtube";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # stylix = {
+    #   url = "github:danth/stylix";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+
+    # zapret = {
+    #   # url = "github:kartavkun/zapret-discord-youtube";
+    #   url = "git+https://git.roodnt.name/Roodnt/zapret-discord-youtube";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     spicetify-nix = {
       url = "github:gerg-l/spicetify-nix";
@@ -54,46 +60,38 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, ... }@inputs:
   let
-    system = "x86_64-linux";
-    homeStateVersion = "24.11";
     user = "nox";
-    
-    stable = import inputs.nixpkgs-stable {
-      inherit system;
-      config.allowUnfree = true;
-    };
-    
-    hosts = [
-      { hostname = "nixos"; stateVersion = "24.11"; }
-      { hostname = "laptop"; stateVersion = "25.11"; }
-    ];
-    
-    makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
-      system = system;
-      specialArgs = {
-        inherit inputs stateVersion hostname user stable;
-      };
 
+    makeSystem = system: hostname: nixpkgs.lib.nixosSystem {
+      inherit system;
+      
       modules = [
+        inputs.home-manager.nixosModules.home-manager
+        {
+          home-manager = {
+            users.${user} = ./home-manager/home.nix;
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            extraSpecialArgs = {
+              inherit inputs user;
+            };
+          };
+        }
+        
         ./hosts/${hostname}/configuration.nix
+        ./nixos/modules
       ];
+
+      specialArgs = {
+        inherit inputs hostname user;
+      };
     };
   in {
-    nixosConfigurations = nixpkgs.lib.foldl' (configs: host:
-      configs // {
-        "${host.hostname}" = makeSystem {
-          inherit (host) hostname stateVersion;
-        };
-      }) {} hosts;
-
-    homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.${system};
-      extraSpecialArgs = {
-        inherit inputs homeStateVersion user stable;
-      };
-      modules = [ ./home-manager/home.nix ];
+    nixosConfigurations = {
+      nixos = makeSystem "x86_64-linux" "nixos";
+      laptop = makeSystem "x86_64-linux" "laptop";
     };
   };
 }

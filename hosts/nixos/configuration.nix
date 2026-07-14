@@ -1,9 +1,8 @@
-{ pkgs, stateVersion, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
     ./hardware-configuration.nix
-    ../../nixos/modules
     ./modules
   ];
 
@@ -24,5 +23,5 @@
     }
   ];
   
-  system.stateVersion = stateVersion;
+  system.stateVersion = "24.11";
 }

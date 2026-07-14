@@ -1,6 +1,6 @@
 {
   imports = [
-    ./bash.nix
+    # ./bash.nix
     ./grub.nix
     ./hyprland.nix
     ./nh.nix

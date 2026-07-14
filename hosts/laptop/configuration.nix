@@ -1,9 +1,8 @@
-{ pkgs, stateVersion, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
     ./hardware-configuration.nix
-    ../../nixos/modules
     ./modules
   ];
 
@@ -16,5 +15,5 @@
     LC_TIME = "en_GB.UTF-8";
   };
   
-  system.stateVersion = stateVersion;
+  system.stateVersion = "25.11";
 }

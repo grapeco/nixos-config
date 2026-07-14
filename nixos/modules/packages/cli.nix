@@ -25,6 +25,7 @@
     
     # Other
     wireguard-tools
+    nftables
     sstp
     btop
     unzip

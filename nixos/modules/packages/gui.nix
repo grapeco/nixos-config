@@ -30,6 +30,7 @@
     
     # Other
     alacritty
+    amberol
     pavucontrol
     mpv   
     qbittorrent
