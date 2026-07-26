@@ -1,12 +1,30 @@
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$nix_shell\
+$cmd_duration\
+$line_break\
+$character\
+"""
+
 [directory]
 format = "[ ](#{{base0D}})[ $path ]($style)"
 style = "#{{base0D}}"
+truncate_to_repo = false
+truncation_length = 0
 
 [character]
 success_symbol = "[ ](#{{base0D}})[ ➜](bold green)"
 error_symbol = "[ ](#{{base0D}})[ ➜](bold red)"
 
 [cmd_duration]
-format = "[󰔛 $duration]($style)"
+format = "[󰔛 $duration ]($style)"
 style = "bg:none fg:#{{base0A}}"
 show_notifications = false
+
+[nix_shell]
+format = "[  nix-shell-env ]($style)"
+style = "#{{base0D}}"

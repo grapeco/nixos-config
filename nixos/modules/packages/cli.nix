@@ -22,11 +22,14 @@
     nixd
     clang
     nasm
-    
-    # Other
+
+    # Networking
     wireguard-tools
     nftables
     sstp
+    torsocks
+    
+    # Other
     btop
     unzip
     nix-prefetch-scripts

@@ -1,5 +1,5 @@
 {
-  "data": "~/dotfiles/.config/muscat/themes/catppuccin.json",
+  "data": "~/.config/muscat/themes/catppuccin.json",
   
   "data_dir": "~/.config/muscat/themes",
     
@@ -32,6 +32,6 @@
   "restarts": [
     "waybar",
     "swaync",
-    "zed",
+    // "zed",
   ]
 }

@@ -18,11 +18,10 @@
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
 
-    # zapret = {
-    #   # url = "github:kartavkun/zapret-discord-youtube";
-    #   url = "git+https://git.roodnt.name/Roodnt/zapret-discord-youtube";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    zapret = {
+      url = "github:kartavkun/zapret-discord-youtube";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     spicetify-nix = {
       url = "github:gerg-l/spicetify-nix";
