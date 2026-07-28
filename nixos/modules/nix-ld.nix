@@ -14,7 +14,7 @@
   ];
   
   programs.nix-ld = {
-    enable = true;
+    # enable = true;
     libraries = with pkgs; [
       # Базовые системные
       stdenv.cc.cc.lib

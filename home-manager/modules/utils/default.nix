@@ -3,7 +3,7 @@
     ./direnv.nix
     ./gammastep.nix
     ./ssh.nix
-    ./stylix.nix
+    # ./stylix.nix
     ./gtk.nix
   ];
 }

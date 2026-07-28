@@ -2,7 +2,6 @@
 {
   programs.nh = {
     enable = true;
-    # clean.enable = true;
-    flake = "/home/${user}/dotfiles";
+    flake = "/home/${user}/nixos-config";
   };
 }

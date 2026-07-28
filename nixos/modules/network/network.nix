@@ -36,7 +36,7 @@
     enable = true;
   };
   
-  programs.amnezia-vpn.enable = true;
+  # programs.amnezia-vpn.enable = true;
   
-  services.zerotierone.enable = true;
+  # services.zerotierone.enable = true;
 }
