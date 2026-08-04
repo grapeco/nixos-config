@@ -1,7 +1,5 @@
 {
-  "data": "~/.config/muscat/themes/catppuccin.json",
-  
-  "data_dir": "~/.config/muscat/themes",
+  "theme": "catppuccin",
     
   "targets": [
     "~/.config/waybar/config.jsonc",
@@ -12,8 +10,8 @@
     "~/.config/kitty/kitty.conf",
     "~/.config/gtk-3.0/gtk.css",
     "~/.config/gtk-4.0/gtk.css",
-    "~/.config/Kvantum/kvantum.svg",
-    "~/.config/Kvantum/kvconfig",
+    "~/.config/Kvantum/Base16/Base16.svg",
+    "~/.config/Kvantum/Base16/Base16.kvconfig",
     "~/.config/vesktop/themes/theme.css",
     "~/.config/zed/settings.json",
     "~/.config/zed/themes/base16.json",
@@ -33,7 +31,6 @@
   
   "restarts": [
     "waybar",
-    "swaync",
-    // "zed",
+    "zed",
   ]
 }

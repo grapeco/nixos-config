@@ -3,11 +3,13 @@
   "icon_theme": "Zed (Default)",
   "theme": "Base16",
   "auto-update": false,
+
   "autosave": {
     "after_delay": {
       "milliseconds": 500
     }
   },
+
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_size": 16,
   
@@ -19,6 +21,7 @@
       ]
     }
   },
+
   "lsp": {
     "nixd": {
       "binary": {
@@ -31,22 +34,22 @@
       }
     }
   },
-  
+
   "project_panel": {
     "dock": "left",
     "entry_spacing": "comfortable",
     "sticky_scroll": false
   },
-  
+
   "outline_panel": {
     "dock": "left"
   },
-  
+
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
-  
+
   "ui_font_family": "Noto Sans",
   "ui_font_size": 14,
   "vim_mode": false

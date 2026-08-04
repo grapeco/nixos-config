@@ -16,6 +16,7 @@
     gimp
     zed-editor
     obsidian
+    # (callPackage ./custom/anydesk { })
     inputs.muscat.packages.${pkgs.stdenv.hostPlatform.system}.default
     
     # Browsing
