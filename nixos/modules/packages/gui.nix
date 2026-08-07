@@ -1,11 +1,16 @@
 { pkgs, inputs, stable, ... }: 
 {  
+  # systemd.packages = with pkgs; [
+  #   (callPackage ./custom/anydesk { })
+  # ];
+  # systemd.services.anydesk.wantedBy = [ "multi-user.target" ];
+  
   environment.systemPackages = with pkgs; [
     # Games
     # stable.lutris
     mangohud
     inputs.prismlauncher.packages.${pkgs.stdenv.hostPlatform.system}.default
-    mindustry
+    stable.mindustry
     
     # Studying
     libreoffice
@@ -16,7 +21,7 @@
     gimp
     zed-editor
     obsidian
-    # (callPackage ./custom/anydesk { })
+    (callPackage ./custom/anydesk/package.nix { })
     inputs.muscat.packages.${pkgs.stdenv.hostPlatform.system}.default
     
     # Browsing

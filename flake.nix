@@ -1,7 +1,7 @@
 { 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.11";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-26.05";
 
     hyprland = {
       url = "github:hyprwm/Hyprland";
@@ -48,10 +48,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     
-    qylock = {
-      url = "github:Darkkal44/qylock";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # qylock = {
+    #   url = "github:Darkkal44/qylock";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     prismlauncher = {
       url = "github:Diegiwg/PrismLauncher-Cracked";
@@ -68,7 +68,11 @@
   let
     user = "nox";
 
-    makeSystem = system: hostname: nixpkgs.lib.nixosSystem {
+    makeSystem = system: hostname: 
+    let 
+      stable = import inputs.nixpkgs-stable { inherit system; };
+    in
+      nixpkgs.lib.nixosSystem {
       inherit system;
       
       modules = [
@@ -89,7 +93,7 @@
       ];
 
       specialArgs = {
-        inherit inputs hostname user;
+        inherit inputs hostname user stable;
       };
     };
   in {
