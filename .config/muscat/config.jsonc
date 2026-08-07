@@ -15,7 +15,7 @@
     "~/.config/vesktop/themes/theme.css",
     "~/.config/zed/settings.json",
     "~/.config/zed/themes/base16.json",
-    "~/.config/hypr/hyprland.conf",
+    "~/.config/hypr/hyprland.lua",
     "~/.config/alacritty/alacritty.toml",
     "~/.config/rofi/theme.rasi",
   ],
