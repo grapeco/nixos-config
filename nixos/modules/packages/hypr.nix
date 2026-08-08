@@ -2,7 +2,7 @@
   environment.systemPackages = with pkgs; [
     # inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
     rofi
-    waybar
+    inputs.waybar.packages.${pkgs.stdenv.hostPlatform.system}.default
     hyprlock
     wl-clipboard
     cliphist

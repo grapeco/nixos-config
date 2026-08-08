@@ -61,9 +61,11 @@ hl.config({
 
 hl.curve("linear",        { type = "bezier", points = { {0, 0},       {0.8, 0.15} } })
 hl.curve("md3_standart",  { type = "bezier", points = { {0.2, 0},     {0, 1} } })
+hl.curve("md3_decel",     { type = "bezier", points = { {0.05, 0.54}, {0.07, 1} } })
 hl.curve("md3_accel",     { type = "bezier", points = { {0.3, 0},     {0.8, 0.15} } })
 hl.curve("overshot",      { type = "bezier", points = { {0.05, 0.54}, {0.1, 1.1} } })
 hl.curve("crazyshot",     { type = "bezier", points = { {0.1, 0.9},   {0.76, 0.92} } })
+hl.curve("menu_decel",    { type = "bezier", points = { {0.1, 0.6}, {0, 1} } })
 hl.curve("menu_accel",    { type = "bezier", points = { {0.38, 0.024}, {1, 0.07} } })
 hl.curve("easeInOutCirc", { type = "bezier", points = { {0.85, 0},    {0.15, 1} } })
 hl.curve("easeOutCirc",   { type = "bezier", points = { {0, 0.33},    {0.45, 1} } })

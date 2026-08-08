@@ -1,9 +1,10 @@
 { pkgs, inputs, stable, ... }: 
 {  
-  # systemd.packages = with pkgs; [
-  #   (callPackage ./custom/anydesk { })
+  # imports = [
+  #   ./custom/anydesk/module.nix
   # ];
-  # systemd.services.anydesk.wantedBy = [ "multi-user.target" ];
+
+  # services.anydesk.enable = true;
   
   environment.systemPackages = with pkgs; [
     # Games

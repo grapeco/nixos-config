@@ -23,6 +23,7 @@
     "persistent-workspaces": {
       "*": 9,
     },
+    "tooltip": false,
   },
 
   "custom/cava": {
