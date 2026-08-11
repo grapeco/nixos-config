@@ -27,6 +27,7 @@
     # Browsing
     firefox
     chromium
+    (callPackage ./custom/helium/package.nix {})
     
     # Communication
     element-desktop
@@ -39,6 +40,7 @@
     amberol
     pavucontrol
     mpv   
+    (callPackage ./custom/hiddify/package.nix {})
     qbittorrent
     obs-studio
     nautilus

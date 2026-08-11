@@ -504,11 +504,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1785967508,
-        "narHash": "sha256-/e+Z3ejhvq2oFWDmfAEHknYYeg910uMJr/8v1i1j5lg=",
+        "lastModified": 1786192119,
+        "narHash": "sha256-voX3I3CaeU69P30lI87g/TKkjg5PiMKx9p4qPW7WjjQ=",
         "owner": "grapeco",
         "repo": "muscat",
-        "rev": "9fe1491f5656ea712d50f4863d49c4d76f8ce7e8",
+        "rev": "948694ee95259e606be0a72b9968af1ed5a4b138",
         "type": "github"
       },
       "original": {

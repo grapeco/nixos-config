@@ -7,6 +7,8 @@ hl.monitor({
 
 require("binds")
 
+hl.env("LIBVA_DRIVER_NAME", "nvidia")
+hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
 hl.env("QT_QPA_PLATFORM", "wayland;xcb")
 hl.env("QT_STYLE_OVERRIDE", "kvantum")
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "wayland")
@@ -130,7 +132,7 @@ hl.window_rule({
     match = {
         class = ".*",
     },
-    opacity = "0.9",
+    opacity = "0.9 0.9 1.0",
 })
 
 hl.window_rule({
@@ -138,5 +140,5 @@ hl.window_rule({
     match = {
         class = "io.bassi.Amberol|firefox|vesktop|org.gnome.eog|gimp",
     },
-    opacity = "1.0",
+    opacity = "1.0 1.0 1.0",
 })

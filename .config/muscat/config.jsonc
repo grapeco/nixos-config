@@ -6,14 +6,11 @@
     "~/.config/waybar/style.css",
     "~/.config/swaync/style.css",
     "~/.config/cava/config",
-    "~/.config/starship.toml",
-    "~/.config/kitty/kitty.conf",
     "~/.config/gtk-3.0/gtk.css",
     "~/.config/gtk-4.0/gtk.css",
     "~/.config/Kvantum/Base16/Base16.svg",
     "~/.config/Kvantum/Base16/Base16.kvconfig",
     "~/.config/vesktop/themes/theme.css",
-    "~/.config/zed/settings.json",
     "~/.config/zed/themes/base16.json",
     "~/.config/hypr/hyprland.lua",
     "~/.config/alacritty/alacritty.toml",
@@ -21,16 +18,17 @@
   ],
   
   "wallpapers": [
-    { "catppuccin": "~/Pictures/Wallpapers/NixOs.png" },
-    { "gruvbox": "~/Pictures/Wallpapers/gruv-abstract-maze.png" },
+    { "catppuccin": "~/Pictures/Wallpapers/cat.png" },
+    { "gruvbox": "~/Pictures/Wallpapers/gruvbox-space.png" },
     { "everforest": "~/Pictures/Wallpapers/green-code.png" },
     { "kanagawa": "~/Pictures/Wallpapers/monochrome.png" },
     { "monochrome": "~/Pictures/Wallpapers/monochrome.png" },
     { "da-one-black": "~/Pictures/Wallpapers/monochrome.png" },
+    { "nord": "~/Pictures/Wallpapers/cyber-city.jpg" },
   ],
   
   "restarts": [
     "waybar",
-    "zed",
+    // "zed",
   ]
 }

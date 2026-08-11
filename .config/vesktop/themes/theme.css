@@ -1,5 +1,5 @@
 /**
-* @name my-Catppuccin Mocha
+* @name Catppuccin Mocha
 * @description Custom theme based on refact0r's midnight
 * @author refact0r
 * @version 0.1.0
@@ -22,9 +22,9 @@
     --text-5: #585b70;
 
     --bg-1: #313244;
-    --bg-2: #181825;
-    --bg-3: #1e1e2e;
-    --bg-4: #1e1e2e;
+    --bg-2: #1e1e2e;
+    --bg-3: #181825;
+    --bg-4: #181825;
     --hover: #585b7056;
     --active: #cdd6f456;
     --active-2: #45475a96;
