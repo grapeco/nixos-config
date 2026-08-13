@@ -89,7 +89,7 @@ hl.animation({ leaf = "specialWorkspace", enabled = true, speed = 2.5, bezier = 
 
 hl.config({
     cursor = {
-        no_hardware_cursors = 2,
+        no_hardware_cursors = 1,
     },
 })
 
@@ -132,7 +132,7 @@ hl.window_rule({
     match = {
         class = ".*",
     },
-    opacity = "0.9 0.9 1.0",
+    opacity = "0.95 0.95 1.0",
 })
 
 hl.window_rule({

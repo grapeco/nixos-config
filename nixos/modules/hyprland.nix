@@ -3,13 +3,8 @@
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
+    withUWSM = true;
     package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
     portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
   };
-  
-  # services.xserver = {
-  #   desktopManager = {
-  #     xfce.enable = true;
-  #   };
-  # };
 }

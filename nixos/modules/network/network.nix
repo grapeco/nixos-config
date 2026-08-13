@@ -29,7 +29,7 @@
   };
   
   environment.systemPackages = with pkgs; [
-    networkmanagerapplet
+    # networkmanagerapplet
   ];
   
   services.resolved = {

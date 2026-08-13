@@ -3,6 +3,17 @@
   nixpkgs.config.allowUnfree = true;
   nixpkgs.overlays = [ 
     inputs.nix4vscode.overlays.forVscode 
+
+    # https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/development/python-modules/nanoemoji/default.nix
+    (final: prev: {
+      python313Packages = prev.python313Packages.overrideScope (pyFinal: pyPrev: {
+        nanoemoji = pyPrev.nanoemoji.overrideAttrs (old: {
+          src = old.src.overrideAttrs (_: {
+            hash = "sha256-FysyKC01XBnRiur5RR9fcsTxQqE8x0JJHSoe3q6JtKc=";
+          });
+        });
+      });
+    })
   ];
 
   nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
