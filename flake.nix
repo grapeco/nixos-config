@@ -33,15 +33,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    spicetify-nix = {
-      url = "github:gerg-l/spicetify-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    
-    nix-alien = {
-      url = "github:thiagokokada/nix-alien";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # spicetify-nix = {
+    #   url = "github:gerg-l/spicetify-nix";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     nix4vscode = {
       url = "github:nix-community/nix4vscode";
@@ -52,11 +47,6 @@
       url = "github:Lxtharia/minegrub-theme";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    
-    # qylock = {
-    #   url = "github:Darkkal44/qylock";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
 
     prismlauncher = {
       url = "github:Diegiwg/PrismLauncher-Cracked";

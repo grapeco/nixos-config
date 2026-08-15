@@ -36,6 +36,5 @@
     yt-dlp
     appimage-run
     usbutils
-    inputs.nix-alien.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
