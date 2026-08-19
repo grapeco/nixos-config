@@ -7,8 +7,6 @@ hl.monitor({
 
 require("binds")
 
-hl.env("LIBVA_DRIVER_NAME", "nvidia")
-hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
 hl.env("QT_QPA_PLATFORM", "wayland;xcb")
 hl.env("QT_STYLE_OVERRIDE", "kvantum")
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "wayland")
@@ -109,11 +107,15 @@ hl.gesture({
     direction = "horizontal",
     action = "workspace"
 })
-
 hl.gesture({
     fingers = 3,
     direction = "down",
     action = function() hl.exec_cmd("grimblast --notify --freeze copy screen") end 
+})
+hl.gesture({
+    fingers = 3;
+    direction = "up";
+    action = function() hl.exec_cmd("muscat --gui") end
 })
 
 hl.device({
@@ -138,7 +140,7 @@ hl.window_rule({
 hl.window_rule({
     name  = "exeptions",
     match = {
-        class = "io.bassi.Amberol|firefox|vesktop|org.gnome.eog|gimp",
+        class = "firefox|vesktop|org.gnome.eog|gimp",
     },
     opacity = "1.0 1.0 1.0",
 })

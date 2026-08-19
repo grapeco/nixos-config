@@ -92,10 +92,11 @@
       "warning": 30,
       "critical": 1,
     },
-    "format": "{icon} {capacity}%",
+    "format": "{icon} {capacity}% {power}W",
     "format-charging": " {capacity}%",
     "format-alt": "{time} {icon}",
     "format-icons": ["", "", "", "", ""],
+    "interval": 1,
   },
 
   "clock": {
