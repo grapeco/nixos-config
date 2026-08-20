@@ -72,23 +72,23 @@ shadowless_popup=false
 transient_groove=false
 
 [GeneralColors]
-window.color=#1e1e2e
-base.color=#181825
-alt.base.color=#1e1e2e
+window.color=#181825
+base.color=#11111b
+alt.base.color=#181825
 button.color=#313244
 light.color=#45475a
 mid.light.color=#45475a
-dark.color=#181825
-mid.color=#181825
+dark.color=#11111b
+mid.color=#11111b
 highlight.color=#cba6f7
 inactive.highlight.color=#45475a
-tooltip.base.color=#181825
+tooltip.base.color=#11111b
 text.color=#cdd6f4
 window.text.color=#cdd6f4
 button.text.color=#cdd6f4
 disabled.text.color=#585b70
 tooltip.text.color=#cdd6f4
-highlight.text.color=#181825
+highlight.text.color=#11111b
 link.color=#89b4fa
 link.visited.color=#cba6f7
 

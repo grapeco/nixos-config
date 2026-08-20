@@ -7,17 +7,17 @@ shape = "Beam"
 
 # Default colors
 [colors.primary]
-background = '#181825'
+background = '#11111b'
 foreground = '#cdd6f4'
 
 # Colors the cursor will use if `custom_cursor_colors` is true
 [colors.cursor]
-text = '#181825'
+text = '#11111b'
 cursor = '#cdd6f4'
 
 # Normal colors
 [colors.normal]
-black = '#181825'
+black = '#11111b'
 red = '#f38ba8'
 green = '#a6e3a1'
 yellow = '#f9e2af'
