@@ -13,6 +13,7 @@
     ./nix-ld.nix
 
     ./sddm
+    ./plymouth
     ./network
     ./virtualization
     ./hardware

@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }: {
+{ pkgs, ... }: {
   environment.systemPackages = with pkgs; [
     # Games
     umu-launcher
@@ -18,6 +18,7 @@
     # Languages
     rustc
     rust-analyzer
+    color-lsp
     cargo
     nixd
     clang

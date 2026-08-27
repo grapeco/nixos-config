@@ -134,7 +134,7 @@ hl.window_rule({
     match = {
         class = ".*",
     },
-    opacity = "0.95 0.95 1.0",
+    opacity = "0.90 0.90 1.0",
 })
 
 hl.window_rule({

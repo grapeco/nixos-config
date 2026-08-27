@@ -14,6 +14,27 @@
 :root {
     --colors: on;
 
+    --accent-1: var(--blue-1);
+    --accent-2: var(--blue-2);
+    --accent-3: var(--blue-3);
+    --accent-4: var(--blue-4);
+    --accent-5: var(--blue-5);
+    --accent-new: var(--red-1);
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 90%) 40%, transparent);
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 95%) 40%, transparent);
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent);
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent);
+
+    --online: var(--green-1);
+    --dnd: var(--red-1);
+    --idle: var(--yellow-1);
+    --streaming: var(--purple-1);
+    --offline: var(--text-5);
+
+    --border-light: transparent;
+    --border: transparent;
+    --button-border: transparent;
+
     --text-0: #{{base05}};
     --text-1: #{{base05}};
     --text-2: #{{base05}};
@@ -29,27 +50,6 @@
     --active: #{{base05}}56;
     --active-2: #{{base03}}96;
     --message-hover: #00000028;
-
-    --accent-1: var(--blue-1);
-    --accent-2: var(--blue-2);
-    --accent-3: var(--blue-3);
-    --accent-4: var(--blue-4);
-    --accent-5: var(--blue-5);
-    --accent-new: var(--red-1);
-    --mention: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 90%) 40%, transparent);
-    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 95%) 40%, transparent);
-    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent);
-    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent);
-
-    --online: #{{base0B}};
-    --dnd: #{{base08}};
-    --idle: #{{base0A}};
-    --streaming: #{{base0E}};
-    --offline: #{{base03}};
-
-    --border-light: #00000000;
-    --border: #00000000;
-    --button-border: #FFFFFF32;
 
     --red-1: #{{base08}};
     --red-2: #{{base08}};
