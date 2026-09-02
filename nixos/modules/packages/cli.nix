@@ -19,6 +19,7 @@
     rustc
     rust-analyzer
     color-lsp
+    asm-lsp
     cargo
     nixd
     clang
@@ -31,7 +32,10 @@
     torsocks
     
     # Other
-    btop
+    (btop.override {
+      cudaSupport = true;
+      rocmSupport = true;
+    })
     unzip
     nix-prefetch-scripts
     yt-dlp
