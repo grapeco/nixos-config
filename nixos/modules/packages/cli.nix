@@ -41,5 +41,6 @@
     yt-dlp
     appimage-run
     usbutils
+    distrobox
   ];
 }

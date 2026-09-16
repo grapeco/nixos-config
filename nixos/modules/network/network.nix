@@ -31,6 +31,11 @@
   environment.systemPackages = with pkgs; [
     # networkmanagerapplet
   ];
+
+  programs.throne = {
+    enable = true;
+    tunMode.enable = true;
+  };
   
   services.resolved = {
     enable = true;

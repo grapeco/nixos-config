@@ -11,6 +11,7 @@
     ./base-packages.nix
     ./user.nix
     ./nix-ld.nix
+    ./steam.nix
 
     ./sddm
     ./plymouth

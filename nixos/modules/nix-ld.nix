@@ -14,7 +14,7 @@
   ];
   
   programs.nix-ld = {
-    # enable = true;
+    enable = true;
     libraries = with pkgs; [
       # Базовые системные
       stdenv.cc.cc.lib
@@ -58,15 +58,11 @@
       glib
       gtk2
       gtk3
-      gnome2.GConf
       pango
       cairo
       atk
       gdk-pixbuf
       librsvg
-      libappindicator-gtk2
-      libdbusmenu-gtk2
-      libindicator-gtk2
       
       # Аудио
       pipewire
