@@ -7,15 +7,12 @@
     ];
     networkmanager = {
       enable = true;
-      plugins = with pkgs; [
-        networkmanager-sstp
-      ];
     };
     
     firewall = {
       enable = true;
       allowedTCPPorts = [ 
-        9090 # For TOR
+        9090 8118 # For TOR
         8080 # For my test web server
         5900 # For VNC vm
       ]; 
