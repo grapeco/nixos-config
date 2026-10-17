@@ -11,5 +11,8 @@
     grimblast
     swaynotificationcenter
     brightnessctl
+    hyprpolkitagent
   ];
+
+  security.polkit.enablePkexecWrapper = true;
 }

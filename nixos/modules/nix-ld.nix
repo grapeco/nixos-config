@@ -56,7 +56,6 @@
       
       # GTK/GNOME
       glib
-      gtk2
       gtk3
       pango
       cairo

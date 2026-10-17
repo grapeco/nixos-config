@@ -1,6 +1,9 @@
-{ pkgs, user, ... }:
+{ pkgs, user, hostname, lib, ... }:
 {
-  boot.kernelParams = [ "intel_iommu=on" "iommu=pt" ];
+  boot.kernelParams = lib.mkIf (hostname == "nixos") [
+    "intel_iommu=on"
+    "iommu=pt"
+  ];
 
   # Add user to libvirtd group
   users.users.${user}.extraGroups = [ "libvirtd" ];

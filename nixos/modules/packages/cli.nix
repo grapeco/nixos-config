@@ -24,6 +24,7 @@
     nixd
     clang
     nasm
+    cmake
 
     # Networking
     wireguard-tools
@@ -42,5 +43,6 @@
     appimage-run
     usbutils
     distrobox
+    android-tools
   ];
 }
