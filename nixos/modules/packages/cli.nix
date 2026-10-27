@@ -44,5 +44,6 @@
     usbutils
     distrobox
     android-tools
+    pmbootstrap
   ];
 }

@@ -11,7 +11,7 @@
     # stable.lutris
     mangohud
     inputs.prismlauncher.packages.${pkgs.stdenv.hostPlatform.system}.default
-    stable.mindustry
+    mindustry
     
     # Studying
     libreoffice

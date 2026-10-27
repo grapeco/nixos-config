@@ -12,6 +12,8 @@
 
     };
   };
+
+  services.logind.settings.Login.HandlePowerKey = "ignore";
   
   # services.logind = {
   #   lidSwitch = "ignore";
