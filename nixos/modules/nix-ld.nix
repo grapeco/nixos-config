@@ -1,25 +1,31 @@
 { pkgs, ... }: 
-{
+let 
+  pinnedPkgs = import (builtins.fetchTarball {
+    url = "https://github.com/NixOS/nixpkgs/archive/refs/tags/25.05.tar.gz";
+    sha256 = "1915r28xc4znrh2vf4rrjnxldw2imysz819gzhk9qlrkqanmfsxd";
+  }) { system = pkgs.system; };
+
+  cairo_old = pinnedPkgs.cairo;
+in {
   nixpkgs.overlays = [
     (final: prev: {
-      webkitgtk_4_0 = (import (builtins.fetchTarball {
-        url = "https://github.com/NixOS/nixpkgs/archive/refs/tags/25.05.tar.gz";
-        sha256 = "1915r28xc4znrh2vf4rrjnxldw2imysz819gzhk9qlrkqanmfsxd";
-      }) { system = prev.system; }).webkitgtk_4_0;
+      webkitgtk_4_0 = pinnedPkgs.webkitgtk_4_0;
+      libsoup_2_4 = pinnedPkgs.libsoup_2_4;
     })
-  ];
-  
-  nixpkgs.config.permittedInsecurePackages = [
-    "libsoup-2.74.3"
   ];
   
   programs.nix-ld = {
     enable = true;
     libraries = with pkgs; [
+      webkitgtk_4_0
+      libsoup_2_4
+      libsoup_3
+      cairo_old
       # Базовые системные
       stdenv.cc.cc.lib
       openssl
       glibc
+      glibcLocales
       
       # X11 библиотеки
       libx11
@@ -46,11 +52,11 @@
       # Графика
       libGL
       libGLU
+      libgbm
       mesa
       libdrm
       libva
       # webkitgtk_4_0
-      libsoup_3
       libelf
       libvdpau
       
@@ -119,6 +125,7 @@
       libxkbcommon
       libdrm
       libsciter
+      fontconfig
     ];
   };
 }
