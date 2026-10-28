@@ -17,8 +17,6 @@ in {
   programs.nix-ld = {
     enable = true;
     libraries = with pkgs; [
-      webkitgtk_4_0
-      libsoup_2_4
       libsoup_3
       cairo_old
       # Базовые системные
